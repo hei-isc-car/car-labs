@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom sim
+DEFAULT_FILE atom registerSigned_sim.vhd

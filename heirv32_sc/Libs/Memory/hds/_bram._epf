@@ -1,0 +1,3 @@
+DEFAULT_FILE atom bram_hexRead.vhd
+DEFAULT_ARCHITECTURE atom hexRead
+TOP_MARKER atom 1

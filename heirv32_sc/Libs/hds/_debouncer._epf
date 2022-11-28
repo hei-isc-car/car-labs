@@ -1,0 +1,2 @@
+DEFAULT_FILE atom debouncer_RTL.vhd
+DEFAULT_ARCHITECTURE atom rtl
