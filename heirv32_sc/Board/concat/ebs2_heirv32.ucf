@@ -79,6 +79,6 @@ NET "*" IOSTANDARD = LVCMOS33;
 #NET     "leds<x>"         LOC = "xx" ;               # use leds signals to control ouputs
 
 #-------------------------------------------------------------------------------
-# 
+# PP-Matrix
 #NET     "btns<x>"         LOC = "xx" ;               # use leds signals to control c1 to c10 "columns" power
 #NET     "btns<x>"         LOC = "xx" ;               # use leds signals to control rd1 to rd7 "rows" power

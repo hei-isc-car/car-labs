@@ -279,19 +279,19 @@ value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs2_sc"
 )
 (vvPair
 variable "date"
-value "04.11.2022"
+value "28.11.2022"
 )
 (vvPair
 variable "day"
-value "ven."
+value "lun."
 )
 (vvPair
 variable "day_long"
-value "vendredi"
+value "lundi"
 )
 (vvPair
 variable "dd"
-value "04"
+value "28"
 )
 (vvPair
 variable "entity_name"
@@ -319,7 +319,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "04.11.2022"
+value "28.11.2022"
 )
 (vvPair
 variable "graphical_source_group"
@@ -331,7 +331,7 @@ value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "12:22:26"
+value "15:48:40"
 )
 (vvPair
 variable "group"
@@ -407,7 +407,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "12:22:26"
+value "15:48:40"
 )
 (vvPair
 variable "unit"
@@ -6347,8 +6347,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "0,0,1921,1056"
-viewArea "-1900,-2000,169110,88909"
+windowSize "-8,-8,1928,1048"
+viewArea "-1982,-2081,174348,90833"
 cachedDiagramExtent "0,0,132500,89000"
 pageSetupInfo (PageSetupInfo
 ptrCmd ""
@@ -6372,7 +6372,7 @@ exportStdPackageRefs 1
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 1083,0
+lastUid 1144,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -8182,5 +8182,5 @@ vaOverrides [
 uid 82,0
 type 1
 )
-activeModelName "BlockDiag:GEN"
+activeModelName "BlockDiag"
 )
