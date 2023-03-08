@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="labsDBTester" device="LFE5U-25F-6BG256C" default_implementation="toplevel">
+    <Options/>
+    <Implementation title="toplevel" dir="toplevel" description="toplevel" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="Labs_Board"/>
+        <Source name="../concat/LabsDB.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="Labs_Board"/>
+        </Source>
+        <Source name="../concat/lfe5u_25f.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="labsDBTester1.sty"/>
+</BaliProject>

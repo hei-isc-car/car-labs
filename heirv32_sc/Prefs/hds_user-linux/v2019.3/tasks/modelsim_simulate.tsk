@@ -1,0 +1,48 @@
+version "1.1"
+HDSTool (HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "ModelSim Simulate"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_modelsim_invoke.bmp"
+hasBitmap 1
+tooltip "Invokes the ModelSim Simulator"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+""
+"captureOutput"
+"0"
+"customPrompt"
+""
+"initialDir"
+""
+"promptForRunSettings"
+"1"
+"runMethod"
+"gui"
+"runnableObject"
+"ModelSimSimulator"
+"runnableObjectType"
+"tcl_plugin"
+"useViewSpecific"
+"1"
+]
+)
+"TaskSetting"
+(SettingsMap
+settingsMap [
+"exepath"
+"%task_ModelSimPath"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 1
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 3
+)

@@ -1,0 +1,2 @@
+DEFAULT_FILE atom rtl_instrMemory.vhd
+DEFAULT_ARCHITECTURE atom instrMemory

@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom hex
+DEFAULT_FILE atom instrMemory_hex.vhd

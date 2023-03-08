@@ -1,0 +1,3 @@
+DEFAULT_FILE atom bram_bhv.vhd
+DEFAULT_ARCHITECTURE atom bhv
+TOP_MARKER atom 1

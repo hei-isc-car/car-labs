@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom RTL
+DEFAULT_FILE atom debouncerULogicVector_tester_RTL.vhd

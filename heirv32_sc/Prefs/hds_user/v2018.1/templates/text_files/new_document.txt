@@ -1,0 +1,13 @@
+FILE_NAMING_RULE: new_document.txt
+DESCRIPTION_START
+This is the default template used for the creation of Text Document files.
+Template supplied by Mentor Graphics.
+DESCRIPTION_END
+#
+# Created:
+#         by - %(user).%(group) (%(host))
+#         at - %(time) %(date)
+#
+# using Mentor Graphics HDL Designer(TM) %(version)
+#
+

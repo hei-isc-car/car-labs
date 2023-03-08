@@ -1,0 +1,84 @@
+#-------------------------------------------------------------------------------
+# Clock and reset
+#
+NET     "clk"         LOC = "A10";
+NET     "rst_n"       LOC = "E9"     | PULLUP;
+
+#-------------------------------------------------------------------------------
+# FPGA-EBS
+#
+NET     "heartbeat"   LOC = "B16";
+NET     "sys_en"      LOC = "A16";
+NET     "en_step_n"   LOC = "A15"     | PULLUP;
+NET     "en_full_n"   LOC = "D3"      | PULLUP;
+
+#-------------------------------------------------------------------------------
+# LEDS
+#
+NET     "dbg_leds<0>"     LOC = "G5" ;
+NET     "dbg_leds<1>"     LOC = "G4" ;
+NET     "dbg_leds<2>"     LOC = "D2" ;
+NET     "dbg_leds<3>"     LOC = "E2" ;
+NET     "dbg_leds<4>"     LOC = "F4" ;
+NET     "dbg_leds<5>"     LOC = "G3" ;
+NET     "dbg_leds<6>"     LOC = "C2" ;
+NET     "dbg_leds<7>"     LOC = "D5" ;
+NET     "dbg_leds<8>"     LOC = "C4" ;
+NET     "dbg_leds<9>"     LOC = "C5" ;
+NET     "dbg_leds<10>"    LOC = "G6" ;
+NET     "dbg_leds<11>"    LOC = "B3" ;
+NET     "dbg_leds<12>"    LOC = "B4" ;
+NET     "dbg_leds<13>"    LOC = "A4" ;
+NET     "dbg_leds<14>"    LOC = "B6" ;
+NET     "dbg_leds<15>"    LOC = "A6" ;
+
+NET     "leds<7>"         LOC = "A11" ;
+NET     "leds<6>"         LOC = "A14" ;
+NET     "leds<5>"         LOC = "C7" ;
+NET     "leds<4>"         LOC = "A8" ;
+NET     "leds<3>"         LOC = "B11" ;
+NET     "leds<2>"         LOC = "B13" ;
+NET     "leds<1>"         LOC = "B14" ;
+NET     "leds<0>"         LOC = "E7" ;
+
+NET     "btns<3>"         LOC = "E8" ;
+NET     "btns<2>"         LOC = "G9" ;
+NET     "btns<1>"         LOC = "F9" ;
+NET     "btns<0>"         LOC = "F7" ;
+
+#-------------------------------------------------------------------------------
+# Globals
+#
+NET "*" IOSTANDARD = LVCMOS33;
+
+
+
+# ----------------------------
+# Extra boards
+# ----------------------------
+
+#-------------------------------------------------------------------------------
+# PMOD-MAXSONAR
+#NET     "btns<x>"         LOC = "xx" ;               # use btns signals to read the input, NO PULL RES. !
+
+#-------------------------------------------------------------------------------
+# PMOD-OD1, PMOD_8LD
+#NET     "leds<x>"         LOC = "xx" ;               # use leds signals to control ouputs
+
+#-------------------------------------------------------------------------------
+# PMOD-CON1, PMOD_CON3, PMOD_BTN
+#NET     "btns<x>"         LOC = "xx"     | PULLUP;   # use btns signals to read the input
+#NET     "btns<x>"         LOC = "xx"     | PULLDOWN;
+#NET     "btns<x>"         LOC = "xx";
+
+#-------------------------------------------------------------------------------
+# PMOD-BB (mix of inputs and outputs)
+#NET     "btns<x>"         LOC = "xx"     | PULLUP;   # use btns signals to read the input
+#NET     "btns<x>"         LOC = "xx"     | PULLDOWN;
+#NET     "btns<x>"         LOC = "xx";
+#NET     "leds<x>"         LOC = "xx" ;               # use leds signals to control ouputs
+
+#-------------------------------------------------------------------------------
+# PP-Matrix
+#NET     "btns<x>"         LOC = "xx" ;               # use leds signals to control c1 to c10 "columns" power
+#NET     "btns<x>"         LOC = "xx" ;               # use leds signals to control rd1 to rd7 "rows" power

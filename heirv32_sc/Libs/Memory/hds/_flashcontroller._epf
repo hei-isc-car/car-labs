@@ -1,0 +1,3 @@
+TOP_MARKER atom 1
+DEFAULT_ARCHITECTURE atom RTL
+DEFAULT_FILE atom flashController_RTL.vhd
