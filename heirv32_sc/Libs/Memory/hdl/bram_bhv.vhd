@@ -1,37 +1,18 @@
-USE std.textio.all;
-
 ARCHITECTURE bhv OF bram IS
-  -- Define ramContent type
-  type ramContentType is array(0 to (2**addressBitNb)-1) of bit_vector(dataBitNb-1 DOWNTO 0);
 
-  -- Define function to create initvalue signal
-  impure function ReadRamContentFromFile(ramContentFilenAme : in string) return ramContentType is
-    FILE     ramContentFile     : text is in ramContentFilenAme;
-    variable ramContentFileLine : line;
-    variable ramContent         : ramContentType;
-  begin
-    for i in ramContentType'range loop
-      readline(ramContentFile, ramContentFileLine);
-      read(ramContentFileLine, ramContent(i));
-    end loop;
-    return ramContent;
-  end function;
-
-  -- Declare ramContent signal
-  shared variable ramContent: ramContentType := ReadRamContentFromFile(initFile);
+  type ramContentType is array(2**addressBitNb-1 downto 0) of std_logic_vector(dataBitNb-1 DOWNTO 0);
+  shared variable ramContent: ramContentType ;
 
 BEGIN
-  -- Port A
+
   process(clock)
   begin
-    if clock'event and clock='1' then
+    if rising_edge(clock) then
       if en = '1' then
         if writeEn = '1' then
-          dataOut <= dataIn;
-          ramContent(to_integer(unsigned(addressIn))) := to_bitvector(dataIn,'0');
-        else
-          dataOut <= to_stdulogicvector(ramContent(to_integer(unsigned(addressIn))));
+          ramContent(to_integer(unsigned(addressIn))) := dataIn;
         end if;
+        dataOut <= ramContent(to_integer(unsigned(addressIn)));
       end if;
     end if;
   end process;

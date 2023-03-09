@@ -16,8 +16,8 @@ libraryRefs [
 "ieee"
 ]
 )
-version "26.1"
-appVersion "2018.1 (Build 12)"
+version "27.1"
+appVersion "2019.3 (Build 4)"
 model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
@@ -460,14 +460,6 @@ value "8"
 )
 uid 441,0
 )
-*65 (LogGeneric
-generic (GiElement
-name "initFile"
-type "string"
-value "\"bramInit.txt\""
-)
-uid 443,0
-)
 ]
 )
 pdm (PhysicalDM
@@ -475,7 +467,7 @@ displayShortBounds 1
 editShortBounds 1
 uid 192,0
 optionalChildren [
-*66 (Sheet
+*65 (Sheet
 sheetRow (SheetRow
 headerVa (MVa
 cellColor "49152,49152,49152"
@@ -492,49 +484,43 @@ cellColor "39936,56832,65280"
 fontColor "0,0,0"
 font "courier,10,0"
 )
-emptyMRCItem *67 (MRCItem
+emptyMRCItem *66 (MRCItem
 litem &51
-pos 3
+pos 2
 dimension 20
 )
 uid 194,0
 optionalChildren [
-*68 (MRCItem
+*67 (MRCItem
 litem &52
 pos 0
 dimension 20
 uid 195,0
 )
-*69 (MRCItem
+*68 (MRCItem
 litem &53
 pos 1
 dimension 23
 uid 196,0
 )
-*70 (MRCItem
+*69 (MRCItem
 litem &54
 pos 2
 hidden 1
 dimension 20
 uid 197,0
 )
-*71 (MRCItem
+*70 (MRCItem
 litem &63
 pos 0
 dimension 20
 uid 440,0
 )
-*72 (MRCItem
+*71 (MRCItem
 litem &64
 pos 1
 dimension 20
 uid 442,0
-)
-*73 (MRCItem
-litem &65
-pos 2
-dimension 20
-uid 444,0
 )
 ]
 )
@@ -547,43 +533,43 @@ textAngle 90
 )
 uid 198,0
 optionalChildren [
-*74 (MRCItem
+*72 (MRCItem
 litem &55
 pos 0
 dimension 20
 uid 199,0
 )
-*75 (MRCItem
+*73 (MRCItem
 litem &57
 pos 1
 dimension 50
 uid 200,0
 )
-*76 (MRCItem
+*74 (MRCItem
 litem &58
 pos 2
 dimension 100
 uid 201,0
 )
-*77 (MRCItem
+*75 (MRCItem
 litem &59
 pos 3
 dimension 100
 uid 202,0
 )
-*78 (MRCItem
+*76 (MRCItem
 litem &60
 pos 4
 dimension 86
 uid 203,0
 )
-*79 (MRCItem
+*77 (MRCItem
 litem &61
 pos 5
 dimension 50
 uid 204,0
 )
-*80 (MRCItem
+*78 (MRCItem
 litem &62
 pos 6
 dimension 80
@@ -611,23 +597,23 @@ value " "
 )
 (vvPair
 variable "HDLDir"
-value "/home/francois/Documents/HEVs/Kart/eln_kart/04-Controller/../Libs/Memory/hdl"
+value "/home/francois/Documents/HEVs/Projects/NGRW/FPGA/Prefs/../Libs/Memory/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/francois/Documents/HEVs/Kart/eln_kart/04-Controller/../Libs/Memory/hds"
+value "/home/francois/Documents/HEVs/Projects/NGRW/FPGA/Prefs/../Libs/Memory/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/francois/Documents/HEVs/Kart/eln_kart/04-Controller/../Libs/Memory/hds/bram@dualport@writefirst/symbol.sb.info"
+value "/home/francois/Documents/HEVs/Projects/NGRW/FPGA/Prefs/../Libs/Memory/hds/bram@dualport/symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/francois/Documents/HEVs/Kart/eln_kart/04-Controller/../Libs/Memory/hds/bram@dualport@writefirst/symbol.sb.user"
+value "/home/francois/Documents/HEVs/Projects/NGRW/FPGA/Prefs/../Libs/Memory/hds/bram@dualport/symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/francois/Documents/HEVs/Kart/eln_kart/04-Controller/../Libs/Memory/hds"
+value "/home/francois/Documents/HEVs/Projects/NGRW/FPGA/Prefs/../Libs/Memory/hds"
 )
 (vvPair
 variable "appl"
@@ -647,27 +633,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/francois/Documents/HEVs/Kart/eln_kart/04-Controller/../Libs/Memory/hds/bram@dualport@writefirst"
+value "/home/francois/Documents/HEVs/Projects/NGRW/FPGA/Prefs/../Libs/Memory/hds/bram@dualport"
 )
 (vvPair
 variable "d_logical"
-value "/home/francois/Documents/HEVs/Kart/eln_kart/04-Controller/../Libs/Memory/hds/bramDualportWritefirst"
+value "/home/francois/Documents/HEVs/Projects/NGRW/FPGA/Prefs/../Libs/Memory/hds/bramDualport"
 )
 (vvPair
 variable "date"
-value "08/28/19"
+value "12/30/22"
 )
 (vvPair
 variable "day"
-value "Wed"
+value "Fri"
 )
 (vvPair
 variable "day_long"
-value "Wednesday"
+value "Friday"
 )
 (vvPair
 variable "dd"
-value "28"
+value "30"
 )
 (vvPair
 variable "designName"
@@ -675,7 +661,7 @@ value "$DESIGN_NAME"
 )
 (vvPair
 variable "entity_name"
-value "bramDualportWritefirst"
+value "bramDualport"
 )
 (vvPair
 variable "ext"
@@ -699,7 +685,7 @@ value "francois"
 )
 (vvPair
 variable "graphical_source_date"
-value "08/28/19"
+value "12/30/22"
 )
 (vvPair
 variable "graphical_source_group"
@@ -707,11 +693,11 @@ value "francois"
 )
 (vvPair
 variable "graphical_source_host"
-value "Aphelia"
+value "Aphrodite"
 )
 (vvPair
 variable "graphical_source_time"
-value "13:45:15"
+value "12:23:59"
 )
 (vvPair
 variable "group"
@@ -719,7 +705,7 @@ value "francois"
 )
 (vvPair
 variable "host"
-value "Aphelia"
+value "Aphrodite"
 )
 (vvPair
 variable "language"
@@ -731,31 +717,31 @@ value "Memory"
 )
 (vvPair
 variable "library_downstream_ModelSimCompiler"
-value "$SCRATCH_DIR/Libs/Memory/work"
+value "$SCRATCH_DIR/Memory"
 )
 (vvPair
 variable "mm"
-value "08"
+value "12"
 )
 (vvPair
 variable "module_name"
-value "bramDualportWritefirst"
+value "bramDualport"
 )
 (vvPair
 variable "month"
-value "Aug"
+value "Dec"
 )
 (vvPair
 variable "month_long"
-value "August"
+value "December"
 )
 (vvPair
 variable "p"
-value "/home/francois/Documents/HEVs/Kart/eln_kart/04-Controller/../Libs/Memory/hds/bram@dualport@writefirst/symbol.sb"
+value "/home/francois/Documents/HEVs/Projects/NGRW/FPGA/Prefs/../Libs/Memory/hds/bram@dualport/symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "/home/francois/Documents/HEVs/Kart/eln_kart/04-Controller/../Libs/Memory/hds/bramDualportWritefirst/symbol.sb"
+value "/home/francois/Documents/HEVs/Projects/NGRW/FPGA/Prefs/../Libs/Memory/hds/bramDualport/symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -795,7 +781,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "C:\\EDA\\Modelsim\\win32"
+value "<TBD>"
 )
 (vvPair
 variable "task_NC"
@@ -831,11 +817,11 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "13:45:15"
+value "12:23:59"
 )
 (vvPair
 variable "unit"
-value "bramDualportWritefirst"
+value "bramDualport"
 )
 (vvPair
 variable "user"
@@ -843,7 +829,7 @@ value "francois"
 )
 (vvPair
 variable "version"
-value "2018.1 (Build 12)"
+value "2019.3 (Build 4)"
 )
 (vvPair
 variable "view"
@@ -851,21 +837,21 @@ value "symbol"
 )
 (vvPair
 variable "year"
-value "2019"
+value "2022"
 )
 (vvPair
 variable "yy"
-value "19"
+value "22"
 )
 ]
 )
 LanguageMgr "Vhdl2008LangMgr"
 uid 149,0
 optionalChildren [
-*81 (SymbolBody
+*79 (SymbolBody
 uid 8,0
 optionalChildren [
-*82 (CptPort
+*80 (CptPort
 uid 79,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -897,8 +883,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,9200,18000,10100"
-st "clockA   : IN     std_ulogic  ;
-"
+st "clockA   : IN     std_ulogic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -910,7 +895,7 @@ suid 1,0
 )
 )
 )
-*83 (CptPort
+*81 (CptPort
 uid 89,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -942,8 +927,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,10100,18000,11000"
-st "enA      : IN     std_ulogic  ;
-"
+st "enA      : IN     std_ulogic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -955,7 +939,7 @@ suid 3,0
 )
 )
 )
-*84 (CptPort
+*82 (CptPort
 uid 94,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -987,8 +971,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,11000,18000,11900"
-st "writeEnA : IN     std_ulogic  ;
-"
+st "writeEnA : IN     std_ulogic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1000,7 +983,7 @@ suid 4,0
 )
 )
 )
-*85 (CptPort
+*83 (CptPort
 uid 99,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -1032,8 +1015,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,11900,34000,12800"
-st "addressA : IN     std_ulogic_vector (addressBitNb-1 DOWNTO 0) ;
-"
+st "addressA : IN     std_ulogic_vector (addressBitNb-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1046,7 +1028,7 @@ suid 5,0
 )
 )
 )
-*86 (CptPort
+*84 (CptPort
 uid 104,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -1078,8 +1060,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,12800,32500,13700"
-st "dataInA  : IN     std_ulogic_vector (dataBitNb-1 DOWNTO 0) ;
-"
+st "dataInA  : IN     std_ulogic_vector (dataBitNb-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1092,7 +1073,7 @@ suid 6,0
 )
 )
 )
-*87 (CptPort
+*85 (CptPort
 uid 109,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -1124,8 +1105,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,13700,32500,14600"
-st "dataOutA : OUT    std_ulogic_vector (dataBitNb-1 DOWNTO 0) ;
-"
+st "dataOutA : OUT    std_ulogic_vector (dataBitNb-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1140,7 +1120,7 @@ suid 7,0
 )
 )
 )
-*88 (CptPort
+*86 (CptPort
 uid 114,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -1173,8 +1153,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,14600,18000,15500"
-st "clockB   : IN     std_ulogic  ;
-"
+st "clockB   : IN     std_ulogic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1186,7 +1165,7 @@ suid 8,0
 )
 )
 )
-*89 (CptPort
+*87 (CptPort
 uid 124,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -1219,8 +1198,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,15500,18000,16400"
-st "enB      : IN     std_ulogic  ;
-"
+st "enB      : IN     std_ulogic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1232,7 +1210,7 @@ suid 10,0
 )
 )
 )
-*90 (CptPort
+*88 (CptPort
 uid 129,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -1265,8 +1243,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,16400,18000,17300"
-st "writeEnB : IN     std_ulogic  ;
-"
+st "writeEnB : IN     std_ulogic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1278,7 +1255,7 @@ suid 11,0
 )
 )
 )
-*91 (CptPort
+*89 (CptPort
 uid 134,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -1311,8 +1288,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,17300,34000,18200"
-st "addressB : IN     std_ulogic_vector (addressBitNb-1 DOWNTO 0) ;
-"
+st "addressB : IN     std_ulogic_vector (addressBitNb-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1325,7 +1301,7 @@ suid 12,0
 )
 )
 )
-*92 (CptPort
+*90 (CptPort
 uid 139,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -1358,8 +1334,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,18200,32500,19100"
-st "dataInB  : IN     std_ulogic_vector (dataBitNb-1 DOWNTO 0) ;
-"
+st "dataInB  : IN     std_ulogic_vector (dataBitNb-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1372,7 +1347,7 @@ suid 13,0
 )
 )
 )
-*93 (CptPort
+*91 (CptPort
 uid 144,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -1405,8 +1380,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "2000,19100,31500,20000"
-st "dataOutB : OUT    std_ulogic_vector (dataBitNb-1 DOWNTO 0)
-"
+st "dataOutB : OUT    std_ulogic_vector (dataBitNb-1 DOWNTO 0)"
 )
 thePort (LogicalPort
 lang 11
@@ -1450,12 +1424,12 @@ uid 12,0
 va (VaSet
 font "courier,8,1"
 )
-xt "39200,29900,50700,30800"
-st "bramDualportWritefirst"
+xt "39200,29900,45700,30800"
+st "bramDualport"
 blo "39200,30600"
 )
 )
-gi *94 (GenericInterface
+gi *92 (GenericInterface
 uid 13,0
 ps "CenterOffsetStrategy"
 matrix (Matrix
@@ -1465,12 +1439,12 @@ uid 15,0
 va (VaSet
 font "courier,8,0"
 )
-xt "39000,32000,58500,36500"
+xt "39000,32000,52000,35600"
 st "Generic Declarations
 
-addressBitNb positive 8               
-dataBitNb    positive 8               
-initFile     string   \"bramInit.txt\"  "
+addressBitNb positive 8  
+dataBitNb    positive 8  
+"
 )
 header "Generic Declarations"
 showHdrWhenContentsEmpty 1
@@ -1486,11 +1460,6 @@ name "dataBitNb"
 type "positive"
 value "8"
 )
-(GiElement
-name "initFile"
-type "string"
-value "\"bramInit.txt\""
-)
 ]
 )
 portInstanceVisAsIs 1
@@ -1503,10 +1472,10 @@ sTC 0
 sIVOD 1
 )
 )
-*95 (Grouping
+*93 (Grouping
 uid 16,0
 optionalChildren [
-*96 (CommentText
+*94 (CommentText
 uid 18,0
 shape (Rectangle
 uid 19,0
@@ -1537,7 +1506,7 @@ position 1
 ignorePrefs 1
 titleBlock 1
 )
-*97 (CommentText
+*95 (CommentText
 uid 21,0
 shape (Rectangle
 uid 22,0
@@ -1568,7 +1537,7 @@ position 1
 ignorePrefs 1
 titleBlock 1
 )
-*98 (CommentText
+*96 (CommentText
 uid 24,0
 shape (Rectangle
 uid 25,0
@@ -1599,7 +1568,7 @@ position 1
 ignorePrefs 1
 titleBlock 1
 )
-*99 (CommentText
+*97 (CommentText
 uid 27,0
 shape (Rectangle
 uid 28,0
@@ -1630,7 +1599,7 @@ position 1
 ignorePrefs 1
 titleBlock 1
 )
-*100 (CommentText
+*98 (CommentText
 uid 30,0
 shape (Rectangle
 uid 31,0
@@ -1660,7 +1629,7 @@ visibleWidth 20000
 ignorePrefs 1
 titleBlock 1
 )
-*101 (CommentText
+*99 (CommentText
 uid 33,0
 shape (Rectangle
 uid 34,0
@@ -1678,7 +1647,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "57200,44000,66200,45000"
+xt "57200,44000,59000,45000"
 st "
 %project_name
 "
@@ -1691,7 +1660,7 @@ position 1
 ignorePrefs 1
 titleBlock 1
 )
-*102 (CommentText
+*100 (CommentText
 uid 36,0
 shape (Rectangle
 uid 37,0
@@ -1722,7 +1691,7 @@ position 1
 ignorePrefs 1
 titleBlock 1
 )
-*103 (CommentText
+*101 (CommentText
 uid 39,0
 shape (Rectangle
 uid 40,0
@@ -1753,7 +1722,7 @@ position 1
 ignorePrefs 1
 titleBlock 1
 )
-*104 (CommentText
+*102 (CommentText
 uid 42,0
 shape (Rectangle
 uid 43,0
@@ -1784,7 +1753,7 @@ position 1
 ignorePrefs 1
 titleBlock 1
 )
-*105 (CommentText
+*103 (CommentText
 uid 45,0
 shape (Rectangle
 uid 46,0
@@ -1802,7 +1771,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "36200,47000,46400,48000"
+xt "36200,47000,52400,48000"
 st "
 %library/%unit/%view
 "
@@ -1840,11 +1809,11 @@ xShown 1
 yShown 1
 color "26368,26368,26368"
 )
-packageList *106 (PackageList
+packageList *104 (PackageList
 uid 48,0
 stg "VerticalLayoutStrategy"
 textVec [
-*107 (Text
+*105 (Text
 uid 49,0
 va (VaSet
 font "courier,8,1"
@@ -1853,7 +1822,7 @@ xt "0,0,6500,900"
 st "Package List"
 blo "0,700"
 )
-*108 (MLText
+*106 (MLText
 uid 50,0
 va (VaSet
 )
@@ -1865,8 +1834,8 @@ tm "PackageList"
 )
 ]
 )
-windowSize "116,36,1417,903"
-viewArea "-1090,-1090,75403,50355"
+windowSize "1196,524,2497,1391"
+viewArea "-1100,-1100,70048,44836"
 cachedDiagramExtent "0,0,73000,49000"
 pageSetupInfo (PageSetupInfo
 ptrCmd ""
@@ -1998,7 +1967,7 @@ st "<cell>"
 blo "22200,16800"
 )
 )
-gi *109 (GenericInterface
+gi *107 (GenericInterface
 ps "CenterOffsetStrategy"
 matrix (Matrix
 text (MLText
@@ -2099,7 +2068,7 @@ o 0
 )
 )
 )
-DeclarativeBlock *110 (SymDeclBlock
+DeclarativeBlock *108 (SymDeclBlock
 uid 1,0
 stg "SymDeclLayoutStrategy"
 declLabel (Text
@@ -2157,6 +2126,6 @@ xt "0,7400,0,7400"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 605,0
+lastUid 628,0
 activeModelName "Symbol"
 )
