@@ -6,14 +6,14 @@
   @echo off
   set cmd_location="%~dp0"
   pushd %cmd_location%
-  set SEPARATOR="--------------------------------------------------------------------------------"
+  set SEPARATOR=--------------------------------------------------------------------------------
   set INDENT="  "
 
   echo %SEPARATOR%
-  echo "-- %~nx0 Started!"
+  echo -- %~nx0 Started!
   echo.
 
-echo "Search HEI Library"
+echo Search HEI Library
 ::------------------------------------------------------------------------------
 :: Search HEI library directory
 ::
@@ -42,15 +42,15 @@ if !REQUIRE_LIBS! == 1 (
     )
   )
   if exist !HEI_LIBS_DIR!\ (
-    echo "%INDENT:"=%Found HEI_LIBS_DIR   at !HEI_LIBS_DIR:"=!"
+    echo %INDENT:"=%Found HEI_LIBS_DIR   at !HEI_LIBS_DIR:"=!
   ) else (
-    echo "%INDENT:"=%ERROR: No valid HEI_LIBS_DIR found: please verify your HEI_LIBS_DIR settings."
+    echo %INDENT:"=%ERROR: No valid HEI_LIBS_DIR found: please verify your HEI_LIBS_DIR settings.
     pause&goto:eof
   )
 )
 
 
-echo "Search Design Tools: HDL Designer, Modelsim, Xilinx ISE, Microsemi Libero, Lattice Diamond"
+echo Search Design Tools: HDL Designer, Modelsim, Xilinx ISE, Microsemi Libero, Lattice Diamond
 ::------------------------------------------------------------------------------
 :: Search HDL Designer directory
 ::
@@ -60,15 +60,15 @@ if !REQUIRE_HDS! == 1 (
     if not exist !HDS_HOME!\ (
       set HDS_HOME=C:\tools\eda\HDS
       if not exist !HDS_HOME!\ (
-        echo "%INDENT:"=%ERROR: No valid installation of HDL-Designer found: please verify your HDS_HOME settings."
+        echo %INDENT:"=%ERROR: No valid installation of HDL-Designer found: please verify your HDS_HOME settings.
         pause&goto:eof
       )
     )
   )
   if exist !HDS_HOME! (
-      echo "%INDENT:"=%Found HDL-Designer   at !HDS_HOME!"
+      echo %INDENT:"=%Found HDL-Designer   at !HDS_HOME!
   ) else (
-      echo "%INDENT:"=%ERROR: No valid installation of HDL-Designer found: please verify your HDS_HOME settings."
+      echo %INDENT:"=%ERROR: No valid installation of HDL-Designer found: please verify your HDS_HOME settings.
       pause&goto:eof
   )
 )
@@ -86,7 +86,7 @@ if !REQUIRE_MODELSIM! == 1 (
         if not exist !MODELSIM_HOME!\ (
           set MODELSIM_HOME=C:\tools\eda\Modelsim\win32
           if not exist !MODELSIM_HOME!\ (
-            echo "%INDENT:"=%ERROR: No valid installation of ModelSim found please verify your MODELSIM_HOME settings."
+            echo %INDENT:"=%ERROR: No valid installation of ModelSim found please verify your MODELSIM_HOME settings.
             pause&goto:eof
           )
         )
@@ -94,9 +94,9 @@ if !REQUIRE_MODELSIM! == 1 (
     )
   )
   if exist !MODELSIM_HOME! (
-    echo "%INDENT:"=%Found ModelSim       at !MODELSIM_HOME:"=!"
+    echo %INDENT:"=%Found ModelSim       at !MODELSIM_HOME:"=!
   ) else (
-    echo "%INDENT:"=%ERROR: No valid installation of ModelSim found please verify your MODELSIM_HOME settings."
+    echo %INDENT:"=%ERROR: No valid installation of ModelSim found please verify your MODELSIM_HOME settings.
     pause
     goto:eof
   )
@@ -112,15 +112,15 @@ if !REQUIRE_ISE! == 1 (
     if not exist !ISE_HOME!\ (
       set ISE_HOME=C:\tools\eda\Xilinx\!ISE_VERSION:"=!\ISE_DS\ISE
       if not exist !ISE_HOME!\ (
-        echo "%INDENT:"=%ERROR: No valid installation of ISE found please verify your ISE_HOME settings."
+        echo %INDENT:"=%ERROR: No valid installation of ISE found please verify your ISE_HOME settings.
         pause&goto:eof
       )
     )
   )
   if exist !ISE_HOME! (
-    echo "%INDENT:"=%Found ISE            at !ISE_HOME:"=!"
+    echo %INDENT:"=%Found ISE            at !ISE_HOME:"=!
   ) else (
-    echo "%INDENT:"=%ERROR: No valid installation of ISE found please verify your ISE_HOME settings."
+    echo %INDENT:"=%ERROR: No valid installation of ISE found please verify your ISE_HOME settings.
     pause&goto:eof
   )
 )
@@ -134,15 +134,15 @@ if %REQUIRE_LIBERO% == 1 (
     if not exist !LIBERO_HOME!\ (
       set LIBERO_HOME=C:\tools\eda\Microsemi\Libero
       if not exist !LIBERO_HOME!\ (
-        echo "%INDENT:"=%ERROR: No valid installation of Libero found please verify your LIBERO_HOME settings."
+        echo %INDENT:"=%ERROR: No valid installation of Libero found please verify your LIBERO_HOME settings.
         pause&goto:eof
       )
     )
   )
   if exist !LIBERO_HOME! (
-    echo "%INDENT:"=%Found Libero         at !LIBERO_HOME:"=!"
+    echo %INDENT:"=%Found Libero         at !LIBERO_HOME:"=!
   ) else (
-    echo "%INDENT:"=%ERROR: No valid installation of Libero found please verify your LIBERO_HOME settings."
+    echo %INDENT:"=%ERROR: No valid installation of Libero found please verify your LIBERO_HOME settings.
     pause
     goto:eof
   )
@@ -159,16 +159,16 @@ if %REQUIRE_DIAMOND% == 1 (
       if not exist !DIAMOND_HOME!\ (
         set DIAMOND_HOME=C:\lscc\diamond\3.12
         if not exist !DIAMOND_HOME!\ (
-          echo "%INDENT:"=%ERROR: No valid installation of Lattice Diamond found - please verify your DIAMOND_HOME settings."
+          echo %INDENT:"=%ERROR: No valid installation of Lattice Diamond found - please verify your DIAMOND_HOME settings.
           pause&goto:eof
         )
       )
     )
   )
   if exist !DIAMOND_HOME! (
-    echo "%INDENT:"=%Found Diamond        at !DIAMOND_HOME:"=!"
+    echo %INDENT:"=%Found Diamond        at !DIAMOND_HOME:"=!
   ) else (
-    echo "%INDENT:"=%ERROR: No valid installation of Diamond found - please verify your DIAMOND_HOME settings."
+    echo %INDENT:"=%ERROR: No valid installation of Diamond found - please verify your DIAMOND_HOME settings.
     pause
     goto:eof
   )
@@ -176,7 +176,8 @@ if %REQUIRE_DIAMOND% == 1 (
 
 :end
   echo.
-  echo "-- %~nx0 Finished!"
+  echo -- %~nx0 Finished!
   echo %SEPARATOR%
+  echo. && echo.
   popd
   goto:eof

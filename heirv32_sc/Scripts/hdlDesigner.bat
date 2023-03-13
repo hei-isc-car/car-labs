@@ -5,11 +5,11 @@
   setlocal EnableExtensions EnableDelayedExpansion
   set cmd_location=%~dp0
   pushd %cmd_location%
-  set SEPARATOR="--------------------------------------------------------------------------------"
+  set SEPARATOR=--------------------------------------------------------------------------------
   set INDENT="  "
 
   echo %SEPARATOR%
-  echo "-- %~nx0 Started!"
+  echo -- %~nx0 Started!
   echo.
 
 :: -----------------------------------------------------------------------------
@@ -63,12 +63,12 @@ set usage3="                        [-p prefsDirectory] [-u userPrefsDirectory] 
 set usage4="                        [-s scratchDirectory] [-c concatDirectory]"
 set usage5="                        [-y synthesisDirectory] [-m library_matchings]"
 
-echo "Search Commandline Parameters"
+echo Search Commandline Parameters
 :parseloop
 if not "%1"=="" (
     if "%1"=="-v" (
         set VERBOSE=1
-        echo "%INDENT:"=%verbose enabled"
+        echo %INDENT:"=%verbose enabled
         shift
     )
     if "%1"=="-h" (
@@ -77,32 +77,32 @@ if not "%1"=="" (
     )
     if "%1"=="-n" (
         set design_name=%2
-        echo "%INDENT:"=%design_name=!design_name:"=! "
+        echo %INDENT:"=%design_name=!design_name:"=!
         shift & shift
     )
     if "%1"=="-d" (
         set design_directory=%2
-        echo "%INDENT:"=%design_directory=!design_directory:"=! "
+        echo %INDENT:"=%design_directory=!design_directory:"=!
         shift & shift
     )
     if "%1"=="-p" (
         set prefs_directory=%2
-        echo "%INDENT:"=%prefs_directory=!prefs_directory:"=! "
+        echo %INDENT:"=%prefs_directory=!prefs_directory:"=!
         shift & shift
     )
     if "%1"=="-u" (
         set user_prefs_directory=%2
-        echo "%INDENT:"=%user_prefs_directory=%user_prefs_directory:"=% "
+        echo %INDENT:"=%user_prefs_directory=%user_prefs_directory:"=%
         shift & shift
     )
     if "%1"=="-t" (
         set team_prefs_directory=%2
-        echo "%INDENT:"=%team_prefs_directory=%team_prefs_directory:"=% "
+        echo %INDENT:"=%team_prefs_directory=%team_prefs_directory:"=%
         shift & shift
     )
     if "%1"=="-s" (
         set scratch_directory=%2
-        echo "%INDENT:"=%scratch_directory=%scratch_directory:"=% "
+        echo %INDENT:"=%scratch_directory=%scratch_directory:"=%
         shift & shift
     )
     if "%1"=="-c" (
@@ -112,12 +112,12 @@ if not "%1"=="" (
     )
     if "%1"=="-y" (
         set synthesis_subdirectory=%2
-        echo "%INDENT:"=%synthesis_subdirectory=%synthesis_subdirectory:"=% "
+        echo %INDENT:"=%synthesis_subdirectory=%synthesis_subdirectory:"=%
         shift & shift
     )
     if "%1"=="-m" (
         set set library_matchings="%2.hdp"
-        echo "%INDENT:"=%library_matchings=%library_matchings:"=% "
+        echo %INDENT:"=%library_matchings=%library_matchings:"=%
         shift & shift
     )
     goto :parseloop
@@ -143,6 +143,7 @@ if not exist "%scratch_directory%" (
 ::================================================================================
 :: Main script
 ::
+echo.
 call "./searchPaths.bat"
 
 ::------------------------------------------------------------------------------
@@ -168,35 +169,35 @@ set DIAMOND_WORK_DIR=%scratch_directory:"=%\%DESIGN_NAME:"=%\%synthesis_subdirec
 :: Display info
 ::
 if !VERBOSE! == 1 (
-  echo "Program Parameters"
-  echo "%INDENT:"=%DESIGN_NAME     is %DESIGN_NAME:"=%"
-  echo "%INDENT:"=%HEI_LIBS_DIR    is %HEI_LIBS_DIR:"=%"
-  echo "%INDENT:"=%HDS_LIBS        is %HDS_LIBS:"=%"
-  echo "%INDENT:"=%SIMULATION_DIR  is %SIMULATION_DIR:"=%"
-  echo "%INDENT:"=%HDS_USER_HOME   is %HDS_USER_HOME:"=%"
-  echo "%INDENT:"=%HDS_TEAM_HOME   is %HDS_TEAM_HOME:"=%"
-  echo "%INDENT:"=%SCRATCH_DIR     is %SCRATCH_DIR:"=%"
-  echo "%INDENT:"=%CONCAT_DIR      is %CONCAT_DIR:"=%"
+  echo Program Parameters
+  echo %INDENT:"=%DESIGN_NAME     is %DESIGN_NAME:"=%
+  echo %INDENT:"=%HEI_LIBS_DIR    is %HEI_LIBS_DIR:"=%
+  echo %INDENT:"=%HDS_LIBS        is %HDS_LIBS:"=%
+  echo %INDENT:"=%SIMULATION_DIR  is %SIMULATION_DIR:"=%
+  echo %INDENT:"=%HDS_USER_HOME   is %HDS_USER_HOME:"=%
+  echo %INDENT:"=%HDS_TEAM_HOME   is %HDS_TEAM_HOME:"=%
+  echo %INDENT:"=%SCRATCH_DIR     is %SCRATCH_DIR:"=%
+  echo %INDENT:"=%CONCAT_DIR      is %CONCAT_DIR:"=%
   if %REQUIRE_HDS% == 1 (
-    echo "%INDENT:"=%HDS_HOME        is %HDS_HOME:"=%"
+    echo %INDENT:"=%HDS_HOME        is %HDS_HOME:"=%
   )
   if %REQUIRE_MODELSIM% == 1 (
-    echo "%INDENT:"=%MODELSIM_HOME   is %MODELSIM_HOME:"=%"
+    echo %INDENT:"=%MODELSIM_HOME   is %MODELSIM_HOME:"=%
   )
   if %REQUIRE_ISE% == 1 (
-    echo "%INDENT:"=%ISE_HOME        is %ISE_HOME:"=%"
-    echo "%INDENT:"=%ISE_BASE_DIR    is %ISE_BASE_DIR:"=%"
-    echo "%INDENT:"=%ISE_WORK_DIR    is %ISE_WORK_DIR:"=%"
+    echo %INDENT:"=%ISE_HOME        is %ISE_HOME:"=%
+    echo %INDENT:"=%ISE_BASE_DIR    is %ISE_BASE_DIR:"=%
+    echo %INDENT:"=%ISE_WORK_DIR    is %ISE_WORK_DIR:"=%
   )
   if %REQUIRE_LIBERO% == 1 (
-    echo "%INDENT:"=%LIBERO_HOME     is %LIBERO_HOME:"=%"
-    echo "%INDENT:"=%LIBERO_BASE_DIR is %LIBERO_BASE_DIR:"=%"
-    echo "%INDENT:"=%LIBERO_WORK_DIR is %LIBERO_WORK_DIR:"=%"
+    echo %INDENT:"=%LIBERO_HOME     is %LIBERO_HOME:"=%
+    echo %INDENT:"=%LIBERO_BASE_DIR is %LIBERO_BASE_DIR:"=%
+    echo %INDENT:"=%LIBERO_WORK_DIR is %LIBERO_WORK_DIR:"=%
   )
   if %REQUIRE_DIAMOND% == 1 (
-    echo "%INDENT:"=%DIAMOND_HOME     is %DIAMOND_HOME:"=%"
-    echo "%INDENT:"=%DIAMOND_BASE_DIR is %DIAMOND_BASE_DIR:"=%"
-    echo "%INDENT:"=%DIAMOND_WORK_DIR is %DIAMOND_WORK_DIR:"=%"
+    echo %INDENT:"=%DIAMOND_HOME     is %DIAMOND_HOME:"=%
+    echo %INDENT:"=%DIAMOND_BASE_DIR is %DIAMOND_BASE_DIR:"=%
+    echo %INDENT:"=%DIAMOND_WORK_DIR is %DIAMOND_WORK_DIR:"=%
   )
   echo.
 )
@@ -204,6 +205,7 @@ if !VERBOSE! == 1 (
 ::------------------------------------------------------------------------------
 :: Delete scratch directory
 ::
+echo.
 call "./cleanScratch.bat"
 
 ::------------------------------------------------------------------------------
@@ -211,8 +213,8 @@ call "./cleanScratch.bat"
 ::
 if %REQUIRE_ISE% == 1 (
   if exist %ISE_BASE_DIR% (
-    echo "%ISE_BASE_DIR:"=%"
-    echo "  -> %ISE_WORK_DIR:"=%"
+    echo %ISE_BASE_DIR:"=%
+    echo   -> %ISE_WORK_DIR:"=%
     if exist %ISE_WORK_DIR% (
       rmdir /S /Q "%ISE_WORK_DIR%"
     )
@@ -223,8 +225,8 @@ if %REQUIRE_ISE% == 1 (
 
 if %REQUIRE_LIBERO% == 1 (
   if exist %LIBERO_BASE_DIR% (
-    echo "%LIBERO_BASE_DIR:"=%"
-    echo "  -> %LIBERO_BASE_DIR:"=%"
+    echo %LIBERO_BASE_DIR:"=%
+    echo   -> %LIBERO_BASE_DIR:"=%
     if exist %LIBERO_WORK_DIR% (
       rmdir /S /Q "%LIBERO_WORK_DIR%"
     )
@@ -235,8 +237,8 @@ if %REQUIRE_LIBERO% == 1 (
 
 if %REQUIRE_DIAMOND% == 1 (
   if exist %DIAMOND_BASE_DIR% (
-    echo "%DIAMOND_BASE_DIR:"=%"
-    echo "  -> %DIAMOND_BASE_DIR:"=%"
+    echo %DIAMOND_BASE_DIR:"=%
+    echo   -> %DIAMOND_BASE_DIR:"=%
     if exist %DIAMOND_WORK_DIR% (
       rmdir /S /Q "%DIAMOND_WORK_DIR%"
     )
@@ -248,18 +250,20 @@ if %REQUIRE_DIAMOND% == 1 (
 ::------------------------------------------------------------------------------
 :: Launch application
 ::
-echo "%SEPARATOR:"=%"
-echo "-- Launching program"
-echo "%INDENT:"=%Waiting until programs finished..."
-echo "-- Finished... YOU CAN CLOSE THIS WINDOW NOW!"
+echo -- Launching program
+::echo %INDENT:"=%Waiting until programs finished...
 ::start /wait !HDS_HOME:"=!\bin\hdldesigner.exe
-%windir%\system32\cmd.exe /c start /wait !HDS_HOME!\bin\hdldesigner.exe
-echo "%SEPARATOR:"=%"
+%windir%\system32\cmd.exe /c start !HDS_HOME!\bin\hdldesigner.exe
+::echo -- Finished... YOU CAN CLOSE THIS WINDOW NOW!
 
 :end
+  echo.
+  echo -- %~nx0 Finished!
+  echo %SEPARATOR%
+  echo. && echo.
   popd
   endlocal
-  pause&goto:eof
+  goto:eof
 
 ::------------------------------------------------------------------------------
 :: Helper Functions

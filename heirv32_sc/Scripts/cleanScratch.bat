@@ -7,11 +7,11 @@
   setlocal
   set cmd_location="%~dp0"
   pushd %cmd_location%
-  set SEPARATOR="--------------------------------------------------------------------------------"
+  set SEPARATOR=--------------------------------------------------------------------------------
   set INDENT="  "
 
   echo %SEPARATOR%
-  echo "-- %~nx0 Started!"
+  echo -- %~nx0 Started!
   echo.
 
 ::------------------------------------------------------------------------------
@@ -31,8 +31,9 @@ if exist %SCRATCH_DIR% (
 
 :end
   echo.
-  echo "-- %~nx0 Finished!"
+  echo -- %~nx0 Finished!
   echo %SEPARATOR%
+  echo. && echo.
   popd
   endlocal
   goto:eof
