@@ -21,35 +21,27 @@
 ## Description
 [(Back to top)](#table-of-contents)
 
+### Documentation
+The documentation is available under the [car-docs](https://github.com/hei-isc-car/car-docs) Git repository.
+
+### Moodle
 As it changes each year, all you have to do is search on <a href="https://cyberlearn.hes-so.ch" target="_blank">Moodle Cyberlearn</a> for the course and select the one starting with the last two digits of the current year.
 
 Course number:
 * YY_HES-SO-VS_Architecture des ordinateurs / Computerarchitektur
 
-HEIRV32 is an implementation of a [RISC-V](https://riscv.org/) soft-processor.
-It does not meet the minimum requirements for the [RV32I ISA](https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf), but is simpler to implement and support the following instructions :
-- R-type (op rd rs1 rs2)
-  - add  : rd = rs1 + rs2
-  - sub  : rd = rs1 - rs2
-  - slt  : rd = (rs1 < rs2) ? 1:0
-  - or   : rd = rs1 | rs2
-  - and  : rd = rs1 & rs2
-- I-type (op rd rs1 imm), imm on 12 bits
-  - addi : rd = rs1 + imm
-  - slti : rd = (rs1 < imm) ? 1:0
-  - ori  : rd = rs1 | imm
-  - andi : rd = rs1 & imm
-  - lw (op dest imm(rs1)) : dest = Memory\[rs1 + imm\]
-- S-type (op rs2 offs(rs1)), offs on 12 bits
-  - sw   : Memory\[rs1 + offs\] = rs2
-- B-type (op rs1 rs2 imm]), imm given on 12 bits that will be << 1
-  - beq  : if(rs1 == rs2) -> PC += imm
-- J-type (op imm || op rd imm), imm given on 20 bits that will be << 1
-  - jal  : rd = PC + 4 (if no rd specified, rd = x1); PC += imm
+### BEM
+The objective of the Benchmark (BEM) lab is to compare your own computer to others in the world, as well as those of your classmates. The goal is to get concrete information about the performance of your system.
 
-HEIRV32 is delivered in two versions : a single-cycle and a multi-cycle cores.
-Both have to be completed and tested.
-Code can be written for it through its dedicated assembler (see inside the **heivr32-asm** folder).
+### ISA
+The ISA lab focuses on the RISC-V instruction set architecture:
+- Basic assembler (ASM) instructions usage and their opcode translation
+- Algorithms and high-level languages constructs translation following established conventions
+- Reverse-engineering
+
+### HEIRV32-SC
+The HEIRV32-SC (SC standing for Single Cycle) lab is a FPGA implementation of a very simple RISC-V architecture in which the instruction decoder must be completed and timing calculations performed.
+A dedicated assembler supporting this reduced architecture is available in the **heirv32-asm** folder.
 
 ## How To Use
 [(Back to top)](#table-of-contents)
