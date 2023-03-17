@@ -1,3 +1,2 @@
 DEFAULT_ARCHITECTURE atom struct
 DEFAULT_FILE atom ebs3/struct.bd
-TOP_MARKER atom 1
