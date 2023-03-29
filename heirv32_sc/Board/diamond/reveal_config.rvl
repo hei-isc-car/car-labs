@@ -1,0 +1,662 @@
+<Project ModBy="Inserter" SigType="0" Name="C:/dev/car-heirv/Board/diamond/reveal_config.rvl" Date="2023-03-06">
+    <IP Version="1_6_042617"/>
+    <Design DesignEntry="Schematic/VHDL" Synthesis="synplify" DeviceFamily="ECP5U" DesignName="labsDBTester"/>
+    <Core InsertDataset="0" Insert="1" Reveal_sig="483219822" Name="ebs3_mc_LA0" ID="0">
+        <Setting>
+            <Clock SampleClk="u_pll/clk50m" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
+            <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="1" BufferDepth="512"/>
+            <Capture Mode="0" MinSamplesPerTrig="8"/>
+            <Event CntEnable="0" MaxEventCnt="8"/>
+            <TrigOut Polarity="0" MinPulseWidth="0" TrigOutNetType="1" EnableTrigOut="0" TrigOutNet="reveal_debug_ebs3_mc_LA0_net"/>
+            <DistRAM Disable="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Sig Type="SIG" Name="clk_red"/>
+                <Sig Type="SIG" Name="u_heirv32/pcwrite"/>
+                <Bus Name="u_heirv32/pc">
+                    <Sig Type="SIG" Name="u_heirv32/pc:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:1"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:2"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:3"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:4"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:5"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:6"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:7"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:8"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:9"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:10"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:11"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:12"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:13"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:14"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:15"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:16"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:17"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:18"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:19"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:20"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:21"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:22"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:23"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:24"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:25"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:26"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:27"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:28"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:29"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:30"/>
+                    <Sig Type="SIG" Name="u_heirv32/pc:31"/>
+                </Bus>
+                <Bus Name="u_heirv32/oldpc">
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:1"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:2"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:3"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:4"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:5"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:6"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:7"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:8"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:9"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:10"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:11"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:12"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:13"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:14"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:15"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:16"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:17"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:18"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:19"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:20"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:21"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:22"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:23"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:24"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:25"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:26"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:27"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:28"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:29"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:30"/>
+                    <Sig Type="SIG" Name="u_heirv32/oldpc:31"/>
+                </Bus>
+                <Bus Name="u_heirv32/pcnext">
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:1"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:2"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:3"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:4"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:5"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:6"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:7"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:8"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:9"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:10"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:11"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:12"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:13"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:14"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:15"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:16"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:17"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:18"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:19"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:20"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:21"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:22"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:23"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:24"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:25"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:26"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:27"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:28"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:29"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:30"/>
+                    <Sig Type="SIG" Name="u_heirv32/pcnext:31"/>
+                </Bus>
+                <Sig Type="SIG" Name="u_heirv32/adrsrc"/>
+                <Bus Name="u_heirv32/adr">
+                    <Sig Type="SIG" Name="u_heirv32/adr:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:1"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:2"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:3"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:4"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:5"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:6"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:7"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:8"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:9"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:10"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:11"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:12"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:13"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:14"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:15"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:16"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:17"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:18"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:19"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:20"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:21"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:22"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:23"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:24"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:25"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:26"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:27"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:28"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:29"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:30"/>
+                    <Sig Type="SIG" Name="u_heirv32/adr:31"/>
+                </Bus>
+                <Bus Name="u_heirv32/writedata">
+                    <Sig Type="SIG" Name="u_heirv32/writedata:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:1"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:2"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:3"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:4"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:5"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:6"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:7"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:8"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:9"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:10"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:11"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:12"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:13"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:14"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:15"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:16"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:17"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:18"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:19"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:20"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:21"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:22"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:23"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:24"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:25"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:26"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:27"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:28"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:29"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:30"/>
+                    <Sig Type="SIG" Name="u_heirv32/writedata:31"/>
+                </Bus>
+                <Sig Type="SIG" Name="u_heirv32/memwrite"/>
+                <Bus Name="u_heirv32/data">
+                    <Sig Type="SIG" Name="u_heirv32/data:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:1"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:2"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:3"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:4"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:5"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:6"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:7"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:8"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:9"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:10"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:11"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:12"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:13"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:14"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:15"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:16"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:17"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:18"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:19"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:20"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:21"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:22"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:23"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:24"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:25"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:26"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:27"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:28"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:29"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:30"/>
+                    <Sig Type="SIG" Name="u_heirv32/data:31"/>
+                </Bus>
+                <Sig Type="SIG" Name="u_heirv32/irwrite"/>
+                <Bus Name="u_heirv32/instruction">
+                    <Sig Type="SIG" Name="u_heirv32/instruction:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:1"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:2"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:3"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:4"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:5"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:6"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:7"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:8"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:9"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:10"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:11"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:12"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:13"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:14"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:15"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:16"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:17"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:18"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:19"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:20"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:21"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:22"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:23"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:24"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:25"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:26"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:27"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:28"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:29"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:30"/>
+                    <Sig Type="SIG" Name="u_heirv32/instruction:31"/>
+                </Bus>
+                <Bus Name="u_heirv32/u_extend/input">
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:7"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:8"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:9"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:10"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:11"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:12"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:13"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:14"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:15"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:16"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:17"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:18"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:19"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:20"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:21"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:22"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:23"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:24"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:25"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:26"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:27"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:28"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:29"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:30"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_extend/input:31"/>
+                </Bus>
+                <Bus Name="u_heirv32/u_registerfile/addr1">
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/addr1:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/addr1:1"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/addr1:2"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/addr1:3"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/addr1:4"/>
+                </Bus>
+                <Bus Name="u_heirv32/u_registerfile/addr2">
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/addr2:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/addr2:1"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/addr2:2"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/addr2:3"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/addr2:4"/>
+                </Bus>
+                <Bus Name="u_heirv32/u_registerfile/addr3">
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/addr3:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/addr3:1"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/addr3:2"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/addr3:3"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/addr3:4"/>
+                </Bus>
+                <Bus Name="u_heirv32/result">
+                    <Sig Type="SIG" Name="u_heirv32/result:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:1"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:2"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:3"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:4"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:5"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:6"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:7"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:8"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:9"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:10"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:11"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:12"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:13"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:14"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:15"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:16"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:17"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:18"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:19"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:20"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:21"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:22"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:23"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:24"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:25"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:26"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:27"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:28"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:29"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:30"/>
+                    <Sig Type="SIG" Name="u_heirv32/result:31"/>
+                </Bus>
+                <Sig Type="SIG" Name="u_heirv32/regwrite"/>
+                <Bus Name="u_heirv32/alusrca">
+                    <Sig Type="SIG" Name="u_heirv32/alusrca:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/alusrca:1"/>
+                </Bus>
+                <Bus Name="u_heirv32/rd1">
+                    <Sig Type="SIG" Name="u_heirv32/rd1:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:1"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:2"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:3"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:4"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:5"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:6"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:7"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:8"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:9"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:10"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:11"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:12"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:13"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:14"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:15"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:16"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:17"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:18"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:19"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:20"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:21"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:22"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:23"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:24"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:25"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:26"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:27"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:28"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:29"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:30"/>
+                    <Sig Type="SIG" Name="u_heirv32/rd1:31"/>
+                </Bus>
+                <Bus Name="u_heirv32/srca">
+                    <Sig Type="SIG" Name="u_heirv32/srca:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:1"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:2"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:3"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:4"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:5"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:6"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:7"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:8"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:9"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:10"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:11"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:12"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:13"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:14"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:15"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:16"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:17"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:18"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:19"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:20"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:21"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:22"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:23"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:24"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:25"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:26"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:27"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:28"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:29"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:30"/>
+                    <Sig Type="SIG" Name="u_heirv32/srca:31"/>
+                </Bus>
+                <Bus Name="u_heirv32/alusrcb">
+                    <Sig Type="SIG" Name="u_heirv32/alusrcb:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/alusrcb:1"/>
+                </Bus>
+                <Bus Name="u_heirv32/immsrc">
+                    <Sig Type="SIG" Name="u_heirv32/immsrc:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/immsrc:1"/>
+                </Bus>
+                <Bus Name="u_heirv32/immext">
+                    <Sig Type="SIG" Name="u_heirv32/immext:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:1"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:2"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:3"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:4"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:5"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:6"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:7"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:8"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:9"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:10"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:11"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:12"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:13"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:14"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:15"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:16"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:17"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:18"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:19"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:20"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:21"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:22"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:23"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:24"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:25"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:26"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:27"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:28"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:29"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:30"/>
+                    <Sig Type="SIG" Name="u_heirv32/immext:31"/>
+                </Bus>
+                <Bus Name="u_heirv32/srcb">
+                    <Sig Type="SIG" Name="u_heirv32/srcb:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:1"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:2"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:3"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:4"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:5"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:6"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:7"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:8"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:9"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:10"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:11"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:12"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:13"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:14"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:15"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:16"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:17"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:18"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:19"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:20"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:21"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:22"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:23"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:24"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:25"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:26"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:27"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:28"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:29"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:30"/>
+                    <Sig Type="SIG" Name="u_heirv32/srcb:31"/>
+                </Bus>
+                <Bus Name="u_heirv32/alucontrol">
+                    <Sig Type="SIG" Name="u_heirv32/alucontrol:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/alucontrol:1"/>
+                    <Sig Type="SIG" Name="u_heirv32/alucontrol:2"/>
+                </Bus>
+                <Sig Type="SIG" Name="u_heirv32/zero"/>
+                <Bus Name="u_heirv32/aluresult">
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:1"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:2"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:3"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:4"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:5"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:6"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:7"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:8"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:9"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:10"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:11"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:12"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:13"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:14"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:15"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:16"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:17"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:18"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:19"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:20"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:21"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:22"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:23"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:24"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:25"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:26"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:27"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:28"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:29"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:30"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluresult:31"/>
+                </Bus>
+                <Bus Name="u_heirv32/aluout">
+                    <Sig Type="SIG" Name="u_heirv32/aluout:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:1"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:2"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:3"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:4"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:5"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:6"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:7"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:8"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:9"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:10"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:11"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:12"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:13"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:14"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:15"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:16"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:17"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:18"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:19"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:20"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:21"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:22"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:23"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:24"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:25"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:26"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:27"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:28"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:29"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:30"/>
+                    <Sig Type="SIG" Name="u_heirv32/aluout:31"/>
+                </Bus>
+                <Bus Name="u_heirv32/resultsrc">
+                    <Sig Type="SIG" Name="u_heirv32/resultsrc:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/resultsrc:1"/>
+                </Bus>
+                <Sig Type="SIG" Name="u_heirv32/u_controlunit/branch"/>
+                <Sig Type="SIG" Name="u_heirv32/u_controlunit/pcupdate"/>
+            </Trace>
+            <Trigger>
+                <TU Serialbits="0" Type="0" ID="1" Sig="u_heirv32/en,"/>
+                <TE MaxSequence="1" MaxEvnCnt="1" ID="1" Resource="1"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+    <Core InsertDataset="0" Insert="1" Reveal_sig="483219824" Name="ebs3_mc_LA1" ID="1">
+        <Setting>
+            <Clock SampleClk="clk50m" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
+            <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="1" BufferDepth="512"/>
+            <Capture Mode="0" MinSamplesPerTrig="8"/>
+            <Event CntEnable="0" MaxEventCnt="8"/>
+            <TrigOut Polarity="0" MinPulseWidth="0" TrigOutNetType="1" EnableTrigOut="0" TrigOutNet="reveal_debug_ebs3_mc_LA1_net"/>
+            <DistRAM Disable="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Bus Name="leds">
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:1"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:2"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:3"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:4"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:5"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:6"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:7"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:8"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:9"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:10"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:11"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:12"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:13"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:14"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:15"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:16"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:17"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:18"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:19"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:20"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:21"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:22"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:23"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:24"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:25"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:26"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:27"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:28"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:29"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:30"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:30:31"/>
+                </Bus>
+                <Bus Name="btns">
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:0"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:1"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:2"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:3"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:4"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:5"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:6"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:7"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:8"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:9"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:10"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:11"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:12"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:13"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:14"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:15"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:16"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:17"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:18"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:19"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:20"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:21"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:22"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:23"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:24"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:25"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:26"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:27"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:28"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:29"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:30"/>
+                    <Sig Type="SIG" Name="u_heirv32/u_registerfile/larr_registers:31:31"/>
+                </Bus>
+            </Trace>
+            <Trigger>
+                <TU Serialbits="0" Type="0" ID="1" Sig="u_heirv32/en,"/>
+                <TE MaxSequence="2" MaxEvnCnt="1" ID="1" Resource="1"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>
