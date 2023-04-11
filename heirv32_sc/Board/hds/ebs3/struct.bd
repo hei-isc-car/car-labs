@@ -301,19 +301,19 @@ value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3"
 )
 (vvPair
 variable "date"
-value "23.02.2023"
+value "11.04.2023"
 )
 (vvPair
 variable "day"
-value "jeu."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "jeudi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "23"
+value "11"
 )
 (vvPair
 variable "entity_name"
@@ -341,7 +341,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "23.02.2023"
+value "11.04.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -353,7 +353,7 @@ value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "11:11:57"
+value "14:22:47"
 )
 (vvPair
 variable "group"
@@ -381,7 +381,7 @@ value "$SCRATCH_DIR/CAr/Board/work"
 )
 (vvPair
 variable "mm"
-value "02"
+value "04"
 )
 (vvPair
 variable "module_name"
@@ -389,11 +389,11 @@ value "ebs3"
 )
 (vvPair
 variable "month"
-value "févr."
+value "avr."
 )
 (vvPair
 variable "month_long"
-value "février"
+value "avril"
 )
 (vvPair
 variable "p"
@@ -429,7 +429,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "11:11:57"
+value "14:22:47"
 )
 (vvPair
 variable "unit"
@@ -6743,7 +6743,7 @@ exportStdPackageRefs 1
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 1770,0
+lastUid 1833,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

@@ -1692,7 +1692,6 @@ tasksMenubarOrder [
 "USER:Generate"
 ]
 tasksShortcutbarOrder [
-"Setup DesignChecker"
 "\"USER:ModelSim Compile\""
 "\"USER:ModelSim Flow\""
 "\"USER:ModelSim Simulate\""
@@ -4286,7 +4285,7 @@ hdsWorkspaceLocation ""
 relativeLibraryRootDir ""
 vmLabelLatestDontAskAgain 0
 vmLabelWorkspaceDontAskAgain 0
-logWindowGeometry "1009x663+-1694+285"
+logWindowGeometry "1009x663+373+210"
 diagramBrowserTabNo 0
 showInsertPortHint 0
 showContentFirstTime 0
