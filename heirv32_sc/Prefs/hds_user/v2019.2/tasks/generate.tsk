@@ -37,5 +37,5 @@ onShortcutBar 1
 onPulldownMenu 1
 onToolbar 1
 enabled 1
-hierDepth 2
+hierDepth 1
 )

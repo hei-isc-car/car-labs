@@ -21,7 +21,7 @@ appVersion "2019.2 (Build 5)"
 model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
-suid 9,0
+suid 10,0
 usingSuid 1
 emptyRow *1 (LEmptyRow
 )
@@ -137,6 +137,20 @@ suid 9,0
 )
 uid 4764,0
 )
+*20 (LogPort
+port (LogicalPort
+lang 11
+m 1
+decl (Decl
+n "test"
+t "std_ulogic_vector"
+b "(32+32+1+2+1+1+2+3+1 - 1 downto 0)"
+o 7
+suid 10,0
+)
+)
+uid 5056,0
+)
 ]
 )
 pdm (PhysicalDM
@@ -144,7 +158,7 @@ displayShortBounds 1
 editShortBounds 1
 uid 66,0
 optionalChildren [
-*20 (Sheet
+*21 (Sheet
 sheetRow (SheetRow
 headerVa (MVa
 cellColor "49152,49152,49152"
@@ -161,67 +175,73 @@ cellColor "39936,56832,65280"
 fontColor "0,0,0"
 font "Tahoma,10,0"
 )
-emptyMRCItem *21 (MRCItem
+emptyMRCItem *22 (MRCItem
 litem &1
 pos 6
 dimension 20
 )
 uid 68,0
 optionalChildren [
-*22 (MRCItem
+*23 (MRCItem
 litem &2
 pos 0
 dimension 20
 uid 69,0
 )
-*23 (MRCItem
+*24 (MRCItem
 litem &3
 pos 1
 dimension 23
 uid 70,0
 )
-*24 (MRCItem
+*25 (MRCItem
 litem &4
 pos 2
 hidden 1
 dimension 20
 uid 71,0
 )
-*25 (MRCItem
+*26 (MRCItem
 litem &14
 pos 0
 dimension 20
 uid 467,0
 )
-*26 (MRCItem
+*27 (MRCItem
 litem &15
 pos 1
 dimension 20
 uid 469,0
 )
-*27 (MRCItem
+*28 (MRCItem
 litem &16
 pos 2
 dimension 20
 uid 3869,0
 )
-*28 (MRCItem
+*29 (MRCItem
 litem &17
 pos 3
 dimension 20
 uid 4129,0
 )
-*29 (MRCItem
+*30 (MRCItem
 litem &18
 pos 4
 dimension 20
 uid 4761,0
 )
-*30 (MRCItem
+*31 (MRCItem
 litem &19
 pos 5
 dimension 20
 uid 4763,0
+)
+*32 (MRCItem
+litem &20
+pos 6
+dimension 20
+uid 5055,0
 )
 ]
 )
@@ -234,49 +254,49 @@ textAngle 90
 )
 uid 72,0
 optionalChildren [
-*31 (MRCItem
+*33 (MRCItem
 litem &5
 pos 0
 dimension 20
 uid 73,0
 )
-*32 (MRCItem
+*34 (MRCItem
 litem &7
 pos 1
 dimension 50
 uid 74,0
 )
-*33 (MRCItem
+*35 (MRCItem
 litem &8
 pos 2
 dimension 100
 uid 75,0
 )
-*34 (MRCItem
+*36 (MRCItem
 litem &9
 pos 3
 dimension 50
 uid 76,0
 )
-*35 (MRCItem
+*37 (MRCItem
 litem &10
 pos 4
 dimension 100
 uid 77,0
 )
-*36 (MRCItem
+*38 (MRCItem
 litem &11
 pos 5
 dimension 100
 uid 78,0
 )
-*37 (MRCItem
+*39 (MRCItem
 litem &12
 pos 6
 dimension 50
 uid 79,0
 )
-*38 (MRCItem
+*40 (MRCItem
 litem &13
 pos 7
 dimension 80
@@ -297,41 +317,41 @@ uid 52,0
 )
 genericsCommonDM (CommonDM
 ldm (LogicalDM
-emptyRow *39 (LEmptyRow
+emptyRow *41 (LEmptyRow
 )
 uid 82,0
 optionalChildren [
-*40 (RefLabelRowHdr
+*42 (RefLabelRowHdr
 )
-*41 (TitleRowHdr
+*43 (TitleRowHdr
 )
-*42 (FilterRowHdr
+*44 (FilterRowHdr
 )
-*43 (RefLabelColHdr
+*45 (RefLabelColHdr
 tm "RefLabelColHdrMgr"
 )
-*44 (RowExpandColHdr
+*46 (RowExpandColHdr
 tm "RowExpandColHdrMgr"
 )
-*45 (GroupColHdr
+*47 (GroupColHdr
 tm "GroupColHdrMgr"
 )
-*46 (NameColHdr
+*48 (NameColHdr
 tm "GenericNameColHdrMgr"
 )
-*47 (TypeColHdr
+*49 (TypeColHdr
 tm "GenericTypeColHdrMgr"
 )
-*48 (InitColHdr
+*50 (InitColHdr
 tm "GenericValueColHdrMgr"
 )
-*49 (PragmaColHdr
+*51 (PragmaColHdr
 tm "GenericPragmaColHdrMgr"
 )
-*50 (EolColHdr
+*52 (EolColHdr
 tm "GenericEolColHdrMgr"
 )
-*51 (LogGeneric
+*53 (LogGeneric
 generic (GiElement
 name "g_programFile"
 type "string"
@@ -339,7 +359,7 @@ value "\"$SIMULATION_DIR/code.txt\""
 )
 uid 4689,0
 )
-*52 (LogGeneric
+*54 (LogGeneric
 generic (GiElement
 name "g_btnsNb"
 type "positive"
@@ -347,7 +367,7 @@ value "2"
 )
 uid 4737,0
 )
-*53 (LogGeneric
+*55 (LogGeneric
 generic (GiElement
 name "g_dataWidth"
 type "positive"
@@ -355,7 +375,7 @@ value "32"
 )
 uid 4914,0
 )
-*54 (LogGeneric
+*56 (LogGeneric
 generic (GiElement
 name "g_memoryNbBits"
 type "positive"
@@ -370,7 +390,7 @@ displayShortBounds 1
 editShortBounds 1
 uid 94,0
 optionalChildren [
-*55 (Sheet
+*57 (Sheet
 sheetRow (SheetRow
 headerVa (MVa
 cellColor "49152,49152,49152"
@@ -387,52 +407,52 @@ cellColor "39936,56832,65280"
 fontColor "0,0,0"
 font "Tahoma,10,0"
 )
-emptyMRCItem *56 (MRCItem
-litem &39
+emptyMRCItem *58 (MRCItem
+litem &41
 pos 4
 dimension 20
 )
 uid 96,0
 optionalChildren [
-*57 (MRCItem
-litem &40
+*59 (MRCItem
+litem &42
 pos 0
 dimension 20
 uid 97,0
 )
-*58 (MRCItem
-litem &41
+*60 (MRCItem
+litem &43
 pos 1
 dimension 23
 uid 98,0
 )
-*59 (MRCItem
-litem &42
+*61 (MRCItem
+litem &44
 pos 2
 hidden 1
 dimension 20
 uid 99,0
 )
-*60 (MRCItem
-litem &51
+*62 (MRCItem
+litem &53
 pos 0
 dimension 20
 uid 4688,0
 )
-*61 (MRCItem
-litem &52
+*63 (MRCItem
+litem &54
 pos 1
 dimension 20
 uid 4736,0
 )
-*62 (MRCItem
-litem &53
+*64 (MRCItem
+litem &55
 pos 2
 dimension 20
 uid 4913,0
 )
-*63 (MRCItem
-litem &54
+*65 (MRCItem
+litem &56
 pos 3
 dimension 20
 uid 4984,0
@@ -448,44 +468,44 @@ textAngle 90
 )
 uid 100,0
 optionalChildren [
-*64 (MRCItem
-litem &43
+*66 (MRCItem
+litem &45
 pos 0
 dimension 20
 uid 101,0
 )
-*65 (MRCItem
-litem &45
+*67 (MRCItem
+litem &47
 pos 1
 dimension 50
 uid 102,0
 )
-*66 (MRCItem
-litem &46
+*68 (MRCItem
+litem &48
 pos 2
 dimension 100
 uid 103,0
 )
-*67 (MRCItem
-litem &47
+*69 (MRCItem
+litem &49
 pos 3
 dimension 100
 uid 104,0
 )
-*68 (MRCItem
-litem &48
+*70 (MRCItem
+litem &50
 pos 4
 dimension 50
 uid 105,0
 )
-*69 (MRCItem
-litem &49
+*71 (MRCItem
+litem &51
 pos 5
 dimension 50
 uid 106,0
 )
-*70 (MRCItem
-litem &50
+*72 (MRCItem
+litem &52
 pos 6
 dimension 80
 uid 107,0
@@ -508,23 +528,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\RiscV\\HEIRV32\\SingleCycle\\hdl"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\RiscV\\HEIRV32\\SingleCycle\\hds"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\RiscV\\HEIRV32\\SingleCycle\\hds\\heirv32_sc\\symbol.sb.info"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\heirv32_sc\\symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\RiscV\\HEIRV32\\SingleCycle\\hds\\heirv32_sc\\symbol.sb.user"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\heirv32_sc\\symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\RiscV\\HEIRV32\\SingleCycle\\hds"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds"
 )
 (vvPair
 variable "appl"
@@ -544,27 +564,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\RiscV\\HEIRV32\\SingleCycle\\hds\\heirv32_sc"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\heirv32_sc"
 )
 (vvPair
 variable "d_logical"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\RiscV\\HEIRV32\\SingleCycle\\hds\\heirv32_sc"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\heirv32_sc"
 )
 (vvPair
 variable "date"
-value "03.11.2022"
+value "02.05.2023"
 )
 (vvPair
 variable "day"
-value "jeu."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "jeudi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "03"
+value "02"
 )
 (vvPair
 variable "entity_name"
@@ -592,7 +612,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "03.11.2022"
+value "02.05.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -604,7 +624,7 @@ value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "15:20:21"
+value "11:00:34"
 )
 (vvPair
 variable "group"
@@ -628,11 +648,11 @@ value "$HDS_PROJECT_DIR/../Board/concat"
 )
 (vvPair
 variable "library_downstream_ModelSimCompiler"
-value "$SCRATCH_DIR/CAr/RiscV/HEIRV32/SingleCycle/work"
+value "$SCRATCH_DIR/CAr/HEIRV32/SingleCycle/work"
 )
 (vvPair
 variable "mm"
-value "11"
+value "05"
 )
 (vvPair
 variable "module_name"
@@ -640,19 +660,19 @@ value "heirv32_sc"
 )
 (vvPair
 variable "month"
-value "nov."
+value "mai"
 )
 (vvPair
 variable "month_long"
-value "novembre"
+value "mai"
 )
 (vvPair
 variable "p"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\RiscV\\HEIRV32\\SingleCycle\\hds\\heirv32_sc\\symbol.sb"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\heirv32_sc\\symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\RiscV\\HEIRV32\\SingleCycle\\hds\\heirv32_sc\\symbol.sb"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\heirv32_sc\\symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -680,7 +700,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "15:20:21"
+value "11:00:34"
 )
 (vvPair
 variable "unit"
@@ -700,21 +720,21 @@ value "symbol"
 )
 (vvPair
 variable "year"
-value "2022"
+value "2023"
 )
 (vvPair
 variable "yy"
-value "22"
+value "23"
 )
 ]
 )
 LanguageMgr "Vhdl2008LangMgr"
 uid 51,0
 optionalChildren [
-*71 (SymbolBody
+*73 (SymbolBody
 uid 8,0
 optionalChildren [
-*72 (CptPort
+*74 (CptPort
 uid 471,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -759,7 +779,7 @@ suid 3,0
 )
 )
 )
-*73 (CptPort
+*75 (CptPort
 uid 476,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -804,7 +824,7 @@ suid 4,0
 )
 )
 )
-*74 (CptPort
+*76 (CptPort
 uid 3871,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -852,7 +872,7 @@ suid 6,0
 )
 )
 )
-*75 (CptPort
+*77 (CptPort
 uid 4131,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -897,7 +917,7 @@ suid 7,0
 )
 )
 )
-*76 (CptPort
+*78 (CptPort
 uid 4765,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -943,7 +963,7 @@ suid 8,0
 )
 )
 )
-*77 (CptPort
+*79 (CptPort
 uid 4770,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -976,8 +996,8 @@ uid 4774,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,6400,76000,7200"
-st "leds     : OUT    std_ulogic_vector (g_dataWidth-1 DOWNTO 0)"
+xt "44000,6400,77000,7200"
+st "leds     : OUT    std_ulogic_vector (g_dataWidth-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
@@ -988,6 +1008,54 @@ t "std_ulogic_vector"
 b "(g_dataWidth-1 DOWNTO 0)"
 o 6
 suid 9,0
+)
+)
+)
+*80 (CptPort
+uid 5057,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 5058,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "35000,26625,35750,27375"
+)
+tg (CPTG
+uid 5059,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 5060,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "30700,26300,34000,27700"
+st "test"
+ju 2
+blo "34000,27500"
+tm "CptPortNameMgr"
+)
+)
+dt (MLText
+uid 5061,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "44000,7200,81000,8000"
+st "test     : OUT    std_ulogic_vector (32+32+1+2+1+1+2+3+1 - 1 downto 0)"
+)
+thePort (LogicalPort
+lang 11
+m 1
+decl (Decl
+n "test"
+t "std_ulogic_vector"
+b "(32+32+1+2+1+1+2+3+1 - 1 downto 0)"
+o 7
+suid 10,0
 )
 )
 )
@@ -1026,7 +1094,7 @@ st "heirv32_sc"
 blo "27800,31000"
 )
 )
-gi *78 (GenericInterface
+gi *81 (GenericInterface
 uid 13,0
 ps "CenterOffsetStrategy"
 matrix (Matrix
@@ -1080,10 +1148,10 @@ sTC 0
 sIVOD 1
 )
 )
-*79 (Grouping
+*82 (Grouping
 uid 16,0
 optionalChildren [
-*80 (CommentText
+*83 (CommentText
 uid 18,0
 shape (Rectangle
 uid 19,0
@@ -1102,7 +1170,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "36200,48000,47700,49000"
+xt "36200,48000,47600,49000"
 st "
 by %user on %dd %month %year
 "
@@ -1115,7 +1183,7 @@ position 1
 ignorePrefs 1
 titleBlock 1
 )
-*81 (CommentText
+*84 (CommentText
 uid 21,0
 shape (Rectangle
 uid 22,0
@@ -1147,7 +1215,7 @@ position 1
 ignorePrefs 1
 titleBlock 1
 )
-*82 (CommentText
+*85 (CommentText
 uid 24,0
 shape (Rectangle
 uid 25,0
@@ -1179,7 +1247,7 @@ position 1
 ignorePrefs 1
 titleBlock 1
 )
-*83 (CommentText
+*86 (CommentText
 uid 27,0
 shape (Rectangle
 uid 28,0
@@ -1211,7 +1279,7 @@ position 1
 ignorePrefs 1
 titleBlock 1
 )
-*84 (CommentText
+*87 (CommentText
 uid 30,0
 shape (Rectangle
 uid 31,0
@@ -1242,7 +1310,7 @@ visibleWidth 20000
 ignorePrefs 1
 titleBlock 1
 )
-*85 (CommentText
+*88 (CommentText
 uid 33,0
 shape (Rectangle
 uid 34,0
@@ -1274,7 +1342,7 @@ position 1
 ignorePrefs 1
 titleBlock 1
 )
-*86 (CommentText
+*89 (CommentText
 uid 36,0
 shape (Rectangle
 uid 37,0
@@ -1305,7 +1373,7 @@ position 1
 ignorePrefs 1
 titleBlock 1
 )
-*87 (CommentText
+*90 (CommentText
 uid 39,0
 shape (Rectangle
 uid 40,0
@@ -1337,7 +1405,7 @@ position 1
 ignorePrefs 1
 titleBlock 1
 )
-*88 (CommentText
+*91 (CommentText
 uid 42,0
 shape (Rectangle
 uid 43,0
@@ -1369,7 +1437,7 @@ position 1
 ignorePrefs 1
 titleBlock 1
 )
-*89 (CommentText
+*92 (CommentText
 uid 45,0
 shape (Rectangle
 uid 46,0
@@ -1426,11 +1494,11 @@ xShown 1
 yShown 1
 color "65535,0,0"
 )
-packageList *90 (PackageList
+packageList *93 (PackageList
 uid 48,0
 stg "VerticalLayoutStrategy"
 textVec [
-*91 (Text
+*94 (Text
 uid 49,0
 va (VaSet
 font "Verdana,9,1"
@@ -1439,7 +1507,7 @@ xt "0,0,7600,1200"
 st "Package List"
 blo "0,1000"
 )
-*92 (MLText
+*95 (MLText
 uid 50,0
 va (VaSet
 )
@@ -1566,7 +1634,7 @@ st "<cell>"
 blo "26800,17000"
 )
 )
-gi *93 (GenericInterface
+gi *96 (GenericInterface
 ps "CenterOffsetStrategy"
 matrix (Matrix
 text (MLText
@@ -1667,7 +1735,7 @@ o 0
 )
 )
 )
-DeclarativeBlock *94 (SymDeclBlock
+DeclarativeBlock *97 (SymDeclBlock
 uid 1,0
 stg "SymDeclLayoutStrategy"
 declLabel (Text
@@ -1693,9 +1761,9 @@ uid 4,0
 va (VaSet
 font "Verdana,9,1"
 )
-xt "42000,7200,45200,8400"
+xt "42000,8000,45200,9200"
 st "User:"
-blo "42000,8200"
+blo "42000,9000"
 )
 internalLabel (Text
 uid 6,0
@@ -1712,7 +1780,7 @@ uid 5,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,8400,44000,8400"
+xt "44000,9200,44000,9200"
 tm "SyDeclarativeTextMgr"
 )
 internalText (MLText
@@ -1725,7 +1793,7 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 5031,0
+lastUid 5107,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol"
