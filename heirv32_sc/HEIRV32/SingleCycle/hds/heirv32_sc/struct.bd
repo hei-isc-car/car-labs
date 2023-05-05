@@ -386,19 +386,19 @@ value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\heirv32_sc"
 )
 (vvPair
 variable "date"
-value "02.05.2023"
+value "05.05.2023"
 )
 (vvPair
 variable "day"
-value "mar."
+value "ven."
 )
 (vvPair
 variable "day_long"
-value "mardi"
+value "vendredi"
 )
 (vvPair
 variable "dd"
-value "02"
+value "05"
 )
 (vvPair
 variable "entity_name"
@@ -426,7 +426,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "02.05.2023"
+value "05.05.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -438,7 +438,7 @@ value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "11:00:34"
+value "13:43:51"
 )
 (vvPair
 variable "group"
@@ -514,7 +514,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "11:00:34"
+value "13:43:51"
 )
 (vvPair
 variable "unit"
@@ -10405,7 +10405,7 @@ tm "BdCompilerDirectivesTextMgr"
 associable 1
 )
 windowSize "-8,-8,1928,1048"
-viewArea "-2771,-2892,213843,111249"
+viewArea "-2774,-2895,214101,111383"
 cachedDiagramExtent "0,0,199500,112800"
 pageSetupInfo (PageSetupInfo
 ptrCmd "Adobe PDF,winspool,"
@@ -10432,7 +10432,7 @@ exportStdPackageRefs 1
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 10231,0
+lastUid 10290,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

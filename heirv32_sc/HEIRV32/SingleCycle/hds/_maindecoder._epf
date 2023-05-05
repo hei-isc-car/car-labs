@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom studentVersion
+DEFAULT_FILE atom mainDecoder_studentVersion.vhd
