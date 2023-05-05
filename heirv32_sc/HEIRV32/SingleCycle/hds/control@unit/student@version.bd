@@ -29,23 +29,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\RiscV\\HEIRV32\\SingleCycle\\hdl"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\RiscV\\HEIRV32\\SingleCycle\\hds"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\RiscV\\HEIRV32\\SingleCycle\\hds\\control@unit\\students@version.bd.info"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\control@unit\\student@version.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\RiscV\\HEIRV32\\SingleCycle\\hds\\control@unit\\students@version.bd.user"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\control@unit\\student@version.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\RiscV\\HEIRV32\\SingleCycle\\hds"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds"
 )
 (vvPair
 variable "appl"
@@ -53,7 +53,7 @@ value "HDL Designer"
 )
 (vvPair
 variable "arch_name"
-value "studentsVersion"
+value "studentVersion"
 )
 (vvPair
 variable "concat_file"
@@ -65,27 +65,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\RiscV\\HEIRV32\\SingleCycle\\hds\\control@unit"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\control@unit"
 )
 (vvPair
 variable "d_logical"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\RiscV\\HEIRV32\\SingleCycle\\hds\\controlUnit"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\controlUnit"
 )
 (vvPair
 variable "date"
-value "03.11.2022"
+value "05.05.2023"
 )
 (vvPair
 variable "day"
-value "jeu."
+value "ven."
 )
 (vvPair
 variable "day_long"
-value "jeudi"
+value "vendredi"
 )
 (vvPair
 variable "dd"
-value "03"
+value "05"
 )
 (vvPair
 variable "entity_name"
@@ -97,15 +97,15 @@ value "<TBD>"
 )
 (vvPair
 variable "f"
-value "students@version.bd"
+value "student@version.bd"
 )
 (vvPair
 variable "f_logical"
-value "studentsVersion.bd"
+value "studentVersion.bd"
 )
 (vvPair
 variable "f_noext"
-value "students@version"
+value "student@version"
 )
 (vvPair
 variable "graphical_source_author"
@@ -113,7 +113,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "03.11.2022"
+value "05.05.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -125,7 +125,7 @@ value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "14:53:54"
+value "11:23:28"
 )
 (vvPair
 variable "group"
@@ -149,11 +149,11 @@ value "$HDS_PROJECT_DIR/../Board/concat"
 )
 (vvPair
 variable "library_downstream_ModelSimCompiler"
-value "$SCRATCH_DIR/CAr/RiscV/HEIRV32/SingleCycle/work"
+value "$SCRATCH_DIR/CAr/HEIRV32/SingleCycle/work"
 )
 (vvPair
 variable "mm"
-value "11"
+value "05"
 )
 (vvPair
 variable "module_name"
@@ -161,19 +161,19 @@ value "controlUnit"
 )
 (vvPair
 variable "month"
-value "nov."
+value "mai"
 )
 (vvPair
 variable "month_long"
-value "novembre"
+value "mai"
 )
 (vvPair
 variable "p"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\RiscV\\HEIRV32\\SingleCycle\\hds\\control@unit\\students@version.bd"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\control@unit\\student@version.bd"
 )
 (vvPair
 variable "p_logical"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\RiscV\\HEIRV32\\SingleCycle\\hds\\controlUnit\\studentsVersion.bd"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\controlUnit\\studentVersion.bd"
 )
 (vvPair
 variable "package_name"
@@ -193,15 +193,15 @@ value "bd"
 )
 (vvPair
 variable "this_file"
-value "students@version"
+value "student@version"
 )
 (vvPair
 variable "this_file_logical"
-value "studentsVersion"
+value "studentVersion"
 )
 (vvPair
 variable "time"
-value "14:53:54"
+value "11:23:28"
 )
 (vvPair
 variable "unit"
@@ -217,15 +217,15 @@ value "2019.2 (Build 5)"
 )
 (vvPair
 variable "view"
-value "studentsVersion"
+value "studentVersion"
 )
 (vvPair
 variable "year"
-value "2022"
+value "2023"
 )
 (vvPair
 variable "yy"
-value "22"
+value "23"
 )
 ]
 )
@@ -945,7 +945,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "57200,4000,68700,5000"
+xt "57200,4000,68600,5000"
 st "
 by %user on %dd %month %year
 "
@@ -1231,7 +1231,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "57200,3000,72600,4000"
+xt "57200,3000,72200,4000"
 st "
 %library/%unit/%view
 "
@@ -1775,8 +1775,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "-8,-8,1928,1048"
-viewArea "-5384,-1609,105872,58839"
+windowSize "0,0,1921,1056"
+viewArea "-5400,-1600,106338,57800"
 cachedDiagramExtent "-3900,0,97300,56600"
 pageSetupInfo (PageSetupInfo
 ptrCmd ""
@@ -1800,7 +1800,7 @@ exportStdPackageRefs 1
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,0"
-lastUid 284,0
+lastUid 331,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -3247,6 +3247,14 @@ tm "GenericPragmaColHdrMgr"
 *135 (EolColHdr
 tm "GenericEolColHdrMgr"
 )
+*136 (LogGeneric
+generic (GiElement
+name "g_tdec"
+type "time"
+value ""
+)
+uid 330,0
+)
 ]
 )
 pdm (PhysicalDM
@@ -3254,7 +3262,7 @@ displayShortBounds 1
 editShortBounds 1
 uid 271,0
 optionalChildren [
-*136 (Sheet
+*137 (Sheet
 sheetRow (SheetRow
 headerVa (MVa
 cellColor "49152,49152,49152"
@@ -3271,31 +3279,37 @@ cellColor "39936,56832,65280"
 fontColor "0,0,0"
 font "Tahoma,10,0"
 )
-emptyMRCItem *137 (MRCItem
+emptyMRCItem *138 (MRCItem
 litem &124
-pos 0
+pos 1
 dimension 20
 )
 uid 273,0
 optionalChildren [
-*138 (MRCItem
+*139 (MRCItem
 litem &125
 pos 0
 dimension 20
 uid 274,0
 )
-*139 (MRCItem
+*140 (MRCItem
 litem &126
 pos 1
 dimension 23
 uid 275,0
 )
-*140 (MRCItem
+*141 (MRCItem
 litem &127
 pos 2
 hidden 1
 dimension 20
 uid 276,0
+)
+*142 (MRCItem
+litem &136
+pos 0
+dimension 20
+uid 331,0
 )
 ]
 )
@@ -3308,43 +3322,43 @@ textAngle 90
 )
 uid 277,0
 optionalChildren [
-*141 (MRCItem
+*143 (MRCItem
 litem &128
 pos 0
 dimension 20
 uid 278,0
 )
-*142 (MRCItem
+*144 (MRCItem
 litem &130
 pos 1
 dimension 50
 uid 279,0
 )
-*143 (MRCItem
+*145 (MRCItem
 litem &131
 pos 2
 dimension 100
 uid 280,0
 )
-*144 (MRCItem
+*146 (MRCItem
 litem &132
 pos 3
 dimension 100
 uid 281,0
 )
-*145 (MRCItem
+*147 (MRCItem
 litem &133
 pos 4
 dimension 50
 uid 282,0
 )
-*146 (MRCItem
+*148 (MRCItem
 litem &134
 pos 5
 dimension 50
 uid 283,0
 )
-*147 (MRCItem
+*149 (MRCItem
 litem &135
 pos 6
 dimension 80
