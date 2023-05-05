@@ -611,23 +611,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hdl"
+value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds"
+value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb.info"
+value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb.user"
+value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds"
+value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds"
 )
 (vvPair
 variable "appl"
@@ -647,27 +647,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3"
+value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds\\ebs3"
 )
 (vvPair
 variable "d_logical"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3"
+value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds\\ebs3"
 )
 (vvPair
 variable "date"
-value "11.04.2023"
+value "05.05.2023"
 )
 (vvPair
 variable "day"
-value "mar."
+value "ven."
 )
 (vvPair
 variable "day_long"
-value "mardi"
+value "vendredi"
 )
 (vvPair
 variable "dd"
-value "11"
+value "05"
 )
 (vvPair
 variable "entity_name"
@@ -695,7 +695,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "11.04.2023"
+value "05.05.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -707,7 +707,7 @@ value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "14:22:47"
+value "13:50:16"
 )
 (vvPair
 variable "group"
@@ -735,7 +735,7 @@ value "$SCRATCH_DIR/CAr/Board/work"
 )
 (vvPair
 variable "mm"
-value "04"
+value "05"
 )
 (vvPair
 variable "module_name"
@@ -743,19 +743,19 @@ value "ebs3"
 )
 (vvPair
 variable "month"
-value "avr."
+value "mai"
 )
 (vvPair
 variable "month_long"
-value "avril"
+value "mai"
 )
 (vvPair
 variable "p"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb"
+value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb"
+value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -783,7 +783,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "14:22:47"
+value "13:50:16"
 )
 (vvPair
 variable "unit"
@@ -1437,7 +1437,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "36200,48000,47800,49000"
+xt "36200,48000,47600,49000"
 st "
 by %user on %dd %month %year
 "
@@ -2059,6 +2059,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 500,0
+lastUid 523,0
 activeModelName "Symbol:CDM"
 )
