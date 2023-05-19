@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-<h4 align="center">Labor Files for CAr Laboratories practical sessions <a href="https://cyberlearn.hes-so.ch" target="_blank">Moodle Cyberlearn</a>.</h4>
+<h4 align="center">Labor Files for CAr Laboratories practical sessions.</h4>
 
 # Table of contents
 <p align="center">
