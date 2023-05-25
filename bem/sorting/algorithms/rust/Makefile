@@ -86,6 +86,7 @@ ifneq ($(filter %Darwin,$(detected_OS)),)
 	@echo This has not been tested
 	@rustup target add aarch64-apple-darwin
 	@cargo build -r --target=aarch64-apple-darwin
+	@cp -f -v build/aarch64-apple-darwin/release/$(EXEC_NAME) release/$(EXEC_NAME)_$(BUILD_VERSION)_Mac_AARCH64
 else
 	@echo Cannot cross-build for MAC from $(detected_OS)
 endif
