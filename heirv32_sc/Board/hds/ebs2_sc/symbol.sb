@@ -619,19 +619,19 @@ value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs2_sc"
 )
 (vvPair
 variable "date"
-value "28.11.2022"
+value "09.05.2023"
 )
 (vvPair
 variable "day"
-value "lun."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "lundi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "28"
+value "09"
 )
 (vvPair
 variable "entity_name"
@@ -659,7 +659,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "28.11.2022"
+value "09.05.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -671,7 +671,7 @@ value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "15:48:40"
+value "13:53:10"
 )
 (vvPair
 variable "group"
@@ -699,7 +699,7 @@ value "$SCRATCH_DIR/CAr/Board/work"
 )
 (vvPair
 variable "mm"
-value "11"
+value "05"
 )
 (vvPair
 variable "module_name"
@@ -707,11 +707,11 @@ value "ebs2_sc"
 )
 (vvPair
 variable "month"
-value "nov."
+value "mai"
 )
 (vvPair
 variable "month_long"
-value "novembre"
+value "mai"
 )
 (vvPair
 variable "p"
@@ -747,7 +747,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "15:48:40"
+value "13:53:10"
 )
 (vvPair
 variable "unit"
@@ -767,11 +767,11 @@ value "symbol"
 )
 (vvPair
 variable "year"
-value "2022"
+value "2023"
 )
 (vvPair
 variable "yy"
-value "22"
+value "23"
 )
 ]
 )
@@ -1931,6 +1931,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 433,0
+lastUid 456,0
 activeModelName "Symbol:CDM"
 )

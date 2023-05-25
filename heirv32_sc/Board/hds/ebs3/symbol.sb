@@ -611,23 +611,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hdl"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb.info"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb.user"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds"
 )
 (vvPair
 variable "appl"
@@ -647,27 +647,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds\\ebs3"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3"
 )
 (vvPair
 variable "d_logical"
-value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds\\ebs3"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3"
 )
 (vvPair
 variable "date"
-value "05.05.2023"
+value "09.05.2023"
 )
 (vvPair
 variable "day"
-value "ven."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "vendredi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "05"
+value "09"
 )
 (vvPair
 variable "entity_name"
@@ -695,7 +695,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "05.05.2023"
+value "09.05.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -707,7 +707,7 @@ value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "13:50:16"
+value "13:50:52"
 )
 (vvPair
 variable "group"
@@ -751,11 +751,11 @@ value "mai"
 )
 (vvPair
 variable "p"
-value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -783,7 +783,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "13:50:16"
+value "13:50:52"
 )
 (vvPair
 variable "unit"

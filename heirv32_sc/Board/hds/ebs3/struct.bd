@@ -257,23 +257,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hdl"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds\\ebs3\\struct.bd.info"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds\\ebs3\\struct.bd.user"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds"
 )
 (vvPair
 variable "appl"
@@ -293,27 +293,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds\\ebs3"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3"
 )
 (vvPair
 variable "d_logical"
-value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds\\ebs3"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3"
 )
 (vvPair
 variable "date"
-value "05.05.2023"
+value "09.05.2023"
 )
 (vvPair
 variable "day"
-value "ven."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "vendredi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "05"
+value "09"
 )
 (vvPair
 variable "entity_name"
@@ -341,7 +341,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "05.05.2023"
+value "09.05.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -353,7 +353,7 @@ value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "13:50:16"
+value "13:50:52"
 )
 (vvPair
 variable "group"
@@ -397,11 +397,11 @@ value "mai"
 )
 (vvPair
 variable "p"
-value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds\\ebs3\\struct.bd"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "C:\\dev\\car-labs-students\\heirv32_sc\\Prefs\\..\\Board\\hds\\ebs3\\struct.bd"
+value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -429,7 +429,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "13:50:16"
+value "13:50:52"
 )
 (vvPair
 variable "unit"
@@ -4983,7 +4983,7 @@ uid 1933,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "111000,62800,137500,66000"
+xt "111000,61800,137500,65000"
 st "g_programFile  = c_programFile     ( string   )  
 g_btnsNb       = c_btnsNb          ( positive )  
 g_dataWidth    = c_dataWidth       ( positive )  
@@ -6786,8 +6786,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "0,0,1921,1056"
-viewArea "39653,28821,164400,95137"
+windowSize "-1928,-8,8,1048"
+viewArea "-2000,-2000,177789,92737"
 cachedDiagramExtent "0,0,137500,90000"
 pageSetupInfo (PageSetupInfo
 ptrCmd ""

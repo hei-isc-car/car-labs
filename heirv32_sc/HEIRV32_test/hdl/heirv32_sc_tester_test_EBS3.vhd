@@ -23,40 +23,41 @@ ARCHITECTURE test_EBS3 OF heirv32_sc_tester IS
   
   procedure checkProc(
     msg :           string;
-	PCArg :         unsigned(31 downto 0);
+    PCArg :         unsigned(31 downto 0);
     regwriteArg :   std_ulogic;
     immSrcArg :     std_ulogic_vector(1 downto 0);
     ALUSrcArg :     std_ulogic;
-	memWriteArg :   std_ulogic;
-	resultSrcArg :  std_ulogic_vector(1 downto 0);
-	ALUControlArg : std_ulogic_vector(2 downto 0);
-	PCSrcArg :      std_ulogic) is
+    memWriteArg :   std_ulogic;
+    resultSrcArg :  std_ulogic_vector(1 downto 0);
+    ALUControlArg : std_ulogic_vector(2 downto 0);
+    PCSrcArg :      std_ulogic) is
   begin
     wait for 0.8*clockPeriod;
-	std.textio.write(std.textio.output, LF & "===================" & LF);
-	std.textio.write(std.textio.output, "Testing " & msg  & LF);
-	assert (PC_u = PCArg)
+    std.textio.write(std.textio.output, LF & "===================" & LF);
+    std.textio.write(std.textio.output, "Testing " & msg  & LF);
+    assert (PC_u = PCArg)
       report ("PC error - expected " & to_hstring(PC_u)) severity error;
-	assert (regwrite = regwriteArg)
+    assert (regwrite = regwriteArg)
       report ("regwrite error - expected " & to_string(regwriteArg)) severity error;
-	assert (immSrc = immSrcArg)
+    assert (immSrc = immSrcArg)
       report ("immSrc error - expected " & to_string(immSrcArg)) severity error;
-	assert (ALUSrc = ALUSrcArg)
+    assert (ALUSrc = ALUSrcArg)
       report ("ALUSrc error - expected " & to_string(ALUSrcArg)) severity error;
-	assert (memWrite = memWriteArg)
+    assert (memWrite = memWriteArg)
       report ("memWrite error - expected " & to_string(memWriteArg)) severity error;
-	assert (resultSrc = resultSrcArg)
+    assert (resultSrc = resultSrcArg)
       report ("resultSrc error - expected " & to_string(resultSrcArg)) severity error;
-	assert (ALUControl = ALUControlArg)
+    assert (ALUControl = ALUControlArg)
       report ("ALUControl error - expected " & to_string(ALUControlArg)) severity error;
-	assert (PCSrc = PCSrcArg)
+    assert (PCSrc = PCSrcArg)
       report ("PCSrc error - expected " & to_string(PCSrcArg)) severity error;
-	if (regwrite = regwriteArg) AND (immSrc = immSrcArg) AND (ALUSrc = ALUSrcArg) AND (memWrite = memWriteArg) AND
-	  (resultSrc = resultSrcArg) and (ALUControl = ALUControlArg) AND (PCSrc = PCSrcArg) then
-	  report " ** Ok" severity note;
-	end if;
-	std.textio.write(std.textio.output, "===================" & LF);
-	wait until clk'event and clk = '1';
+    if (regwrite = regwriteArg) AND (immSrc = immSrcArg) AND (ALUSrc = ALUSrcArg) AND (memWrite = memWriteArg) AND
+      (resultSrc = resultSrcArg) and (ALUControl = ALUControlArg) AND (PCSrc = PCSrcArg) then
+      report " ** Ok" severity note;
+    end if;
+    std.textio.write(std.textio.output, "===================" & LF);
+    
+    wait until clk'event and clk = '1';
   end procedure checkProc;
 
 BEGIN
@@ -79,12 +80,12 @@ BEGIN
   process
   begin
     en <= '0';
-	sReset <= '1';
-	testInfo <= pad("Wait reset done", testInfo'length);
-	wait for 3.5*clockPeriod;
-	wait until clk'event and clk = '1';
-	wait for 0.1*clockPeriod;
-	sReset <= '0';
+  	sReset <= '1';
+  	testInfo <= pad("Wait reset done", testInfo'length);
+  	wait for 3.5*clockPeriod;
+  	wait until clk'event and clk = '1';
+  	wait for 0.1*clockPeriod;
+  	sReset <= '0';
 
     while true loop
       en <= '1';
@@ -152,10 +153,10 @@ BEGIN
 
       en <= '0';
       testInfo <= pad("Wait a bit, PC should be 0", testInfo'length);
-	  checkProc("Prog. loop", x"00000000", '1', "00", '1', '0', "00", "000", '0');
+      checkProc("Prog. loop", x"00000000", '1', "00", '1', '0', "00", "000", '0');
       wait for 9.2*clockPeriod;
-	  wait until clk'event and clk = '1';
-	  wait for 0.1*clockPeriod;
+      wait until clk'event and clk = '1';
+      wait for 0.1*clockPeriod;
       
     end loop;
   end process;

@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn {
+    font-size: 17px;
+    margin: 3px;
+    text-align: center;
+    position: relative;
+}
+
+.center {
+  text-align: center;
+}
+
+#array {
+    background-color: white;
+    height: 300px;
+    width: 598px;
+    margin: auto;
+    position: relative;
+    margin-top: 35px;
+}
+
+.block {
+    width: 28px;
+    background-color: #6b5b95;
+    position: absolute;
+    bottom: 0px;
+    transition: 0.2s all ease;
+}
+
+.block_id {
+    position: absolute;
+    color: black;
+    margin-top: -20px;
+    width: 100%;
+    text-align: center;
+}
