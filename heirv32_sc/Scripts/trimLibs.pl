@@ -10,8 +10,13 @@
 #    guo: [Oliver A. Gubler](oliver.gubler@hevs.ch)
 #    zas: [Silvan Zahno](silvan.zahno@hevs.ch)
 #    gal: [Laurent Gauch]
+#    ama: [Amand Axel](axel.amand@hevs.ch)
 # ------------------------------------------------------------------------------
 # Changelog:
+#   2023.05.16 : ama
+#     * Add: ice40 libs support
+#   2023.02.01 : ama
+#     * Add: ECP5U libs support
 #   2019.08.23 : cof
 #     * Comment "omment "FOR xxxx : yyy USE ENTITY zzz;"" instead all "For All ... work" lines
 #     * Seen problems in ELN_Kart
@@ -91,12 +96,13 @@ while (chop($line = <HDLFile>)) {
   my $testline = $line;
   $testline =~ s/--.*//;
 
-  # Replace 'use xxx.yyy' with 'use work.yyy', except if xxx is ieee or std or unisim or ecp5u
+  # Replace 'use xxx.yyy' with 'use work.yyy', except if xxx is ieee or std or unisim or ecp5u or ice40
   if ($testline =~ m/use\s.*\.all\s*;/i) {
     if ( not($testline =~ m/\bieee\./i) and
 		 not($testline =~ m/\bstd\./i)  and
 		 not($testline =~ m/\bunisim\./i) and
-     not($testline =~ m/\becp5u\./i)) {
+     not($testline =~ m/\becp5u\./i) and
+     not($testline =~ m/ice40.*\./i)) {
       # if there is any char before "use" except \s, insert new line \n
       if ( ($testline =~ m/[^\s]\s*use/i) ) {
         $line =~ s/use\s+.*?\./\nuse work./i;
@@ -113,12 +119,13 @@ while (chop($line = <HDLFile>)) {
     }
   }
 
-  # Comment libraries which aren't ieee or std or unisim or ecp5u
+  # Comment libraries which aren't ieee or std or unisim or ecp5u or ice40
   if (($testline =~ m/\slibrary\s+/i) or ($testline =~ m/\Alibrary\s+/i)) {
     if ( not($testline =~ m/ieee/i) and
 		 not($testline =~ m/std/i) and
 		 not($testline =~ m/unisim/i) and
-     not($testline =~ m/ecp5u/i)) {
+     not($testline =~ m/ecp5u/i) and
+     not($testline =~ m/ice40/i)) {
       $line = '-- ' . $line;
     }
   }

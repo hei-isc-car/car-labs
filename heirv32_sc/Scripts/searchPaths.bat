@@ -50,7 +50,7 @@ if !REQUIRE_LIBS! == 1 (
 )
 
 
-echo Search Design Tools: HDL Designer, Modelsim, Xilinx ISE, Microsemi Libero, Lattice Diamond
+echo Search Design Tools: HDL Designer, Modelsim, Xilinx ISE, Microsemi Libero, Lattice Diamond, Lattice IceCube2
 ::------------------------------------------------------------------------------
 :: Search HDL Designer directory
 ::
@@ -169,6 +169,32 @@ if %REQUIRE_DIAMOND% == 1 (
     echo %INDENT:"=%Found Diamond        at !DIAMOND_HOME:"=!
   ) else (
     echo %INDENT:"=%ERROR: No valid installation of Diamond found - please verify your DIAMOND_HOME settings.
+    pause
+    goto:eof
+  )
+)
+
+::------------------------------------------------------------------------------
+:: Search Lattice IceCube2 directory
+::
+if %REQUIRE_ICECUBE2% == 1 (
+  if "%ICECUBE2_HOME%" == "" (
+    set ICECUBE2_HOME=C:\eda\lscc\iCEcube2.2020.12
+    if not exist !ICECUBE2_HOME!\ (
+      set ICECUBE2_HOME=C:\tools\lscc\iCEcube2.2020.12
+      if not exist !ICECUBE2_HOME!\ (
+        set ICECUBE2_HOME=C:\lscc\iCEcube2.2020.12
+        if not exist !ICECUBE2_HOME!\ (
+          echo %INDENT:"=%ERROR: No valid installation of Lattice IceCube2 found - please verify your ICECUBE2_HOME settings.
+          pause&goto:eof
+        )
+      )
+    )
+  )
+  if exist !ICECUBE2_HOME! (
+    echo %INDENT:"=%Found IceCube2        at !ICECUBE2_HOME:"=!
+  ) else (
+    echo %INDENT:"=%ERROR: No valid installation of IceCube2 found - please verify your ICECUBE2_HOME settings.
     pause
     goto:eof
   )
