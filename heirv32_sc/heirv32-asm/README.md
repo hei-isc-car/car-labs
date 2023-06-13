@@ -49,13 +49,20 @@ Raw values (decimal, 0b, 0x) can be put directly in the ASM file (no instruction
 If called with bin file (in text format, not hex), will disassemble and recreate instructions and transform jumps into labels.
 
 # Changelog
+## 1.1.5 - 13.06.2023
+### Added
+- Automatic tests (make test)
+- CI integration of tests
+### Fixed
+- **ASM**: spaces within commands were parsed as elements of the command
+
+
 ## 1.1.4 - 21.04.2023
 ### Fixed
 - **ASM**: li lower value was addi to x0 instead of reg.
 - **ASM**: li higher value not accounting for negative extend of lower value
 - **ASM**: jumps were not taking li double operations into account
 - **DISSY**: FUNCT7/special I identificator was badly checked
-
 
 ## 1.1.3 - 30.03.2023
 ### Fixed
