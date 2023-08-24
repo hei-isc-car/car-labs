@@ -55,6 +55,7 @@ If called with bin file (in text format, not hex), will disassemble and recreate
 - CI integration of tests
 ### Fixed
 - **ASM**: spaces within commands were parsed as elements of the command
+- Program stays open in cas of error (mostly when cannot parse the instruction)
 
 
 ## 1.1.4 - 21.04.2023
