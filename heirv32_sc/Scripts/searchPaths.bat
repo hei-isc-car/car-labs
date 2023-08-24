@@ -155,7 +155,7 @@ if %REQUIRE_DIAMOND% == 1 (
   if "%DIAMOND_HOME%" == "" (
     set DIAMOND_HOME=C:\eda\lscc\diamond\3.12
     if not exist !DIAMOND_HOME!\ (
-      set DIAMOND_HOME=C:\tools\lscc\diamond\3.12
+      set DIAMOND_HOME=C:\tools\eda\lscc\diamond\3.12
       if not exist !DIAMOND_HOME!\ (
         set DIAMOND_HOME=C:\lscc\diamond\3.12
         if not exist !DIAMOND_HOME!\ (
@@ -181,7 +181,7 @@ if %REQUIRE_ICECUBE2% == 1 (
   if "%ICECUBE2_HOME%" == "" (
     set ICECUBE2_HOME=C:\eda\lscc\iCEcube2.2020.12
     if not exist !ICECUBE2_HOME!\ (
-      set ICECUBE2_HOME=C:\tools\lscc\iCEcube2.2020.12
+      set ICECUBE2_HOME=C:\tools\eda\lscc\iCEcube2.2020.12
       if not exist !ICECUBE2_HOME!\ (
         set ICECUBE2_HOME=C:\lscc\iCEcube2.2020.12
         if not exist !ICECUBE2_HOME!\ (
