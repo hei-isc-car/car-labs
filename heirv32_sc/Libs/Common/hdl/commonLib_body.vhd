@@ -17,7 +17,7 @@
 --
 -- -----------------------------------------------------------------------------
 --  Authors:
---    cof: [François Corthay](francois.corthay@hevs.ch)
+--    cof: [FranÃ§ois Corthay](francois.corthay@hevs.ch)
 --    guo: [Oliver A. Gubler](oliver.gubler@hevs.ch)
 -- -----------------------------------------------------------------------------
 -- Changelog:

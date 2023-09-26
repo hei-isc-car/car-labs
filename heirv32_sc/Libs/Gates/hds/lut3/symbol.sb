@@ -554,11 +554,11 @@ value "lut3"
 )
 (vvPair
 variable "month"
-value "août"
+value "aoÃ»t"
 )
 (vvPair
 variable "month_long"
-value "août"
+value "aoÃ»t"
 )
 (vvPair
 variable "p"

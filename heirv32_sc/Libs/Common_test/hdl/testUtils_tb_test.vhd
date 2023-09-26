@@ -94,7 +94,7 @@ BEGIN
     print(cr & "Lines");
     test_line := new string'("Hello brave new world!");
     read_first(test_line, result_line);
-    print("  |" & result_line.all & "¦"& test_line.all & "|Hello¦brave new world!|");
+    print("  |" & result_line.all & "Â¦"& test_line.all & "|HelloÂ¦brave new world!|");
 
     wait;
   end process;
