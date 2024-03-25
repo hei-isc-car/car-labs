@@ -269,8 +269,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "rustBubbleSort"
-version = "1.0.0"
+name = "rust_sorting"
+version = "1.1.0"
 dependencies = [
  "native-dialog",
 ]

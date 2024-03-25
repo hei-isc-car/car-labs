@@ -13,9 +13,9 @@ endif
 # GLOBALS                                                                 #
 ###########################################################################
 
-EXEC_NAME = rustBubbleSort
+EXEC_NAME = rust_sorting
 DOCLEAR =
-BUILD_VERSION := 1.0.0
+BUILD_VERSION := 1.1.0
 BUILD_NAME := $(EXEC_NAME)_$(BUILD_VERSION)_$(detected_OS)_$(detected_CPUArch)
 
 ###########################################################################

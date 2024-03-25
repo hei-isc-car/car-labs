@@ -20,8 +20,10 @@ fn main()
   };
   // Read file
   println!("Reading data into memory");
-  let mut vec : Vec<u16>;
-  let mut vec2 : Vec<u16>;
+  let mut vec: Vec<u16>;
+  let mut vec2: Vec<u16>;
+  let mut vec3: Vec<u16>;
+
   {
     let input = File::open(path.into_os_string().into_string().unwrap());
     let buffered = BufReader::new(input.unwrap());
@@ -30,23 +32,29 @@ fn main()
       vec.push(line.unwrap().trim().parse().unwrap())
     }
   }
-  let mut vec2 = vec.clone();
-  
+  vec2 = vec.clone();
+  vec3 = vec.clone();
+
   // Bubble sort (non-opti)
-  println!("Sorting");
+  println!("Sorting with Bubble sort (non-opti)");
   let mut start = Instant::now();
-  fct::bubble_sort(&mut vec, false);
+  _ = fct::bubble_sort(&mut vec, false);
   let mut elapsed = start.elapsed();
-  // Done
   println!(" * Bubble sort (non-opti) done in {:?} [ms]", elapsed.as_millis());
 
   // Bubble sort (opti)
-  println!("Sorting");
+  println!("Sorting with Bubble sort (optimized)");
   start = Instant::now();
-  fct::bubble_sort(&mut vec2, true);
+  _ = fct::bubble_sort(&mut vec2, true);
   elapsed = start.elapsed();
-  // Done
   println!(" * Bubble sort (optimized) done in {:?} [ms]", elapsed.as_millis());
+
+  // Merge Sort
+  println!("Sorting with Merge sort");
+  start = Instant::now();
+  _ = fct::merge_sort(&mut vec3);
+  elapsed = start.elapsed();
+  println!(" * Merge sort done in {:?} [ms]", elapsed.as_millis());
 
   // Done
   let stdin = std::io::stdin();
