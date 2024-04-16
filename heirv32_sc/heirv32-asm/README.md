@@ -49,6 +49,15 @@ Raw values (decimal, 0b, 0x) can be put directly in the ASM file (no instruction
 If called with bin file (in text format, not hex), will disassemble and recreate instructions and transform jumps into labels.
 
 # Changelog
+## 1.2.0 - 16.04.2024
+### Added
+- ISA selection with graphical interface
+### Fixed
+- R instructions decoding error
+### Changed
+- Justfile instead of Makefile
+- Linked CI steps
+
 ## 1.1.5 - 13.06.2023
 ### Added
 - Automatic tests (make test)
@@ -56,7 +65,6 @@ If called with bin file (in text format, not hex), will disassemble and recreate
 ### Fixed
 - **ASM**: spaces within commands were parsed as elements of the command
 - Program stays open in cas of error (mostly when cannot parse the instruction)
-
 
 ## 1.1.4 - 21.04.2023
 ### Fixed
