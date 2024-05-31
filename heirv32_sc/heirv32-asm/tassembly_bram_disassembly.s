@@ -25,6 +25,7 @@ add x2 x2 x9
 sw x2 32(x3)
 beq x2 x2 lb0
 jal x3 lb0
+srli x4 x7 3
 (value) 1500
 (value) 1
 (value) 255

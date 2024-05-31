@@ -13,7 +13,7 @@ addi x5 x0 0
 lb1:
 slt x4 x7 x2
 add x7 x4 x5
-(value) 1076069299
+sub x7 x7 x2
 sw x7 84(x3)
 lw x2 88(x0)
 add x9 x2 x5
@@ -25,6 +25,7 @@ add x2 x2 x9
 sw x2 32(x3)
 beq x2 x2 lb0
 jal x3 lb0
+srli x4 x7 3
 (value) 1500
 (value) 1
 (value) 255

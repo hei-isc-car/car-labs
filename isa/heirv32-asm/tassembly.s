@@ -28,6 +28,7 @@ sw   x2 0x20(x3)
 done:
 beq  x2 x2 main
 jal  x3 main
+srli x4, x7, 3
 
 data:
 1500
