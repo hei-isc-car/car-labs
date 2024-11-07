@@ -102,7 +102,6 @@ PACKAGE testUtils IS
   function sprintf(format : string; value : integer          ) return string;
   function sprintf(format : string; value : real             ) return string;
   function sprintf(format : string; value : std_logic        ) return string;
-  function sprintf(format : string; value : std_ulogic_vector) return string;
   function sprintf(format : string; value : std_logic_vector ) return string;
   function sprintf(format : string; value : unsigned         ) return string;
   function sprintf(format : string; value : signed           ) return string;

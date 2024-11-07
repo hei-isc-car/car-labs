@@ -430,7 +430,7 @@ PACKAGE BODY testUtils IS
   ------------------------------------------------------------------------------
   -- formatted string output: binary integer
   ------------------------------------------------------------------------------
-  function sprintf_b(value: std_ulogic_vector) return string is
+  function sprintf_b(value: std_logic_vector) return string is
     variable out_line : line;
   begin
     for index in value'range loop
@@ -507,7 +507,7 @@ PACKAGE BODY testUtils IS
   ------------------------------------------------------------------------------
   function sprintf_X(
     extend_unsigned : boolean;
-    value           : std_ulogic_vector
+    value           : std_logic_vector
   ) return string is
     variable bit_count : positive;
     variable value_line : line;
@@ -544,7 +544,7 @@ PACKAGE BODY testUtils IS
           when "1101" => write(out_line, 'D');
           when "1110" => write(out_line, 'E');
           when "1111" => write(out_line, 'F');
-          when others => write(out_line, 'X');
+          when others => write(out_line, 0);
         end case;
       end if;
     end loop;
@@ -573,7 +573,7 @@ PACKAGE BODY testUtils IS
       if string_length = 0 then
         string_length := 8;
       end if;
-      return(sprintf_b(std_ulogic_vector(to_signed(value, string_length+1)(string_length-1 downto 0))));
+      return(sprintf_b(std_logic_vector(to_signed(value, string_length+1)(string_length-1 downto 0))));
     elsif format_type.all = "d" then
       return(sprintf_d(right_justify, add_sign, fill_char, string_length, value));
     elsif format_type.all = "f" then
@@ -585,9 +585,9 @@ PACKAGE BODY testUtils IS
       end if;
       string_length := 4*string_length;
       if format_type.all = "X" then
-        return(sprintf_X(false, std_ulogic_vector(to_signed(value, string_length+1)(string_length-1 downto 0))));
+        return(sprintf_X(false, std_logic_vector(to_signed(value, string_length+1)(string_length-1 downto 0))));
       else
-        return(lc(sprintf_X(false, std_ulogic_vector(to_signed(value, string_length+1)(string_length-1 downto 0)))));
+        return(lc(sprintf_X(false, std_logic_vector(to_signed(value, string_length+1)(string_length-1 downto 0)))));
       end if;
     else
       return("Unhandled format type: '" & format_type.all & "'");
@@ -635,58 +635,9 @@ PACKAGE BODY testUtils IS
     if (format_type.all = "b") or (format_type.all = "d") or
        (format_type.all = "X") or (format_type.all = "x") then
       logic_vector(1) := value;
-      return(sprintf(format, std_ulogic_vector(logic_vector)));
+      return(sprintf(format, std_logic_vector(logic_vector)));
     else
       return("Not a std_logic format: '" & format_type.all & "'");
-    end if;
-  end sprintf;
-
-  ------------------------------------------------------------------------------
-  -- std_ulogic_vector
-  ------------------------------------------------------------------------------
-  function sprintf(format : string; value : std_ulogic_vector) return string is
-    variable right_justify : boolean;
-    variable add_sign : boolean;
-    variable fill_char : character;
-    variable bit_string_length : natural;
-    variable point_precision : natural;
-    variable format_type : line;
-  begin
-    get_format_items(format, right_justify, add_sign, fill_char,
-                     bit_string_length, point_precision, format_type);
-    if format_type.all = "b" then
-      return(pad(sprintf_b(value), bit_string_length, fill_char, right_justify));
-    elsif format_type.all = "d" then
-      return(sprintf_d(right_justify, add_sign, fill_char, bit_string_length, to_integer(unsigned(value))));
-    elsif (format_type.all = "X") or (format_type.all = "x") then
-      if format_type.all = "X" then
-        return(pad(sprintf_X(true, value), bit_string_length, fill_char, right_justify));
-      else
-        return(lc(pad(sprintf_X(true, value), bit_string_length, fill_char, right_justify)));
-      end if;
-    else
-      return("Not a std_ulogic_vector format: '" & format_type.all & "'");
-    end if;
-  end sprintf;
-
-  ------------------------------------------------------------------------------
-  -- std_logic_vector
-  ------------------------------------------------------------------------------
-  function sprintf(format : string; value : std_logic_vector) return string is
-    variable right_justify : boolean;
-    variable add_sign : boolean;
-    variable fill_char : character;
-    variable string_length : natural;
-    variable point_precision : natural;
-    variable format_type : line;
-  begin
-    get_format_items(format, right_justify, add_sign, fill_char,
-                     string_length, point_precision, format_type);
-    if (format_type.all = "b") or (format_type.all = "d") or
-       (format_type.all = "X") or (format_type.all = "x") then
-      return(sprintf(format, std_ulogic_vector(value)));
-    else
-      return("Not a std_logic_vector format: '" & format_type.all & "'");
     end if;
   end sprintf;
 
@@ -705,9 +656,9 @@ PACKAGE BODY testUtils IS
                      string_length, point_precision, format_type);
     if (format_type.all = "b") or (format_type.all = "d") or
        (format_type.all = "X") or (format_type.all = "x") then
-      return(sprintf(format, std_ulogic_vector(value)));
+      return(sprintf(format, std_logic_vector(value)));
     else
-      return("Not an unsigned format: '" & format_type.all & "'");
+       return("Not an unsigned format: '" & format_type.all & "'");
     end if;
   end sprintf;
 
@@ -728,7 +679,7 @@ PACKAGE BODY testUtils IS
       fill_char := '1';
     end if;
     if format_type.all = "b" then
-      return(pad(sprintf_b(std_ulogic_vector(value)), bit_string_length, fill_char, right_justify));
+      return(pad(sprintf_b(std_logic_vector(value)), bit_string_length, fill_char, right_justify));
     elsif format_type.all = "d" then
       return(sprintf_d(right_justify, add_sign, fill_char, bit_string_length, to_integer(signed(value))));
     elsif (format_type.all = "X") or (format_type.all = "x") then
@@ -736,9 +687,9 @@ PACKAGE BODY testUtils IS
         fill_char := 'F';
       end if;
       if format_type.all = "X" then
-        return(pad(sprintf_X(true, std_ulogic_vector(value)), bit_string_length, fill_char, right_justify));
+        return(pad(sprintf_X(true, std_logic_vector(value)), bit_string_length, fill_char, right_justify));
       else
-        return(lc(pad(sprintf_X(true, std_ulogic_vector(value)), bit_string_length, fill_char, right_justify)));
+        return(lc(pad(sprintf_X(true, std_logic_vector(value)), bit_string_length, fill_char, right_justify)));
       end if;
     else
       return("Not a signed format: '" & format_type.all & "'");
@@ -793,6 +744,34 @@ PACKAGE BODY testUtils IS
     end if;
   end sprintf;
 
+
+  ------------------------------------------------------------------------------
+  -- std_logic_vector
+  ------------------------------------------------------------------------------
+  function sprintf(format : string; value : std_logic_vector) return string is
+    variable right_justify : boolean;
+    variable add_sign : boolean;
+    variable fill_char : character;
+    variable bit_string_length : natural;
+    variable point_precision : natural;
+    variable format_type : line;
+  begin
+    get_format_items(format, right_justify, add_sign, fill_char,
+                     bit_string_length, point_precision, format_type);
+    if format_type.all = "b" then
+      return(pad(sprintf_b(value), bit_string_length, fill_char, right_justify));
+    elsif format_type.all = "d" then
+      return(sprintf_d(right_justify, add_sign, fill_char, bit_string_length, to_integer(unsigned(value))));
+    elsif (format_type.all = "X") or (format_type.all = "x") then
+      if format_type.all = "X" then
+        return(pad(sprintf_X(true, value), bit_string_length, fill_char, right_justify));
+      else
+        return(lc(pad(sprintf_X(true, value), bit_string_length, fill_char, right_justify)));
+      end if;
+    else
+      return("Not a std_logic_vector format: '" & format_type.all & "'");
+    end if;
+  end sprintf;
 
   --============================================================================
   -- formatted string input
