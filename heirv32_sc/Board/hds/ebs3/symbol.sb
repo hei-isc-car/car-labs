@@ -611,23 +611,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hdl"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\Board\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\Board\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb.info"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb.user"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\Board\\hds"
 )
 (vvPair
 variable "appl"
@@ -647,15 +647,15 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3"
 )
 (vvPair
 variable "d_logical"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3"
 )
 (vvPair
 variable "date"
-value "09.05.2023"
+value "14.01.2025"
 )
 (vvPair
 variable "day"
@@ -667,7 +667,7 @@ value "mardi"
 )
 (vvPair
 variable "dd"
-value "09"
+value "14"
 )
 (vvPair
 variable "entity_name"
@@ -691,11 +691,11 @@ value "symbol"
 )
 (vvPair
 variable "graphical_source_author"
-value "axel.amand"
+value "Axam"
 )
 (vvPair
 variable "graphical_source_date"
-value "09.05.2023"
+value "14.01.2025"
 )
 (vvPair
 variable "graphical_source_group"
@@ -703,11 +703,11 @@ value "UNKNOWN"
 )
 (vvPair
 variable "graphical_source_host"
-value "WE7860"
+value "WE10628"
 )
 (vvPair
 variable "graphical_source_time"
-value "13:50:52"
+value "17:24:01"
 )
 (vvPair
 variable "group"
@@ -715,7 +715,7 @@ value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "WE7860"
+value "WE10628"
 )
 (vvPair
 variable "language"
@@ -735,7 +735,7 @@ value "$SCRATCH_DIR/CAr/Board/work"
 )
 (vvPair
 variable "mm"
-value "05"
+value "01"
 )
 (vvPair
 variable "module_name"
@@ -743,19 +743,19 @@ value "ebs3"
 )
 (vvPair
 variable "month"
-value "mai"
+value "janv."
 )
 (vvPair
 variable "month_long"
-value "mai"
+value "janvier"
 )
 (vvPair
 variable "p"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -783,7 +783,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "13:50:52"
+value "17:24:01"
 )
 (vvPair
 variable "unit"
@@ -791,7 +791,7 @@ value "ebs3"
 )
 (vvPair
 variable "user"
-value "axel.amand"
+value "Axam"
 )
 (vvPair
 variable "version"
@@ -803,11 +803,11 @@ value "symbol"
 )
 (vvPair
 variable "year"
-value "2023"
+value "2025"
 )
 (vvPair
 variable "yy"
-value "23"
+value "25"
 )
 ]
 )
@@ -2059,6 +2059,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 523,0
+lastUid 546,0
 activeModelName "Symbol:CDM"
 )

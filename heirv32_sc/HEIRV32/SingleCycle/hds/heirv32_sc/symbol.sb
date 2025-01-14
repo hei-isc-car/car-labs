@@ -528,23 +528,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hdl"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\heirv32_sc\\symbol.sb.info"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\heirv32_sc\\symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\heirv32_sc\\symbol.sb.user"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\heirv32_sc\\symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds"
 )
 (vvPair
 variable "appl"
@@ -564,27 +564,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\heirv32_sc"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\heirv32_sc"
 )
 (vvPair
 variable "d_logical"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\heirv32_sc"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\heirv32_sc"
 )
 (vvPair
 variable "date"
-value "05.05.2023"
+value "14.01.2025"
 )
 (vvPair
 variable "day"
-value "ven."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "vendredi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "05"
+value "14"
 )
 (vvPair
 variable "entity_name"
@@ -608,11 +608,11 @@ value "symbol"
 )
 (vvPair
 variable "graphical_source_author"
-value "axel.amand"
+value "Axam"
 )
 (vvPair
 variable "graphical_source_date"
-value "05.05.2023"
+value "14.01.2025"
 )
 (vvPair
 variable "graphical_source_group"
@@ -620,11 +620,11 @@ value "UNKNOWN"
 )
 (vvPair
 variable "graphical_source_host"
-value "WE7860"
+value "WE10628"
 )
 (vvPair
 variable "graphical_source_time"
-value "13:43:51"
+value "17:28:06"
 )
 (vvPair
 variable "group"
@@ -632,7 +632,7 @@ value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "WE7860"
+value "WE10628"
 )
 (vvPair
 variable "language"
@@ -652,7 +652,7 @@ value "$SCRATCH_DIR/CAr/HEIRV32/SingleCycle/work"
 )
 (vvPair
 variable "mm"
-value "05"
+value "01"
 )
 (vvPair
 variable "module_name"
@@ -660,19 +660,19 @@ value "heirv32_sc"
 )
 (vvPair
 variable "month"
-value "mai"
+value "janv."
 )
 (vvPair
 variable "month_long"
-value "mai"
+value "janvier"
 )
 (vvPair
 variable "p"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\heirv32_sc\\symbol.sb"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\heirv32_sc\\symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\heirv32_sc\\symbol.sb"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\HEIRV32\\SingleCycle\\hds\\heirv32_sc\\symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -700,7 +700,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "13:43:51"
+value "17:28:06"
 )
 (vvPair
 variable "unit"
@@ -708,7 +708,7 @@ value "heirv32_sc"
 )
 (vvPair
 variable "user"
-value "axel.amand"
+value "Axam"
 )
 (vvPair
 variable "version"
@@ -720,11 +720,11 @@ value "symbol"
 )
 (vvPair
 variable "year"
-value "2023"
+value "2025"
 )
 (vvPair
 variable "yy"
-value "23"
+value "25"
 )
 ]
 )
@@ -1170,7 +1170,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "36200,48000,47600,49000"
+xt "36200,48000,46000,49000"
 st "
 by %user on %dd %month %year
 "
@@ -1793,7 +1793,7 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 5130,0
+lastUid 5222,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol"

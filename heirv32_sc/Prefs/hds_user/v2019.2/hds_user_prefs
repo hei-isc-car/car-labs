@@ -1141,7 +1141,7 @@ second "notepad++.exe \"%(p)\" -n%(l)"
 )
 (pair
 first "Sublime Text"
-second "sublime_text.exe \"%(p)\""
+second "subl.exe \"%(p)\""
 )
 (pair
 first "Textpad 3.2"
@@ -1154,6 +1154,10 @@ second "textpad.exe \"%(p)(%(l))\""
 (pair
 first "UltraEdit"
 second "uedit32.exe \"%(p)/%(l)\""
+)
+(pair
+first "VSCode"
+second "code.exe \"%(p)\""
 )
 (pair
 first "WinEdit"
@@ -1183,7 +1187,7 @@ second "notepad++.exe \"%(p)\" -n%(l) -ro"
 )
 (pair
 first "Sublime Text"
-second "sublime_text.exe \"%(p)\""
+second "subl.exe \"%(p)\""
 )
 (pair
 first "Textpad 3.2"
@@ -1196,6 +1200,10 @@ second "textpad.exe -r \"%(p)(%(l))\""
 (pair
 first "UltraEdit"
 second "uedit32.exe \"%(p)/%(l)\" /r"
+)
+(pair
+first "VSCode"
+second "code.exe \"%(p)\""
 )
 ]
 defaultTextPrintingCmd "Enscript"
@@ -1229,12 +1237,17 @@ verilogArchitectureExtensions [
 verilogDefaultSaveName "untitled"
 vhdlDefaultSaveName "untitled"
 toolbarVisibility [
+"BdWindow:FormatText"
 "AsmWindow:FormatText"
 "FcWindow:FormatText"
 "StdWindow:FormatText"
+"BdWindow:CommentGraphics"
+"SymbolWindow:CommentGraphics"
 "AsmWindow:CommentGraphics"
 "StdWindow:CommentGraphics"
 "FcWindow:CommentGraphics"
+"BdWindow:Appearance"
+"SymbolWindow:Appearance"
 "AsmWindow:Appearance"
 "StdWindow:Appearance"
 "FcWindow:Appearance"
@@ -1242,10 +1255,11 @@ toolbarVisibility [
 "FcTabWindow:Appearance"
 "AsmTabWindow:Appearance"
 "TtTabWindow:Appearance"
+"BdWindow:ArrangeObject"
+"SymbolWindow:ArrangeObject"
 "AsmWindow:ArrangeObject"
 "StdWindow:ArrangeObject"
 "FcWindow:ArrangeObject"
-"BdWindow:ArrangeObject"
 ]
 seperateElseBegincheck 1
 ASICDesigner 1
@@ -1267,9 +1281,13 @@ projectPaths [
 "C:\\work\\git\\Education\\eln\\projects\\Cursor_trial\\Prefs\\cursor.hdp"
 "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\eln_labs.hdp"
 "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\hds.hdp"
-"C:\\work\\edu\\eln\\labo\\eln_labs\\Prefs\\hds.hdp"
-"C:\\Users\\axel.amand\\Desktop\\car-labs\\hdl\\Prefs\\hds.hdp"
-"C:\\dev\\car-labs\\hdl\\Prefs\\hds.hdp"
+"C:\\work\\git\\Education\\eln\\projects\\student\\eln_chrono\\Prefs\\hds.hdp"
+"C:\\work\\git\\Education\\eln\\projects\\solution\\eln_chrono\\Prefs\\hds.hdp"
+"C:\\work\\edu\\eln\\project\\eln_chrono\\Prefs\\hds.hdp"
+"C:\\dev\\eln_chrono\\Prefs\\hds.hdp"
+"C:\\dev\\did-chrono\\Prefs\\hds.hdp"
+"C:\\dev\\DiD\\did-chrono\\Prefs\\hds.hdp"
+"C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\hds.hdp"
 ]
 libMappingsRootDir ""
 teamLibMappingsRootDir ""
@@ -1290,241 +1308,288 @@ exportedDirectories [
 exportStdIncludeRefs 1
 exportStdPackageRefs 1
 )
-printerName "Adobe PDF"
+printerName "\\\\vmenpprint1.hevs.ch\\VS-FOLLOWME-PRN"
 pageSizes [
 (PageSizeInfo
-name "A3"
+name "12\" x 18\""
+type 512
+width 1106
+height 1658
+)
+(PageSizeInfo
+name "11\" x 17\""
+type 17
+width 1013
+height 1566
+)
+(PageSizeInfo
+name "Legal (8,5\" x 14\")"
+type 5
+width 783
+height 1290
+)
+(PageSizeInfo
+name "Letter (8,5\" x 11\")"
+width 783
+height 1013
+)
+(PageSizeInfo
+name "Executive (7,25\"x10,5\")"
+type 7
+width 667
+height 967
+)
+(PageSizeInfo
+name "5,5\" x 8,5\""
+type 6
+width 506
+height 783
+)
+(PageSizeInfo
+name "A3 (297 x 420 mm)"
 type 8
 width 1077
 height 1523
 )
 (PageSizeInfo
-name "A4"
+name "A4 (210 x 297 mm)"
 type 9
 width 761
 height 1077
 )
 (PageSizeInfo
-name "A2"
-type 66
-width 1523
-height 2155
+name "A5 (148 x 210 mm)"
+type 11
+width 538
+height 761
 )
 (PageSizeInfo
-name "Letter"
-type 119
-width 783
-height 1013
+name "A6 (105 x 148 mm)"
+type 70
+width 380
+height 538
 )
 (PageSizeInfo
-name "Legal"
-type 120
-width 783
-height 1290
-)
-(PageSizeInfo
-name "Executive"
-type 121
-width 667
-height 967
-)
-(PageSizeInfo
-name "Ledger"
-type 122
-width 1566
-height 1013
-)
-(PageSizeInfo
-name "11 x 17"
-type 123
-width 1013
-height 1566
-)
-(PageSizeInfo
-name "Screen"
-type 124
-width 599
-height 477
-)
-(PageSizeInfo
-name "ANSI C"
-type 125
-width 1566
-height 2027
-)
-(PageSizeInfo
-name "ANSI D"
-type 126
-width 2027
-height 3133
-)
-(PageSizeInfo
-name "ANSI E"
-type 127
-width 3133
-height 4055
-)
-(PageSizeInfo
-name "ANSI F"
-type 128
-width 2580
-height 3686
-)
-(PageSizeInfo
-name "ARCH A"
-type 129
-width 829
-height 1105
-)
-(PageSizeInfo
-name "ARCH B"
-type 130
-width 1105
-height 1658
-)
-(PageSizeInfo
-name "ARCH C"
-type 131
-width 1658
-height 2211
-)
-(PageSizeInfo
-name "ARCH D"
-type 132
-width 2211
-height 3317
-)
-(PageSizeInfo
-name "ARCH E"
-type 133
-width 3317
-height 4423
-)
-(PageSizeInfo
-name "ARCH E1"
-type 134
-width 2764
-height 3870
-)
-(PageSizeInfo
-name "ARCH E2"
-type 135
-width 2396
-height 3502
-)
-(PageSizeInfo
-name "ARCH E3"
-type 136
-width 2488
-height 3594
-)
-(PageSizeInfo
-name "A1"
-type 137
-width 2155
-height 3051
-)
-(PageSizeInfo
-name "A0"
-type 138
-width 3051
-height 4313
-)
-(PageSizeInfo
-name "Oversize A2"
-type 139
-width 1741
-height 2268
-)
-(PageSizeInfo
-name "Oversize A1"
-type 140
-width 2268
-height 3265
-)
-(PageSizeInfo
-name "Oversize A0"
-type 141
-width 3265
-height 4516
-)
-(PageSizeInfo
-name "ISO B5"
-type 142
-width 638
-height 907
-)
-(PageSizeInfo
-name "ISO B4"
-type 143
-width 907
-height 1281
-)
-(PageSizeInfo
-name "ISO B2"
-type 144
-width 1813
-height 2564
-)
-(PageSizeInfo
-name "ISO B1"
-type 145
-width 2564
-height 3628
-)
-(PageSizeInfo
-name "C5"
-type 146
-width 587
-height 830
-)
-(PageSizeInfo
-name "JIS B4"
-type 147
+name "B4 JIS (257 x 364 mm)"
+type 12
 width 932
 height 1320
 )
 (PageSizeInfo
-name "JIS B3"
-type 148
-width 1320
-height 1868
+name "B5 JIS (182 x 257 mm)"
+type 13
+width 660
+height 932
 )
 (PageSizeInfo
-name "JIS B2"
-type 149
-width 1868
-height 2641
+name "B6 JIS (128 x 182 mm)"
+type 88
+width 464
+height 660
 )
 (PageSizeInfo
-name "JIS B1"
-type 150
-width 2641
-height 3737
+name "8\" x 13\""
+type 518
+width 737
+height 1198
 )
 (PageSizeInfo
-name "JIS B0"
-type 151
-width 3737
-height 5282
+name "8,25\" x 13\""
+type 519
+width 760
+height 1198
 )
 (PageSizeInfo
-name "92 x 92"
-type 152
-width 8478
-height 8478
+name "8,5\" x 13\""
+type 14
+width 783
+height 1198
 )
 (PageSizeInfo
-name "Slide 7.5 x 10"
-type 153
-width 691
-height 921
+name "8.5\" x 13.4\""
+type 551
+width 783
+height 1235
 )
 (PageSizeInfo
-name "Dimension de papier personnalisée PostScript"
-type 32767
-width 761
-height 1077
+name "Com10 Env.(4,125\"x9,5\")"
+type 20
+width 380
+height 875
+)
+(PageSizeInfo
+name "Env.Monar.(3,875\"x7,5\")"
+type 37
+width 357
+height 691
+)
+(PageSizeInfo
+name "Env. DL (110 x 220 mm)"
+type 27
+width 399
+height 798
+)
+(PageSizeInfo
+name "Env. C6 (114 x 162 mm)"
+type 31
+width 413
+height 587
+)
+(PageSizeInfo
+name "Env. C5 (162 x 229 mm)"
+type 28
+width 587
+height 830
+)
+(PageSizeInfo
+name "8K (267 x 390 mm)"
+type 520
+width 968
+height 1415
+)
+(PageSizeInfo
+name "16K (195 x 267 mm)"
+type 521
+width 707
+height 968
+)
+(PageSizeInfo
+name "8,25\" x 14\""
+type 522
+width 760
+height 1290
+)
+(PageSizeInfo
+name "11\" x 14\""
+type 524
+width 1013
+height 1290
+)
+(PageSizeInfo
+name "13\" x 19,2\""
+type 525
+width 1198
+height 1769
+)
+(PageSizeInfo
+name "13\" x 19\""
+type 526
+width 1198
+height 1751
+)
+(PageSizeInfo
+name "12,6\" x 19,2\""
+type 527
+width 1161
+height 1769
+)
+(PageSizeInfo
+name "12,6\" x 18,5\""
+type 528
+width 1161
+height 1704
+)
+(PageSizeInfo
+name "13\" x 18\""
+type 529
+width 1198
+height 1658
+)
+(PageSizeInfo
+name "10\" x 14\""
+type 16
+width 921
+height 1290
+)
+(PageSizeInfo
+name "10\" x 15\""
+type 546
+width 921
+height 1382
+)
+(PageSizeInfo
+name "11\" x 15\""
+type 539
+width 1013
+height 1382
+)
+(PageSizeInfo
+name "SRA3 (320 x 450 mm)"
+type 530
+width 1161
+height 1632
+)
+(PageSizeInfo
+name "SRA4 (225 x 320 mm)"
+type 531
+width 816
+height 1161
+)
+(PageSizeInfo
+name "Format papier personnalisé"
+type 256
+width 783
+height 1013
+)
+(PageSizeInfo
+name "Custom Paper Size1(215,9 x 279,4 mm)"
+type 257
+width 783
+height 1013
+)
+(PageSizeInfo
+name "Custom Paper Size2(215,9 x 279,4 mm)"
+type 258
+width 783
+height 1013
+)
+(PageSizeInfo
+name "Custom Paper Size3(215,9 x 279,4 mm)"
+type 259
+width 783
+height 1013
+)
+(PageSizeInfo
+name "Custom Paper Size4(215,9 x 279,4 mm)"
+type 260
+width 783
+height 1013
+)
+(PageSizeInfo
+name "Custom Paper Size5(215,9 x 279,4 mm)"
+type 261
+width 783
+height 1013
+)
+(PageSizeInfo
+name "Custom Paper Size6(215,9 x 279,4 mm)"
+type 262
+width 783
+height 1013
+)
+(PageSizeInfo
+name "Custom Paper Size7(215,9 x 279,4 mm)"
+type 263
+width 783
+height 1013
+)
+(PageSizeInfo
+name "Custom Paper Size8(215,9 x 279,4 mm)"
+type 264
+width 783
+height 1013
+)
+(PageSizeInfo
+name "Custom Paper Size9(215,9 x 279,4 mm)"
+type 265
+width 783
+height 1013
+)
+(PageSizeInfo
+name "Custom Paper Size10(215,9 x 279,4 mm)"
+type 266
+width 783
+height 1013
 )
 ]
 exportPageSetupInfo (PageSetupInfo
@@ -4239,7 +4304,7 @@ hdsWorkspaceLocation ""
 relativeLibraryRootDir ""
 vmLabelLatestDontAskAgain 0
 vmLabelWorkspaceDontAskAgain 0
-logWindowGeometry "1009x663+417+221"
+logWindowGeometry "622x780+-1463+-96"
 diagramBrowserTabNo 0
 showInsertPortHint 0
 showContentFirstTime 0
@@ -5157,18 +5222,22 @@ theList "HDL Files"
 columns [
 (TreeListVPData_Column
 name "Type"
+displayName ""
 width 140
 )
 (TreeListVPData_Column
 name "Extends"
+displayName ""
 width 100
 )
 (TreeListVPData_Column
 name "Size"
+displayName ""
 width 100
 )
 (TreeListVPData_Column
 name "Time Stamp"
+displayName ""
 width 120
 )
 ]
@@ -6211,73 +6280,28 @@ declHierarchy [
 activeViewpointIdx 0
 )
 (WorkTab
-name "<Empty>"
-showingHierarchy 0
-openLibs [
-]
-declHierarchy [
-]
-activeViewpointIdx 0
-)
-(WorkTab
-name "<Empty>"
-showingHierarchy 0
-openLibs [
-]
-declHierarchy [
-]
-activeViewpointIdx 0
-)
-(WorkTab
-name "<Empty>"
-showingHierarchy 0
-openLibs [
-]
-declHierarchy [
-]
-activeViewpointIdx 0
-)
-(WorkTab
-name "<Empty>"
-showingHierarchy 0
-openLibs [
-]
-declHierarchy [
-]
-activeViewpointIdx 0
-)
-(WorkTab
-name "<Empty>"
-showingHierarchy 0
-openLibs [
-]
-declHierarchy [
-]
-activeViewpointIdx 0
-)
-(WorkTab
-name "<Empty>"
-showingHierarchy 0
-openLibs [
-]
-declHierarchy [
-]
-activeViewpointIdx 0
-)
-(WorkTab
-name "<Empty>"
-showingHierarchy 0
-openLibs [
-]
-declHierarchy [
-]
-activeViewpointIdx 0
-)
-(WorkTab
 name "Board"
 showingHierarchy 0
 openLibs [
 "Board"
+]
+declHierarchy [
+]
+activeViewpointIdx 0
+)
+(WorkTab
+name "Chronometer"
+showingHierarchy 0
+openLibs [
+]
+declHierarchy [
+]
+activeViewpointIdx 0
+)
+(WorkTab
+name "Chronometer_test"
+showingHierarchy 0
+openLibs [
 ]
 declHierarchy [
 ]
@@ -6304,15 +6328,6 @@ declHierarchy [
 activeViewpointIdx 0
 )
 (WorkTab
-name "HEIRV32_MC"
-showingHierarchy 0
-openLibs [
-]
-declHierarchy [
-]
-activeViewpointIdx 0
-)
-(WorkTab
 name "HEIRV32_test"
 showingHierarchy 0
 openLibs [
@@ -6324,6 +6339,12 @@ activeViewpointIdx 0
 )
 ]
 ViewpointsOnOutlookBar [
+"Requirements"
+"Default Viewpoint"
+"Version Management"
+"HDL Files"
+"Logical Objects"
+"All Views"
 ]
 lastActiveViewpoint "Default Viewpoint"
 expandedTemplateNodes [
@@ -6334,30 +6355,26 @@ SplitterClientPrefs [
 (SplitterPreference
 hidden 0
 expand 0
-size 180
+size 190
 )
 ]
 displayHierarchy 0
-xPos 60
-yPos 41
+xPos -1920
+yPos -251
 width 1936
-height 1056
+height 1048
 activeSidePanelTab 2
-activeLibraryTab 4
-sidePanelSize 278
+activeLibraryTab 1
+sidePanelSize 293
 showUnixHiddenFiles 0
-componentBrowserXpos 1248
-componentBrowserYpos 106
-componentBrowserWidth 542
-componentBrowserHeight 650
+componentBrowserXpos -1351
+componentBrowserYpos -251
+componentBrowserWidth 300
+componentBrowserHeight 340
 componentBrowserLibraryNames [
-"HEIRV32"
-"Memory"
-"gates"
 "common"
+"gates"
 "sequential"
-"IO"
-"operators"
 ]
 )
 (SmPreferences
@@ -6441,6 +6458,8 @@ display "State Register Statements"
 status 1
 )
 ]
+vhdlScalarType "std_ulogic"
+vhdlVectorType "std_ulogic_vector"
 clockNameVaSet (VaSet
 )
 clockShapeVaSet (VaSet
@@ -6470,6 +6489,7 @@ recoveryShapeVaSet (VaSet
 vasetType 1
 fg "65535,0,0"
 )
+rstLevel 1
 stateShapeVaSet (VaSet
 vasetType 1
 fg "0,65535,65535"
@@ -6603,7 +6623,7 @@ archConcurrentStatementBlockValueVaSet (VaSet
 )
 outputSignalStatus 1
 internalSignalStatus 2
-showPropsDlgMsg 1
+showPropsDlgMsg 0
 )
 (H2gPreferences
 filesAdded [
@@ -6804,7 +6824,7 @@ cptPortOutName "Out0"
 cptPortInOutName "InOut0"
 cptPortBufferName "Buffer0"
 groupName "Group0"
-cptPortVhdlType "unsigned"
+cptPortVhdlType "std_ulogic"
 cptPortVerilogType "wire"
 cptPortVhdlBounds "(15 DOWNTO 0)"
 cptPortVerilogLb "15"
@@ -6822,7 +6842,6 @@ font "Courier New,8,0"
 )
 order 0
 editSignalScope 4
-promptGenOrderIndicator 0
 showUpdateWhereUsedPrompt 0
 )
 ]

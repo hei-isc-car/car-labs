@@ -257,23 +257,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hdl"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\Board\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\Board\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\struct.bd.info"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\struct.bd.user"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\Board\\hds"
 )
 (vvPair
 variable "appl"
@@ -293,15 +293,15 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3"
 )
 (vvPair
 variable "d_logical"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3"
 )
 (vvPair
 variable "date"
-value "09.05.2023"
+value "14.01.2025"
 )
 (vvPair
 variable "day"
@@ -313,7 +313,7 @@ value "mardi"
 )
 (vvPair
 variable "dd"
-value "09"
+value "14"
 )
 (vvPair
 variable "entity_name"
@@ -337,11 +337,11 @@ value "struct"
 )
 (vvPair
 variable "graphical_source_author"
-value "axel.amand"
+value "Axam"
 )
 (vvPair
 variable "graphical_source_date"
-value "09.05.2023"
+value "14.01.2025"
 )
 (vvPair
 variable "graphical_source_group"
@@ -349,11 +349,11 @@ value "UNKNOWN"
 )
 (vvPair
 variable "graphical_source_host"
-value "WE7860"
+value "WE10628"
 )
 (vvPair
 variable "graphical_source_time"
-value "13:50:52"
+value "17:24:01"
 )
 (vvPair
 variable "group"
@@ -361,7 +361,7 @@ value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "WE7860"
+value "WE10628"
 )
 (vvPair
 variable "language"
@@ -381,7 +381,7 @@ value "$SCRATCH_DIR/CAr/Board/work"
 )
 (vvPair
 variable "mm"
-value "05"
+value "01"
 )
 (vvPair
 variable "module_name"
@@ -389,19 +389,19 @@ value "ebs3"
 )
 (vvPair
 variable "month"
-value "mai"
+value "janv."
 )
 (vvPair
 variable "month_long"
-value "mai"
+value "janvier"
 )
 (vvPair
 variable "p"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\struct.bd"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "C:\\dev\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\struct.bd"
+value "C:\\dev\\CAr\\car-labs\\hdl\\Prefs\\..\\Board\\hds\\ebs3\\struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -429,7 +429,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "13:50:52"
+value "17:24:01"
 )
 (vvPair
 variable "unit"
@@ -437,7 +437,7 @@ value "ebs3"
 )
 (vvPair
 variable "user"
-value "axel.amand"
+value "Axam"
 )
 (vvPair
 variable "version"
@@ -449,11 +449,11 @@ value "struct"
 )
 (vvPair
 variable "year"
-value "2023"
+value "2025"
 )
 (vvPair
 variable "yy"
-value "23"
+value "25"
 )
 ]
 )
@@ -3768,8 +3768,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,9600,35500,10400"
-st "sys_en      : std_ulogic
-"
+st "sys_en      : std_ulogic"
 )
 )
 *109 (Net
@@ -3786,8 +3785,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,20400,39000,21200"
-st "SIGNAL rst_synch   : std_uLogic
-"
+st "SIGNAL rst_synch   : std_uLogic"
 )
 )
 *110 (Net
@@ -3804,8 +3802,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,12400,39000,13200"
-st "SIGNAL D           : std_uLogic
-"
+st "SIGNAL D           : std_uLogic"
 )
 )
 *111 (Net
@@ -3822,8 +3819,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,17200,39000,18000"
-st "SIGNAL falling     : std_ulogic
-"
+st "SIGNAL falling     : std_ulogic"
 )
 )
 *112 (Net
@@ -3841,8 +3837,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,4000,35500,4800"
-st "en_full_n   : std_ulogic
-"
+st "en_full_n   : std_ulogic"
 )
 )
 *113 (Net
@@ -3859,8 +3854,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,16400,39000,17200"
-st "SIGNAL en_step_dbn : std_ulogic
-"
+st "SIGNAL en_step_dbn : std_ulogic"
 )
 )
 *114 (Net
@@ -3877,8 +3871,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,3200,35500,4000"
-st "clk         : std_uLogic
-"
+st "clk         : std_uLogic"
 )
 )
 *115 (Net
@@ -3897,8 +3890,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,7200,46000,8000"
-st "dbg_leds    : std_ulogic_vector(31 DOWNTO 0)
-"
+st "dbg_leds    : std_ulogic_vector(31 DOWNTO 0)"
 )
 )
 *116 (Net
@@ -3915,8 +3907,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,15600,39000,16400"
-st "SIGNAL en_full_dbn : std_ulogic
-"
+st "SIGNAL en_full_dbn : std_ulogic"
 )
 )
 *117 (Net
@@ -3934,8 +3925,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,4800,35500,5600"
-st "en_step_n   : std_ulogic
-"
+st "en_step_n   : std_ulogic"
 )
 )
 *118 (Net
@@ -3952,8 +3942,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,21200,39000,22000"
-st "SIGNAL rst_synch_n : std_uLogic
-"
+st "SIGNAL rst_synch_n : std_uLogic"
 )
 )
 *119 (Net
@@ -3970,8 +3959,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,5600,35500,6400"
-st "rst_n       : std_uLogic
-"
+st "rst_n       : std_uLogic"
 )
 )
 *120 (Net
@@ -3988,8 +3976,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,19600,39000,20400"
-st "SIGNAL rst         : std_uLogic
-"
+st "SIGNAL rst         : std_uLogic"
 )
 )
 *121 (Net
@@ -4006,8 +3993,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,8000,35500,8800"
-st "heartbeat   : std_uLogic
-"
+st "heartbeat   : std_uLogic"
 )
 )
 *122 (Net
@@ -4024,8 +4010,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,13200,39000,14000"
-st "SIGNAL Q           : std_uLogic
-"
+st "SIGNAL Q           : std_uLogic"
 )
 )
 *123 (Net
@@ -4044,8 +4029,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,18800,55000,19600"
-st "SIGNAL lds         : std_ulogic_vector(c_dataWidth-1 DOWNTO 0)
-"
+st "SIGNAL lds         : std_ulogic_vector(c_dataWidth-1 DOWNTO 0)"
 )
 )
 *124 (Net
@@ -4062,8 +4046,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,14000,39000,14800"
-st "SIGNAL T           : std_uLogic
-"
+st "SIGNAL T           : std_uLogic"
 )
 )
 *125 (Net
@@ -4082,8 +4065,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,8800,51500,9600"
-st "leds        : std_ulogic_vector(c_dataWidth-1 DOWNTO 0)
-"
+st "leds        : std_ulogic_vector(c_dataWidth-1 DOWNTO 0)"
 )
 )
 *126 (Net
@@ -4100,8 +4082,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,18000,39000,18800"
-st "SIGNAL falling1    : std_ulogic
-"
+st "SIGNAL falling1    : std_ulogic"
 )
 )
 *127 (Net
@@ -4120,8 +4101,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,2400,50000,3200"
-st "btns        : std_ulogic_vector(c_btnsNb-1 DOWNTO 0)
-"
+st "btns        : std_ulogic_vector(c_btnsNb-1 DOWNTO 0)"
 )
 )
 *128 (Net
@@ -4140,8 +4120,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,14800,53500,15600"
-st "SIGNAL bts         : std_ulogic_vector(c_btnsNb-1 DOWNTO 0)
-"
+st "SIGNAL bts         : std_ulogic_vector(c_btnsNb-1 DOWNTO 0)"
 )
 )
 *129 (SaComponent
@@ -4350,8 +4329,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,6400,35500,7200"
-st "clk_red     : std_uLogic
-"
+st "clk_red     : std_uLogic"
 )
 )
 *137 (PortIoOut
@@ -4655,8 +4633,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,10400,35500,11200"
-st "sys_en_n    : std_uLogic
-"
+st "sys_en_n    : std_uLogic"
 )
 )
 *147 (SaComponent
@@ -4987,8 +4964,7 @@ xt "111000,61800,137500,65000"
 st "g_programFile  = c_programFile     ( string   )  
 g_btnsNb       = c_btnsNb          ( positive )  
 g_dataWidth    = c_dataWidth       ( positive )  
-g_memoryNbBits = c_memoryNbBits    ( positive )  
-"
+g_memoryNbBits = c_memoryNbBits    ( positive )  "
 )
 header ""
 )
@@ -6786,8 +6762,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "-1928,-8,8,1048"
-viewArea "-2000,-2000,177789,92737"
+windowSize "-1928,-259,8,789"
+viewArea "-2057,-2057,172200,91805"
 cachedDiagramExtent "0,0,137500,90000"
 pageSetupInfo (PageSetupInfo
 ptrCmd ""
@@ -6811,7 +6787,7 @@ exportStdPackageRefs 1
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 1934,0
+lastUid 1997,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
