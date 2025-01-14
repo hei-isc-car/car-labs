@@ -6,7 +6,7 @@
 
   Interface:
     -- Output
-    o_value : out unsigned(g_BIT_NB-1 downto 0); -- Output value
+    value : out unsigned(g_BIT_NB-1 downto 0); -- Output value
 
     -- Generics
     g_VALUE : natural := 0;                      -- Value to output
@@ -19,6 +19,6 @@ ARCHITECTURE sim OF logicValueUnsigned IS
 BEGIN
 
   -- Generate the output value
-  o_value <= to_unsigned(g_VALUE, g_BIT_NB);
+  value <= to_unsigned(g_VALUE, g_BIT_NB);
 
 END ARCHITECTURE sim;
