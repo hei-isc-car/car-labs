@@ -1,0 +1,10 @@
+[package]
+name = "rust_sorting_fast"
+version = "1.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+glidesort = "0.1.2"
+native-dialog = "0.6.3"
