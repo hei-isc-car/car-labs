@@ -92,55 +92,76 @@ release-all:
   just release-win-x64
 
 # build and run the mystery program with hyperfine in release mode (default -m 1)
+[unix]
 build-run-mystery mystery="1" args="":
   cargo build --release
   hyperfine --warmup 3 --export-markdown mystery-{{mystery}}.md --show-output --min-runs 10 "build/release/rust_mystery -m {{mystery}} {{args}}"
 
-# build and run alls mystery programs (-m [1..=4]) with hyperfine in release mode
-build-run-mysteries args="":
+# build and run the mystery program with hyperfine in release mode (default -m 1)
+[windows]
+build-run-mystery mystery="1" args="":
   cargo build --release
-  hyperfine --warmup 3 --export-markdown mysteries.md --show-output --min-runs 10 "build/release/rust_mystery -m 1 {{args}}" "build/release/rust_mystery -m 2 {{args}}" "build/release/rust_mystery -m 3 {{args}}" "build/release/rust_mystery -m 4 {{args}}"
+  hyperfine --warmup 3 --export-markdown mystery-{{mystery}}.md --show-output --min-runs 10 "target\release\rust_mystery.exe -m {{mystery}} {{args}}"
 
 # build and run alls mystery programs (-m [1..=4]) with hyperfine in release mode
+[unix]
+build-run-mysteries args="":
+  cargo build --release
+  hyperfine --warmup 3 --export-markdown mysteries.md --show-output --min-runs 10 "build/release/rust_mystery -m 1 {{args}}" "build/release/rust_mystery -m 2 {{args}}" "build/release/rust_mystery -m 3 {{args}}" "build/release/rust_mystery -m 4 {{args}}" "build/release/rust_mystery -m 5 {{args}}"
+
+# build and run alls mystery programs (-m [1..=4]) with hyperfine in release mode
+[windows]
+build-run-mysteries args="":
+  cargo build --release
+  hyperfine --warmup 3 --export-markdown mysteries.md --show-output --min-runs 10 "target\release\rust_mystery.exe -m 1 {{args}}" "target\release\rust_mystery.exe -m 2 {{args}}" "target\release\rust_mystery.exe -m 3 {{args}}" "target\release\rust_mystery.exe -m 4 {{args}}" "target\release\rust_mystery.exe -m 5 {{args}}"
+
+# build and run alls mystery programs (-m [1..=4]) with hyperfine in release mode
+[unix]
 build-run-mysteries-solutions:
   cargo build --release
-  hyperfine --warmup 3 --export-markdown mysteries.md --show-output --min-runs 10 "build/release/rust_mystery -m 1 -v" "build/release/rust_mystery -m 2 -v" "build/release/rust_mystery -m 3 -v" "build/release/rust_mystery -m 4 -v"
+  hyperfine --warmup 3 --export-markdown mysteries.md --show-output --min-runs 10 "build/release/rust_mystery -m 1 -v" "build/release/rust_mystery -m 2 -v" "build/release/rust_mystery -m 3 -v" "build/release/rust_mystery -m 4 -v" "build/release/rust_mystery -m 5 -v"
+
+# build and run alls mystery programs (-m [1..=4]) with hyperfine in release mode
+[windows]
+build-run-mysteries-solutions:
+  cargo build --release
+  hyperfine --warmup 3 --export-markdown mysteries.md --show-output --min-runs 10 "target\release\rust_mystery.exe -m 1 -v" "target\release\rust_mystery.exe -m 2 -v" "target\release\rust_mystery.exe -m 3 -v" "target\release\rust_mystery.exe -m 4 -v" "target\release\rust_mystery.exe -m 5 -v"
 
 # run the mystery program with hyperfine (default -m 1)
 [macos]
 run-mystery mystery="1" args="":
-  hyperfine --warmup 3 --export-markdown mystery-{{mystery}}.md --show-output --min-runs 10 "release/rust_mystery_v1_0_0_Mac_AARCH64 -m {{mystery}} {{args}}"
+  hyperfine --warmup 3 --export-markdown mystery-{{mystery}}.md --show-output --min-runs 10 "release/rust_mystery_{{version}}_Mac_AARCH64 -m {{mystery}} {{args}}"
 
 [linux]
 run-mystery mystery="1" args="":
-  hyperfine --warmup 3 --export-markdown mystery-{{mystery}}.md --show-output --min-runs 10 "release/rust_mystery_v1_0_0_Linux_x64 -m {{mystery}} {{args}}"
+  hyperfine --warmup 3 --export-markdown mystery-{{mystery}}.md --show-output --min-runs 10 "release/rust_mystery_{{version}}_Linux_x64 -m {{mystery}} {{args}}"
 
 [windows]
 run-mystery mystery="1" args="":
-  hyperfine --warmup 3 --export-markdown mystery-{{mystery}}.md --show-output --min-runs 10 "release/rust_mystery_v1_0_0_Windows_x64.exe -m {{mystery}} {{args}}"
+  hyperfine --warmup 3 --export-markdown mystery-{{mystery}}.md --show-output --min-runs 10 "release\rust_mystery_{{version}}_Windows_x64.exe -m {{mystery}} {{args}}"
 
 # runs all mystery programs (-m [1..=4]) with hyperfine in release mode
 [macos]
 run-mysteries args="":
-  hyperfine --warmup 3 --export-markdown mysteries.md --show-output --min-runs 10 "release/rust_mystery_v1_0_0_Mac_AARCH64 -m 1 {{args}}" "release/rust_mystery_v1_0_0_Mac_AARCH64 -m 2 {{args}}" "release/rust_mystery_v1_0_0_Mac_AARCH64 -m 3 {{args}}" "release/rust_mystery_v1_0_0_Mac_AARCH64 -m 4 {{args}}"
+  hyperfine --warmup 3 --export-markdown mysteries.md --show-output --min-runs 10 "release/rust_mystery_{{version}}_Mac_AARCH64 -m 1 {{args}}" "release/rust_mystery_{{version}}_Mac_AARCH64 -m 2 {{args}}" "release/rust_mystery_{{version}}_Mac_AARCH64 -m 3 {{args}}" "release/rust_mystery_{{version}}_Mac_AARCH64 -m 4 {{args}}" "release/rust_mystery_{{version}}_Mac_AARCH64 -m 5 {{args}}"
 
 [linux]
 run-mysteries args="":
-  hyperfine --warmup 3 --export-markdown mysteries.md --show-output --min-runs 10 "release/rust_mystery_v1_0_0_Linux_x64 -m 1 {{args}}" "release/rust_mystery_v1_0_0_Linux_x64 -m 2 {{args}}" "release/rust_mystery_v1_0_0_Linux_x64 -m 3 {{args}}" "release/rust_mystery_v1_0_0_Linux_x64 -m 4 {{args}}"
+  hyperfine --warmup 3 --export-markdown mysteries.md --show-output --min-runs 10 "release/rust_mystery_{{version}}_Linux_x64 -m 1 {{args}}" "release/rust_mystery_{{version}}_Linux_x64 -m 2 {{args}}" "release/rust_mystery_{{version}}_Linux_x64 -m 3 {{args}}" "release/rust_mystery_{{version}}_Linux_x64 -m 4 {{args}}" "release/rust_mystery_{{version}}_Linux_x64 -m 5 {{args}}"
 
 [windows]
 run-mysteries args="":
-  hyperfine --warmup 3 --export-markdown mysteries.md --show-output --min-runs 10 "release/rust_mystery_v1_0_0_Windows_x64.exe -m 1 {{args}}" "release/rust_mystery_v1_0_0_Windows_x64.exe -m 2 {{args}}" "release/rust_mystery_v1_0_0_Windows_x64.exe -m 3 {{args}}" "release/rust_mystery_v1_0_0_Windows_x64.exe -m 4 {{args}}"
+  hyperfine --warmup 3 --export-markdown mysteries.md --show-output --min-runs 10 "release\rust_mystery_{{version}}_Windows_x64.exe -m 1 {{args}}" "release\rust_mystery_{{version}}_Windows_x64.exe -m 2 {{args}}" "release\rust_mystery_{{version}}_Windows_x64.exe -m 3 {{args}}" "release\rust_mystery_{{version}}_Windows_x64.exe -m 4 {{args}}" "release\rust_mystery_{{version}}_Windows_x64.exe -m 5 {{args}}"
 
 # runs all mystery programs (-m [1..=4]) with hyperfine in release mode
 [macos]
 run-mysteries-solutions:
-  hyperfine --warmup 3 --export-markdown mysteries.md --show-output --min-runs 10 "release/rust_mystery_v1_0_0_Mac_AARCH64 -m 1 -v" "release/rust_mystery_v1_0_0_Mac_AARCH64 -m 2 -v" "release/rust_mystery_v1_0_0_Mac_AARCH64 -m 3 -v" "release/rust_mystery_v1_0_0_Mac_AARCH64 -m 4 -v"
+  hyperfine --warmup 3 --export-markdown mysteries.md --show-output --min-runs 10 "release/rust_mystery_{{version}}_Mac_AARCH64 -m 1 -v" "release/rust_mystery_{{version}}_Mac_AARCH64 -m 2 -v" "release/rust_mystery_{{version}}_Mac_AARCH64 -m 3 -v" "release/rust_mystery_{{version}}_Mac_AARCH64 -m 4 -v" "release/rust_mystery_{{version}}_Mac_AARCH64 -m 5 -v"
 
 [linux]
 run-mysteries-solutions:
-  hyperfine --warmup 3 --export-markdown mysteries.md --show-output --min-runs 10 "release/rust_mystery_v1_0_0_Linux_x64 -m 1 -v" "release/rust_mystery_v1_0_0_Linux_x64 -m 2 -v" "release/rust_mystery_v1_0_0_Linux_x64 -m 3 -v" "release/rust_mystery_v1_0_0_Linux_x64 -m 4 -v"
+  hyperfine --warmup 3 --export-markdown mysteries.md --show-output --min-runs 10 "release/rust_mystery_{{version}}_Linux_x64 -m 1 -v" "release/rust_mystery_{{version}}_Linux_x64 -m 2 -v" "release/rust_mystery_{{version}}_Linux_x64 -m 3 -v" "release/rust_mystery_{{version}}_Linux_x64 -m 4 -v" "release/rust_mystery_{{version}}_Linux_x64 -m 5 -v"
 
 [windows]
 run-mysteries-solutions:
-  hyperfine --warmup 3 --export-markdown mysteries.md --show-output --min-runs 10 "release/rust_mystery_v1_0_0_Windows_x64.exe -m 1 -v" "release/rust_mystery_v1_0_0_Windows_x64.exe -m 2 -v" "release/rust_mystery_v1_0_0_Windows_x64.exe -m 3 -v" "release/rust_mystery_v1_0_0_Windows_x64.exe -m 4 -v"
+  hyperfine --warmup 3 --export-markdown mysteries.md --show-output --min-runs 10 "release\rust_mystery_{{version}}_Windows_x64.exe -m 1 -v" "release\rust_mystery_{{version}}_Windows_x64.exe -m 2 -v" "release\rust_mystery_{{version}}_Windows_x64.exe -m 3 -v" "release\rust_mystery_{{version}}_Windows_x64.exe -m 4 -v" "release\rust_mystery_{{version}}_Windows_x64.exe -m 5 -v"
