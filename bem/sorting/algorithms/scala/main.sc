@@ -1,4 +1,4 @@
-object SortOptimization {
+object JDoodle {
     
   // Reads file and create memory array
   def readFile(filename: String): Array[Int] = {
