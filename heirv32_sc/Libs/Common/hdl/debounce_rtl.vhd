@@ -57,7 +57,7 @@ ARCHITECTURE rtl OF debounce IS
 	constant c_INIT_SAMPLE: std_ulogic_vector((g_minConsecutiveStateCount-1) downto 0) := alternating_ones_and_zeros(g_minConsecutiveStateCount);
   -- Delay between two samplings
   -- delay = (g_debounceTime * g_clockFrequency) / g_minConsecutiveStateCount - 1
-  constant DELAY: positive := integer(ceil(((real(g_debounceTime / 1 ps) / 1.0e12) * g_clockFrequency) / real(g_minConsecutiveStateCount))) - 1; 
+  constant DELAY: positive := integer(ceil(((real(g_debounceTime / 1 ns) / 1.0e9) * g_clockFrequency) / real(g_minConsecutiveStateCount))) - 1; 
 
 	-- Holds the state of registered consecutive inputs
 	signal lvec_sample: std_ulogic_vector((g_minConsecutiveStateCount-1) downto 0);
