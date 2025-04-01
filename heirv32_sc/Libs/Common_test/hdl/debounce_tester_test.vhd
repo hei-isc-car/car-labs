@@ -21,7 +21,7 @@ ARCHITECTURE test OF debounce_tester IS
 
   constant clockPeriod     : time := 1.0/g_clockFrequency * 1 sec;
   signal clock_int         : std_ulogic := '1';
-  constant DELAY: positive := integer(ceil(((real(g_debounceTime / 1 ps) / 1.0e12) * g_clockFrequency) / real(g_minConsecutiveStateCount))) - 1;
+  constant DELAY: positive := integer(ceil(((real(g_debounceTime / 1 ns) / 1.0e9) * g_clockFrequency) / real(g_minConsecutiveStateCount))) - 1;
 
   signal testInfo       : string(1 to 40) := (others => ' ');
 

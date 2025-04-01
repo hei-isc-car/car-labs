@@ -77,30 +77,30 @@ libraryRefs [
 ]
 )
 version "32.1"
-appVersion "2019.2 (Build 5)"
+appVersion "2023.4 Built on 6 Oct 2023 at 01:57:26"
 noEmbeddedEditors 1
 model (BlockDiag
 VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\dev\\DiD\\eda-libs\\Prefs\\..\\Common_test\\hdl"
+value "C:\\Users\\remy.borgeat\\Documents\\git\\Courses\\eda-libs\\Prefs\\..\\Common_test\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\dev\\DiD\\eda-libs\\Prefs\\..\\Common_test\\hds"
+value "C:\\Users\\remy.borgeat\\Documents\\git\\Courses\\eda-libs\\Prefs\\..\\Common_test\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\dev\\DiD\\eda-libs\\Prefs\\..\\Common_test\\hds\\debounce_tb\\struct.bd.info"
+value "C:\\Users\\remy.borgeat\\Documents\\git\\Courses\\eda-libs\\Prefs\\..\\Common_test\\hds\\debounce_tb\\struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\dev\\DiD\\eda-libs\\Prefs\\..\\Common_test\\hds\\debounce_tb\\struct.bd.user"
+value "C:\\Users\\remy.borgeat\\Documents\\git\\Courses\\eda-libs\\Prefs\\..\\Common_test\\hds\\debounce_tb\\struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\dev\\DiD\\eda-libs\\Prefs\\..\\Common_test\\hds"
+value "C:\\Users\\remy.borgeat\\Documents\\git\\Courses\\eda-libs\\Prefs\\..\\Common_test\\hds"
 )
 (vvPair
 variable "appl"
@@ -120,27 +120,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\dev\\DiD\\eda-libs\\Prefs\\..\\Common_test\\hds\\debounce_tb"
+value "C:\\Users\\remy.borgeat\\Documents\\git\\Courses\\eda-libs\\Prefs\\..\\Common_test\\hds\\debounce_tb"
 )
 (vvPair
 variable "d_logical"
-value "C:\\dev\\DiD\\eda-libs\\Prefs\\..\\Common_test\\hds\\debounce_tb"
+value "C:\\Users\\remy.borgeat\\Documents\\git\\Courses\\eda-libs\\Prefs\\..\\Common_test\\hds\\debounce_tb"
 )
 (vvPair
 variable "date"
-value "19.01.2024"
+value "31.03.2025"
 )
 (vvPair
 variable "day"
-value "ven."
+value "lun."
 )
 (vvPair
 variable "day_long"
-value "vendredi"
+value "lundi"
 )
 (vvPair
 variable "dd"
-value "19"
+value "31"
 )
 (vvPair
 variable "entity_name"
@@ -164,11 +164,11 @@ value "struct"
 )
 (vvPair
 variable "graphical_source_author"
-value "axel.amand"
+value "remy.borgeat"
 )
 (vvPair
 variable "graphical_source_date"
-value "19.01.2024"
+value "31.03.2025"
 )
 (vvPair
 variable "graphical_source_group"
@@ -176,11 +176,11 @@ value "UNKNOWN"
 )
 (vvPair
 variable "graphical_source_host"
-value "WE7860"
+value "WE10993"
 )
 (vvPair
 variable "graphical_source_time"
-value "10:34:10"
+value "09:10:27"
 )
 (vvPair
 variable "group"
@@ -188,7 +188,7 @@ value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "WE7860"
+value "WE10993"
 )
 (vvPair
 variable "language"
@@ -204,7 +204,7 @@ value "$SCRATCH_DIR/Libraries/Common_test/work"
 )
 (vvPair
 variable "mm"
-value "01"
+value "03"
 )
 (vvPair
 variable "module_name"
@@ -212,19 +212,19 @@ value "debounce_tb"
 )
 (vvPair
 variable "month"
-value "janv."
+value "mars"
 )
 (vvPair
 variable "month_long"
-value "janvier"
+value "mars"
 )
 (vvPair
 variable "p"
-value "C:\\dev\\DiD\\eda-libs\\Prefs\\..\\Common_test\\hds\\debounce_tb\\struct.bd"
+value "C:\\Users\\remy.borgeat\\Documents\\git\\Courses\\eda-libs\\Prefs\\..\\Common_test\\hds\\debounce_tb\\struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "C:\\dev\\DiD\\eda-libs\\Prefs\\..\\Common_test\\hds\\debounce_tb\\struct.bd"
+value "C:\\Users\\remy.borgeat\\Documents\\git\\Courses\\eda-libs\\Prefs\\..\\Common_test\\hds\\debounce_tb\\struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -237,6 +237,10 @@ value "hds"
 (vvPair
 variable "series"
 value "HDL Designer Series"
+)
+(vvPair
+variable "task_QuestaCDCFormalPath"
+value "$QHOME/bin"
 )
 (vvPair
 variable "this_ext"
@@ -252,7 +256,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "10:34:10"
+value "09:10:27"
 )
 (vvPair
 variable "unit"
@@ -260,11 +264,11 @@ value "debounce_tb"
 )
 (vvPair
 variable "user"
-value "axel.amand"
+value "remy.borgeat"
 )
 (vvPair
 variable "version"
-value "2019.2 (Build 5)"
+value "2023.4 Built on 6 Oct 2023 at 01:57:26"
 )
 (vvPair
 variable "view"
@@ -272,11 +276,11 @@ value "struct"
 )
 (vvPair
 variable "year"
-value "2024"
+value "2025"
 )
 (vvPair
 variable "yy"
-value "24"
+value "25"
 )
 ]
 )
@@ -668,8 +672,7 @@ xt "26000,24200,66000,27400"
 st "g_debounceTime             = c_debounceTime                 ( time       )  
 g_minConsecutiveStateCount = c_minConsecutiveStateCount     ( positive   )  
 g_clockFrequency           = c_clockFrequency               ( real       )  
-g_activeState              = c_activeState                  ( std_ulogic )  
-"
+g_activeState              = c_activeState                  ( std_ulogic )  "
 )
 header ""
 )
@@ -972,12 +975,12 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "-1920,0,1,1048"
-viewArea "-1000,-1000,95501,51440"
+windowSize "1920,0,3841,1056"
+viewArea "-1000,-1000,125975,66500"
 cachedDiagramExtent "0,0,66000,48000"
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 563,0
+lastUid 625,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
