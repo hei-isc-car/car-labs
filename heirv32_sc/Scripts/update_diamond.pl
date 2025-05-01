@@ -18,6 +18,9 @@
 #
 ################################################################################
 
+use File::Basename;
+print("Update Diamond Project\n");
+
 $separator = '-' x 79;
 $indent = ' ' x 2;
 $verbose = 1;
@@ -28,8 +31,8 @@ my $designerExe = "$ENV{DIAMOND_HOME}\\bin\\nt64\\pnmain.exe";
 $diamondFileSpec = $ARGV[0];
 $vhdlFileSpec = $ARGV[1];
 $lpfFileSpec = $ARGV[2];
+$vFileSpec = "concatenated.v";
 
-use File::Basename;
 $diamond_dir  = dirname(dirname($vhdlFileSpec)) . '/diamond/'; # get up concat and into diamond
 $projectTitle = basename($diamondFileSpec, ".ldf");
 
@@ -38,6 +41,7 @@ if ($verbose == 1) {
   print "Script Parameters:\n";
   print "  * diamondFileSpec: $diamondFileSpec\n";
   print "  * vhdlFileSpec: $vhdlFileSpec\n";
+  print "  * vFileSpec: $vFileSpec\n";
   print "  * lpfFileSpec: $lpfFileSpec\n";
   print "  * Project title: $projectTitle\n"
 }
@@ -70,40 +74,46 @@ if ( !open(DiamondFile, $diamondFileSpec) ){
 open(workFile, ">$diamondWorkFileSpec");
 while (chop($line = <DiamondFile>)) {
 
-                                                        # replace title
+  # replace title
   if ($line =~ m/<BaliProject.*title=".*"/i) {
     if ($verbose == 1) {print " * Replacing title line\n";}
     $line =~ s/title=".*?"/title="$projectTitle"/;
   }
-                                                        # replace VHDL file spec
+  # replace VHDL file spec
   if ($line =~ m/<Source\sname=".*\.vhd"/i) {
     if ($verbose == 1) {print " * Replacing VHDL line\n";}
     $line =~ s/".*\.vhd"/"$vhdlFileSpec"/;
   }
-                                                         # replace LPF file spec
+  # replace Verilog file spec
+  if ($line =~ m/<Source\sname="(.*\.v)"/i) {
+    if ($verbose == 1) {print " * Replacing Verilog line\n";}
+    $tpath = dirname($vhdlFileSpec) . '/' . basename($1);
+    $line =~ s/".*\.v"/"$tpath"/;
+  }
+  # replace LPF file spec
   if ($line =~ m/<Source\sname=".*\.lpf"/i) {
     if ($verbose == 1) {print " * Replacing LPF line\n";}
     $line =~ s/".*\.lpf"/"$lpfFileSpec"/;
   }
-                                                         # replace RVA file spec
+  # replace RVA file spec
   if ($line =~ m/<Source\sname="(.*\.rva)"/i) {
     if ($verbose == 1) {print " * Replacing RVA line\n";}
     $tpath = $diamond_dir . basename($1);
     $line =~ s/".*\.rva"/"$tpath"/;
   }
-                                                         # replace RVL file spec
+  # replace RVL file spec
   if ($line =~ m/<Source\sname="(.*\.rvl)"/i) {
     if ($verbose == 1) {print " * Replacing RVL line\n";}
     $tpath = $diamond_dir . basename($1);
     $line =~ s/".*\.rvl"/"$tpath"/;
   }
-                                                         # replace XCF file spec
+  # replace XCF file spec
   if ($line =~ m/<Source\sname="(.*\.xcf)"/i) {
     if ($verbose == 1) {print " * Replacing XCF line\n";}
     $tpath = $diamond_dir . basename($1);
     $line =~ s/".*\.xcf"/"$tpath"/;
   }
-                                                         # replace strategy
+  # replace strategy
   if ($line =~ m/<Strategy\sfile="(.*\.sty)"/i) {
     if ($verbose == 1) {print " * Replacing Strategy line\n";}
     $tpath = $diamond_dir . basename($1);

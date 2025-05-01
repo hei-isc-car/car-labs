@@ -97,7 +97,7 @@ while (chop($line = <HDLFile>)) {
   $testline =~ s/--.*//;
 
   # Replace 'use xxx.yyy' with 'use work.yyy', except if xxx is ieee or std or unisim or ecp5u or ice40
-  if ($testline =~ m/use\s.*\.all\s*;/i) {
+  if ($testline =~ m/use\s.*\..*\..*\s*;/i) {
     if ( not($testline =~ m/\bieee\./i) and
 		 not($testline =~ m/\bstd\./i)  and
 		 not($testline =~ m/\bunisim\./i) and

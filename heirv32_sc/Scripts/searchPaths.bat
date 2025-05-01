@@ -153,17 +153,28 @@ if %REQUIRE_LIBERO% == 1 (
 ::
 if %REQUIRE_DIAMOND% == 1 (
   if "%DIAMOND_HOME%" == "" (
-    set DIAMOND_HOME=C:\eda\lscc\diamond\3.12
+    set DIAMOND_HOME=C:\eda\lscc\diamond\3.14
     if not exist !DIAMOND_HOME!\ (
-      set DIAMOND_HOME=C:\tools\eda\lscc\diamond\3.12
+      set DIAMOND_HOME=C:\tools\eda\lscc\diamond\3.14
       if not exist !DIAMOND_HOME!\ (
-        set DIAMOND_HOME=C:\lscc\diamond\3.12
+        set DIAMOND_HOME=C:\lscc\diamond\3.14
         if not exist !DIAMOND_HOME!\ (
-          echo %INDENT:"=%ERROR: No valid installation of Lattice Diamond found - please verify your DIAMOND_HOME settings.
-          pause&goto:eof
+          echo %INDENT:"=%WARNING: No valid installation of Lattice Diamond 3.14 found - looking for older version."
+          set DIAMOND_HOME=C:\eda\lscc\diamond\3.12
+          if not exist !DIAMOND_HOME!\ (
+            set DIAMOND_HOME=C:\tools\eda\lscc\diamond\3.12
+            if not exist !DIAMOND_HOME!\ (
+              set DIAMOND_HOME=C:\lscc\diamond\3.12
+              if not exist !DIAMOND_HOME!\ (
+                echo %INDENT:"=%ERROR: No valid installation of Lattice Diamond found - please verify your DIAMOND_HOME settings.
+                pause&goto:eof
+              )
+            )
+          )
         )
       )
     )
+    
   )
   if exist !DIAMOND_HOME! (
     echo %INDENT:"=%Found Diamond        at !DIAMOND_HOME:"=!
@@ -195,6 +206,32 @@ if %REQUIRE_ICECUBE2% == 1 (
     echo %INDENT:"=%Found IceCube2        at !ICECUBE2_HOME:"=!
   ) else (
     echo %INDENT:"=%ERROR: No valid installation of IceCube2 found - please verify your ICECUBE2_HOME settings.
+    pause
+    goto:eof
+  )
+)
+
+::------------------------------------------------------------------------------
+:: Search Lattice Radiant directory
+::
+if %REQUIRE_RADIANT% == 1 (
+  if "%RADIANT_HOME%" == "" (
+    set RADIANT_HOME=C:\eda\lscc\radiant\2023.2
+    if not exist !RADIANT_HOME!\ (
+      set RADIANT_HOME=C:\tools\eda\lscc\radiant\2023.2
+      if not exist !RADIANT_HOME!\ (
+        set RADIANT_HOME=C:\lscc\radiant\2023.2
+        if not exist !RADIANT_HOME!\ (
+          echo %INDENT:"=%ERROR: No valid installation of Lattice Radiant found - please verify your RADIANT_HOME settings.
+          pause&goto:eof
+        )
+      )
+    )
+  )
+  if exist !RADIANT_HOME! (
+    echo %INDENT:"=%Found Radiant        at !RADIANT_HOME:"=!
+  ) else (
+    echo %INDENT:"=%ERROR: No valid installation of Radiant found - please verify your RADIANT_HOME settings.
     pause
     goto:eof
   )

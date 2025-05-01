@@ -21,6 +21,7 @@ IF NOT DEFINED REQUIRE_ISE SET "REQUIRE_ISE=0"
 IF NOT DEFINED REQUIRE_LIBERO SET "REQUIRE_LIBERO=0"
 IF NOT DEFINED REQUIRE_DIAMOND SET "REQUIRE_DIAMOND=0"
 IF NOT DEFINED REQUIRE_ICECUBE2 SET "REQUIRE_ICECUBE2=0"
+IF NOT DEFINED REQUIRE_RADIANT SET "REQUIRE_RADIANT=0"
 ::
 ::remove trailing backslash
 if %cmd_location:~-1%==\ set design_directory=%design_directory:~0,-1%
@@ -54,6 +55,9 @@ if %REQUIRE_DIAMOND% == 1 (
 )
 if %REQUIRE_ICECUBE2% == 1 (
   set synthesis_subdirectory="Board\icecube2"
+)
+if %REQUIRE_RADIANT% == 1 (
+  set synthesis_subdirectory="Board\radiant"
 )
 set concat_directory="%design_directory:"=%\Board\concat"
 
@@ -170,6 +174,8 @@ set DIAMOND_BASE_DIR=%design_directory:"=%\%synthesis_subdirectory:"=%
 set DIAMOND_WORK_DIR=%scratch_directory:"=%\%DESIGN_NAME:"=%\%synthesis_subdirectory:"=%
 set ICECUBE2_BASE_DIR=%design_directory:"=%\%synthesis_subdirectory:"=%
 set ICECUBE2_WORK_DIR=%scratch_directory:"=%\%DESIGN_NAME:"=%\%synthesis_subdirectory:"=%
+set RADIANT_BASE_DIR=%design_directory:"=%\%synthesis_subdirectory:"=%
+set RADIANT_WORK_DIR=%scratch_directory:"=%\%DESIGN_NAME:"=%\%synthesis_subdirectory:"=%
 
 ::------------------------------------------------------------------------------
 :: Display info
@@ -209,6 +215,11 @@ if !VERBOSE! == 1 (
     echo %INDENT:"=%ICECUBE2_HOME     is %ICECUBE2_HOME:"=%
     echo %INDENT:"=%ICECUBE2_BASE_DIR is %ICECUBE2_BASE_DIR:"=%
     echo %INDENT:"=%ICECUBE2_WORK_DIR is %ICECUBE2_WORK_DIR:"=%
+  )
+  if %REQUIRE_RADIANT% == 1 (
+    echo %INDENT:"=%RADIANT_HOME    is %RADIANT_HOME:"=%
+    echo %INDENT:"=%RADIANT_BASE_DIR is %RADIANT_BASE_DIR:"=%
+    echo %INDENT:"=%RADIANT_WORK_DIR is %RADIANT_WORK_DIR:"=%
   )
   echo.
 )
@@ -267,6 +278,18 @@ if %REQUIRE_ICECUBE2% == 1 (
     )
     mkdir "%ICECUBE2_WORK_DIR%"
     xcopy /S /Y "%ICECUBE2_BASE_DIR%" "%ICECUBE2_WORK_DIR%\"
+  )
+)
+
+if %REQUIRE_RADIANT% == 1 (
+  if exist %RADIANT_BASE_DIR% (
+    echo %RADIANT_BASE_DIR:"=%
+    echo   -> %RADIANT_BASE_DIR:"=%
+    if exist %RADIANT_WORK_DIR% (
+      rmdir /S /Q "%RADIANT_WORK_DIR%"
+    )
+    mkdir "%RADIANT_WORK_DIR%"
+    xcopy /S /Y "%RADIANT_BASE_DIR%" "%RADIANT_WORK_DIR%\"
   )
 )
 
