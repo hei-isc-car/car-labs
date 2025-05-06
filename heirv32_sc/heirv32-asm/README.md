@@ -73,7 +73,13 @@ Run `just utest` and ensure tests are OK before merging in master branch.
 
 # Changelog
 
+## 1.2.3 - 06.05.2025
+### Added
+- Support for `.bin` files in GUI
+
 ## 1.2.2 - 07.03.2025
+### Added
+- Version to the welcome prompt
 ### Changed
 - BIN file now generated on 2**10 operations (filled with 0's) to be directly saved on the SD card for use with HEIRV32 (SD version)
 
