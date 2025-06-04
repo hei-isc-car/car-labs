@@ -57,15 +57,15 @@ wait_end:
 # Any button is pressed if we did not branch
 btns_on:
 	li   leds 0xCC
-	jal  main
+	jal  x0 main
 
 # No buttons are pressed
 btns_off:
 	li   leds 0b00110010
-	jal  main
+	jal  x0 main
 
 
 
 # Life saver ! Keep it
 life_saver:
-	jal  init
+	jal  x0 init
