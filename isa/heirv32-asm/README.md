@@ -73,6 +73,17 @@ Run `just utest` and ensure tests are OK before merging in master branch.
 
 # Changelog
 
+## 1.2.4 - 05.06.2025
+### Added
+- `J` hard-coded jump values checked against being a multiple of 4
+- `I`, `S`, `B` and `J` instructions now checked for immediate values being inbounds (but cannot check for size as values may or not represent signed values)
+- New test for immediate values and bad jumps
+
+### Fixed
+- `jal` without destination register now issues an error
+- Test files updated with enforced `jal` destination register
+- `p` argument, if used without a file path, will not generate a synthesis file anymore
+
 ## 1.2.3 - 06.05.2025
 ### Added
 - Support for `.bin` files in GUI
