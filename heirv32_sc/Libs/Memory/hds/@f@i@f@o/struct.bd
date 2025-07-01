@@ -75,23 +75,23 @@ value " "
 )
 (vvPair
 variable "HDLDir"
-value "C:\\dev\\did-inverter\\Libs\\Memory\\hdl"
+value "C:\\dev\\Clearspace\\clearspace-fpga\\Prefs\\..\\Libs\\Memory\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\dev\\did-inverter\\Libs\\Memory\\hds"
+value "C:\\dev\\Clearspace\\clearspace-fpga\\Prefs\\..\\Libs\\Memory\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\dev\\did-inverter\\Libs\\Memory\\hds\\@f@i@f@o\\struct.bd.info"
+value "C:\\dev\\Clearspace\\clearspace-fpga\\Prefs\\..\\Libs\\Memory\\hds\\@f@i@f@o\\struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\dev\\did-inverter\\Libs\\Memory\\hds\\@f@i@f@o\\struct.bd.user"
+value "C:\\dev\\Clearspace\\clearspace-fpga\\Prefs\\..\\Libs\\Memory\\hds\\@f@i@f@o\\struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\dev\\did-inverter\\Libs\\Memory\\hds"
+value "C:\\dev\\Clearspace\\clearspace-fpga\\Prefs\\..\\Libs\\Memory\\hds"
 )
 (vvPair
 variable "appl"
@@ -111,27 +111,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\dev\\did-inverter\\Libs\\Memory\\hds\\@f@i@f@o"
+value "C:\\dev\\Clearspace\\clearspace-fpga\\Prefs\\..\\Libs\\Memory\\hds\\@f@i@f@o"
 )
 (vvPair
 variable "d_logical"
-value "C:\\dev\\did-inverter\\Libs\\Memory\\hds\\FIFO"
+value "C:\\dev\\Clearspace\\clearspace-fpga\\Prefs\\..\\Libs\\Memory\\hds\\FIFO"
 )
 (vvPair
 variable "date"
-value "04.04.2023"
+value "15.05.2025"
 )
 (vvPair
 variable "day"
-value "mar."
+value "jeu."
 )
 (vvPair
 variable "day_long"
-value "mardi"
+value "jeudi"
 )
 (vvPair
 variable "dd"
-value "04"
+value "15"
 )
 (vvPair
 variable "designName"
@@ -159,11 +159,11 @@ value "struct"
 )
 (vvPair
 variable "graphical_source_author"
-value "axel.amand"
+value "Axam"
 )
 (vvPair
 variable "graphical_source_date"
-value "04.04.2023"
+value "15.05.2025"
 )
 (vvPair
 variable "graphical_source_group"
@@ -171,11 +171,11 @@ value "UNKNOWN"
 )
 (vvPair
 variable "graphical_source_host"
-value "WE7860"
+value "WE10628"
 )
 (vvPair
 variable "graphical_source_time"
-value "13:26:06"
+value "14:57:55"
 )
 (vvPair
 variable "group"
@@ -183,7 +183,7 @@ value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "WE7860"
+value "WE10628"
 )
 (vvPair
 variable "language"
@@ -195,11 +195,11 @@ value "Memory"
 )
 (vvPair
 variable "library_downstream_ModelSimCompiler"
-value "$SCRATCH_DIR/Libraries/Memory/work"
+value "$HDS_PROJECT_DIR/../Libs/Memory/work"
 )
 (vvPair
 variable "mm"
-value "04"
+value "05"
 )
 (vvPair
 variable "module_name"
@@ -207,19 +207,19 @@ value "FIFO"
 )
 (vvPair
 variable "month"
-value "avr."
+value "mai"
 )
 (vvPair
 variable "month_long"
-value "avril"
+value "mai"
 )
 (vvPair
 variable "p"
-value "C:\\dev\\did-inverter\\Libs\\Memory\\hds\\@f@i@f@o\\struct.bd"
+value "C:\\dev\\Clearspace\\clearspace-fpga\\Prefs\\..\\Libs\\Memory\\hds\\@f@i@f@o\\struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "C:\\dev\\did-inverter\\Libs\\Memory\\hds\\FIFO\\struct.bd"
+value "C:\\dev\\Clearspace\\clearspace-fpga\\Prefs\\..\\Libs\\Memory\\hds\\FIFO\\struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -291,7 +291,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "13:26:06"
+value "14:57:55"
 )
 (vvPair
 variable "unit"
@@ -299,7 +299,7 @@ value "FIFO"
 )
 (vvPair
 variable "user"
-value "axel.amand"
+value "Axam"
 )
 (vvPair
 variable "version"
@@ -311,11 +311,11 @@ value "struct"
 )
 (vvPair
 variable "year"
-value "2023"
+value "2025"
 )
 (vvPair
 variable "yy"
-value "23"
+value "25"
 )
 ]
 )
@@ -2863,8 +2863,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "-8,-8,1928,1048"
-viewArea "-4441,-1433,123006,67813"
+windowSize "-1928,-259,8,789"
+viewArea "-4400,-1400,123700,65500"
 cachedDiagramExtent "-3000,0,94000,66000"
 pageSetupInfo (PageSetupInfo
 ptrCmd ""
@@ -2889,7 +2889,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-3000,0"
-lastUid 647,0
+lastUid 674,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
