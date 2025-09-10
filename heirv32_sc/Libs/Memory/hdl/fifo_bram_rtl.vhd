@@ -9,6 +9,8 @@ architecture RTL of FIFO_bram is
   signal writeCounter: unsigned(requiredBitNb(depth-1)-1 downto 0);
   signal readCounter: unsigned(writeCounter'range);
   signal memoryArray: memory_type;
+  attribute syn_ramstyle : string;
+  attribute syn_ramstyle of memoryArray : signal is "no_rw_check";
 
   type fifoStateType is (
     sEmpty, sFull,
