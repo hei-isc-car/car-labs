@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1681223158"/>
+            <Task name="Promgen" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1681223113">
+            <Task name="Map" build_result="2" update_result="0" update_time="1681223113"/>
+            <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1681223147">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1681223147"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1681223153"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1681223107">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1681223107"/>
+        </Milestone>
+        <Milestone name="Translate" build_result="2" build_time="1681223107">
+            <Task name="Translate" build_result="2" update_result="0" update_time="1681223107"/>
+        </Milestone>
+        <Report name="MyProjectTitle_toplevel.bgn" last_build_time="1681223158" last_build_size="4448"/>
+        <Report name="MyProjectTitle_toplevel.bit" last_build_time="1681223158" last_build_size="582682"/>
+        <Report name="MyProjectTitle_toplevel.edi" last_build_time="1681223104" last_build_size="830783"/>
+        <Report name="MyProjectTitle_toplevel.ncd" last_build_time="1681223147" last_build_size="1006848"/>
+        <Report name="MyProjectTitle_toplevel.ngd" last_build_time="1681223107" last_build_size="693192"/>
+        <Report name="MyProjectTitle_toplevel.twr" last_build_time="1681223153" last_build_size="69636"/>
+        <Report name="MyProjectTitle_toplevel_map.ncd" last_build_time="1681223113" last_build_size="686173"/>
+    </Strategy>
+</BuildStatus>

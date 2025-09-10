@@ -1,0 +1,52 @@
+[Concat]
+Board = $HDS_PROJECT_DIR/../Board/concat
+HEIRV32 = $HDS_PROJECT_DIR/../Board/concat
+HEIRV32_SC = $HDS_PROJECT_DIR/../Board/concat
+HEIRV32_test = $HDS_PROJECT_DIR/../Board/concat
+[ModelSim]
+Board = $SCRATCH_DIR/CAr/Board/work
+common = $SCRATCH_DIR/CAr/Libraries/Common/work
+Common_test = $SCRATCH_DIR/CAr/Libraries/Common_test/work
+gates = $SCRATCH_DIR/CAr/Libraries/Gates/work
+HEIRV32 = $SCRATCH_DIR/CAr/HEIRV32/work
+HEIRV32_SC = $SCRATCH_DIR/CAr/HEIRV32/SingleCycle/work
+HEIRV32_test = $SCRATCH_DIR/CAr/HEIRV32_test/work
+IO = $SCRATCH_DIR/CAr/Libraries/IO/work
+Memory = $SCRATCH_DIR/CAr/Libraries/Memory/work
+Memory_test = $SCRATCH_DIR/CAr/Libraries/Memory_test/work
+operators = $SCRATCH_DIR/CAr/Libraries/Operators/work
+sequential = $SCRATCH_DIR/CAr/Libraries/Sequential/work
+[hdl]
+Board = $HDS_PROJECT_DIR/../Board/hdl
+common = $HEI_LIBS_DIR/Common/hdl
+Common_test = $HEI_LIBS_DIR/Common_test/hdl
+gates = $HEI_LIBS_DIR/Gates/hdl
+HEIRV32 = $HDS_PROJECT_DIR/../HEIRV32/hdl
+HEIRV32_SC = $HDS_PROJECT_DIR/../HEIRV32/SingleCycle/hdl
+HEIRV32_test = $HDS_PROJECT_DIR/../HEIRV32_test/hdl
+IO = $HEI_LIBS_DIR/IO/hdl
+Memory = $HEI_LIBS_DIR/Memory/hdl
+Memory_test = $HEI_LIBS_DIR/Memory_test/hdl
+operators = $HEI_LIBS_DIR/Operators/hdl
+sequential = $HEI_LIBS_DIR/Sequential/hdl
+[hds]
+Board = $HDS_PROJECT_DIR/../Board/hds
+common = $HEI_LIBS_DIR/Common/hds
+Common_test = $HEI_LIBS_DIR/Common_test/hds
+gates = $HEI_LIBS_DIR/Gates/hds
+HEIRV32 = $HDS_PROJECT_DIR/../HEIRV32/hds
+HEIRV32_SC = $HDS_PROJECT_DIR/../HEIRV32/SingleCycle/hds
+HEIRV32_test = $HDS_PROJECT_DIR/../HEIRV32_test/hds
+IO = $HEI_LIBS_DIR/IO/hds
+Memory = $HEI_LIBS_DIR/Memory/hds
+Memory_test = $HEI_LIBS_DIR/Memory_test/hds
+operators = $HEI_LIBS_DIR/Operators/hds
+sequential = $HEI_LIBS_DIR/Sequential/hds
+[hds_settings]
+design_root = Board.ebs3(struct)ebs3/struct.bd
+[hds_standard_library]
+ieee = $HDS_HOME/hdl_libs/ieee
+[library_type]
+ieee = standard
+[shared]
+others = $HDS_TEAM_HOME/shared.hdp

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="MyProjectTitle" device="LFE5U-25F-6BG256C" default_implementation="toplevel">
+    <Options/>
+    <Implementation title="toplevel" dir="toplevel" description="toplevel" synthesis="synplify" default_strategy="Strategy">
+        <Source name="../concat/car-labs.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="../concat/car-labs.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="reveal_analyze.rva" type="Reveal Analyzer Project File" type_short="RVA">
+            <Options/>
+        </Source>
+        <Source name="reveal_config.rvl" type="Reveal" type_short="Reveal" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="programmer.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy" file="strategy.sty"/>
+</BaliProject>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--Axam - 24.05.2023-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <br/>
+    <p class="header">Bubble Sort Viewer</p>
+
+    <br/>
+
+    <div class="center">
+        <button class="btn" id="sortStart">Sort (non-optimized)</button>
+        <button class="btn" id="sortOptiStart">Sort (optimized)</button>
+        <button class="btn" id="sortGenerateKnown">Generate known data</button>
+        <button class="btn" id="sortGenerate">Generate random data</button>
+    </div>
+
+    <br/><br/>
+
+    <div class="center">
+        "Which elements to swap" delay : 
+        <input type="range" min="1" max="700" value="0" id="rangeSwapShowDelay">
+        <label id="textSwapShowDelay"></label>
+        <br/><br/>
+        Swap animation delay : 
+        <input type="range" min="1" max="500" value="0" id="rangeSwapAnimDelay">
+        <label id="textSwapAnimDelay"></label>
+    </div>
+    
+    <br/>
+
+    <div id="array"></div>
+
+    <br/><hr><br/>
+
+    <p class="header">Performance test</p>
+
+    <br/>
+    
+    <div class="center">
+        <button class="btn" id="sortPerf">Perform test on current data</button>
+        <button class="btn" id="sortPerfOpti">Perform test on current data (optimized)</button>
+        <br/><br/>
+        <input type="file" id="bubblePerfFileInput" accept=".txt"/>
+        <textarea readonly id="taBubblePerfValues"></textarea>
+        <label style="margin-left: 2.5em;" id="textBubblePerf">Test not ran yet ...</label>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

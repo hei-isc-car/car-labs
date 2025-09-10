@@ -1,0 +1,55 @@
+version "8.0"
+RenoirTeamPreferences [
+(BaseTeamPreferences
+version "1.1"
+verConcat 0
+ttDGProps [
+]
+fcDGProps [
+]
+smDGProps [
+]
+asmDGProps [
+]
+bdDGProps [
+]
+syDGProps [
+]
+)
+(VersionControlTeamPreferences
+version "1.1"
+VMPlugin ""
+VMRepository "$HDS_HOME/examples/hds_scratch/hds_repository"
+VMRcsHdsRepository "$HDS_HOME/examples/hds_scratch/hds_repository/%(library)/hds_vm"
+VMRcsHdlRepository "$HDS_HOME/examples/hds_scratch/hds_repository/%(library)/hdl_vm"
+VMCvsHdsRepository "$HDS_HOME/examples/hds_scratch/hds_repository/hds_vm"
+VMCvsHdlRepository "$HDS_HOME/examples/hds_scratch/hds_repository/hdl_vm"
+VMCVSmkIIHdsRepository "$HDS_HOME/examples/hds_scratch/hds_repository/hds_vm"
+VMCVSmkIIHdlRepository "$HDS_HOME/examples/hds_scratch/hds_repository"
+VMVssHdsRepository "$/hds_scratch/hds_repository/%(library)/hds_vm"
+VMVssHdlRepository "$/hds_scratch/hds_repository/%(library)/hdl_vm"
+VMDsHdsRepository "sync://<host_name>:<port>/hds_scratch/hds_repository/hds_vm"
+VMDsHdlRepository "sync://<host_name>:<port>/hds_scratch/hds_repository/hdl_vm"
+VMPvcsHdsRepository "$HDS_HOME/examples/hds_scratch/hds_repository/hds_vm"
+VMPvcsHdlRepository "$HDS_HOME/examples/hds_scratch/hds_repository/hdl_vm"
+VMSvnHdlRepository ""
+VMDefaultView 1
+VMCurrentDesignHierarchyOnly 0
+VMUserData 1
+VMGeneratedHDL 0
+VMVerboseMode 0
+VMAlwaysEmpty 0
+VMSetTZ 1
+VMSymbol 1
+VMCurrentDesignHierarchy 0
+VMMultipleRepositoryMode 0
+VMSnapshotViewMode 0
+backupNameClashes 1
+clearCaseMaster 0
+)
+(CustomizeTeamPreferences
+version "1.1"
+FileTypes [
+]
+)
+]
