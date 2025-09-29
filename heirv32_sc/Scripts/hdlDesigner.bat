@@ -18,6 +18,7 @@ IF NOT DEFINED REQUIRE_LIBS SET "REQUIRE_LIBS=0"
 IF NOT DEFINED REQUIRE_HDS SET "REQUIRE_HDS=0"
 IF NOT DEFINED REQUIRE_MODELSIM SET "REQUIRE_MODELSIM=0"
 IF NOT DEFINED REQUIRE_ISE SET "REQUIRE_ISE=0"
+IF NOT DEFINED REQUIRE_VIVADO SET "REQUIRE_VIVADO=0"
 IF NOT DEFINED REQUIRE_LIBERO SET "REQUIRE_LIBERO=0"
 IF NOT DEFINED REQUIRE_DIAMOND SET "REQUIRE_DIAMOND=0"
 IF NOT DEFINED REQUIRE_ICECUBE2 SET "REQUIRE_ICECUBE2=0"
@@ -32,6 +33,11 @@ set hpd_name=hds
 if "%ISE_VERSION%"== "" (
   set ISE_VERSION=14.7
 )
+
+if "%VIVADO_VERSION%"== "" (
+  set VIVADO_VERSION=2023.2
+)
+
 set prefs_directory="%design_directory:"=%\Prefs"
 set library_matchings="%hpd_name%.hdp"
 set simulation_directory="%design_directory:"=%\Simulation"
@@ -46,6 +52,9 @@ if "%SCRATCH_DIR%" == "" (
 set synthesis_subdirectory=""
 if %REQUIRE_ISE% == 1 (
   set synthesis_subdirectory="Board\ise"
+)
+if %REQUIRE_VIVADO% == 1 (
+  set synthesis_subdirectory="Board\vivado"
 )
 if %REQUIRE_LIBERO% == 1 (
   set synthesis_subdirectory="Board\libero"
@@ -181,6 +190,8 @@ set SCRATCH_DIR=%scratch_directory:"=%
 set CONCAT_DIR=%concat_directory:"=%
 set ISE_BASE_DIR=%design_directory:"=%\%synthesis_subdirectory:"=%
 set ISE_WORK_DIR=%scratch_directory:"=%\%DESIGN_NAME:"=%\%synthesis_subdirectory:"=%
+set VIVADO_BASE_DIR=%design_directory:"=%\%synthesis_subdirectory:"=%
+set VIVADO_WORK_DIR=%scratch_directory:"=%\%DESIGN_NAME:"=%\%synthesis_subdirectory:"=%
 set LIBERO_BASE_DIR=%design_directory:"=%\%synthesis_subdirectory:"=%
 set LIBERO_WORK_DIR=%scratch_directory:"=%\%DESIGN_NAME:"=%\%synthesis_subdirectory:"=%
 set DIAMOND_BASE_DIR=%design_directory:"=%\%synthesis_subdirectory:"=%
@@ -213,6 +224,11 @@ if !VERBOSE! == 1 (
     echo %INDENT:"=%ISE_HOME        is %ISE_HOME:"=%
     echo %INDENT:"=%ISE_BASE_DIR    is %ISE_BASE_DIR:"=%
     echo %INDENT:"=%ISE_WORK_DIR    is %ISE_WORK_DIR:"=%
+  )
+  if %REQUIRE_VIVADO% == 1 (
+    echo %INDENT:"=%VIVADO_HOME     is %VIVADO_HOME:"=%
+    echo %INDENT:"=%VIVADO_BASE_DIR is %VIVADO_BASE_DIR:"=%
+    echo %INDENT:"=%VIVADO_WORK_DIR is %VIVADO_WORK_DIR:"=%
   )
   if %REQUIRE_LIBERO% == 1 (
     echo %INDENT:"=%LIBERO_HOME     is %LIBERO_HOME:"=%
@@ -257,7 +273,17 @@ if %REQUIRE_ISE% == 1 (
     xcopy /Y "%ISE_BASE_DIR%" "%ISE_WORK_DIR%\"
   )
 )
-
+if %REQUIRE_VIVADO% == 1 (
+  if exist %VIVADO_BASE_DIR% (
+    echo %VIVADO_BASE_DIR:"=%
+    echo   -> %VIVADO_WORK_DIR:"=%
+    if exist %VIVADO_WORK_DIR% (
+      rmdir /S /Q "%VIVADO_WORK_DIR%"
+    )
+    mkdir "%VIVADO_WORK_DIR%"
+    xcopy /Y "%VIVADO_BASE_DIR%" "%VIVADO_WORK_DIR%\"
+  )
+)
 if %REQUIRE_LIBERO% == 1 (
   if exist %LIBERO_BASE_DIR% (
     echo %LIBERO_BASE_DIR:"=%

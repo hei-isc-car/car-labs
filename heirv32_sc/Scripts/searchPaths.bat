@@ -126,6 +126,33 @@ if !REQUIRE_ISE! == 1 (
 )
 
 ::------------------------------------------------------------------------------
+:: Search Xilinx Vivado directory
+::
+if %REQUIRE_VIVADO% == 1 (
+  if "%VIVADO_HOME%" == "" (
+    set VIVADO_HOME=C:\eda\Xilinx\Vivado\2023.2\
+    if not exist !VIVADO_HOME!\ (
+      set VIVADO_HOME=C:\tools\eda\Xilinx\Vivado\$!VIVADO_VERSION:"=!\
+
+      if not exist !VIVADO_HOME!\ (
+        set VIVADO_HOME=\opt\EDA\Xilinx\Vivado\$!VIVADO_VERSION:"=!\
+        if not exist !VIVADO_HOME!\ (
+          echo %INDENT:"=%ERROR: No valid installation of Vivado found - please verify your VIVADO_HOME settings.
+          pause&goto:eof
+        )
+      )
+    )
+  )
+  if exist !VIVADO_HOME! (
+    echo %INDENT:"=%Found Vivado        at !VIVADO_HOME:"=!
+  ) else (
+    echo %INDENT:"=%ERROR: No valid installation of Vivado found - please verify your VIVADO_HOME settings.
+    pause
+    goto:eof
+  )
+)
+
+::------------------------------------------------------------------------------
 :: Search Microsemi Libero directory
 ::
 if %REQUIRE_LIBERO% == 1 (
