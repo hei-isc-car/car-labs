@@ -1,0 +1,98 @@
+version "1.1"
+HDSTool (HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "ModelSim Compile"
+bitmap "$HDS_HOME\\resources\\bitmaps\\tools/tool_modelsim_compile.bmp"
+hasBitmap 1
+tooltip "Runs ModelSim compilation"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+""
+"captureOutput"
+"0"
+"customPrompt"
+""
+"initialDir"
+""
+"promptForRunSettings"
+"0"
+"runMethod"
+"gui"
+"runnableObject"
+"ModelSimCompiler"
+"runnableObjectType"
+"tcl_plugin"
+"useViewSpecific"
+"0"
+]
+)
+"TaskSetting"
+(SettingsMap
+settingsMap [
+"64bit"
+"0"
+"compAlways"
+"0"
+"covSwitch"
+""
+"coverNoSub"
+""
+"dontAskAgain"
+"0"
+"enableMFCU"
+"1"
+"excludePSL"
+"0"
+"exepath"
+"$MODELSIM_HOME"
+"logFile"
+""
+"logicalLib"
+"1"
+"mapAllLib"
+"0"
+"mapQuartusIPs"
+"1"
+"masterCov"
+"0"
+"peSe"
+"EE"
+"prevOnly"
+"0"
+"quartusSimDir"
+"$HDS_PROJECT_DIR/QuartusIPSimLibs"
+"replayScriptPath"
+""
+"saveReplayScript"
+"0"
+"server"
+""
+"showCmd"
+"0"
+"transcript"
+"1"
+"useFlatLibrary"
+"0"
+"useRemote"
+"0"
+"useShortName"
+"0"
+"vhdlSwitches"
+" -nologo"
+"vlogSwitches"
+" -nologo"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 1
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+)

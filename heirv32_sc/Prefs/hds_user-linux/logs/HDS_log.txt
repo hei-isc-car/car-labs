@@ -1,0 +1,134 @@
+Internal Error: Unexpected signal 'Terminated' encountered
+Information about the problem which has just occurred will follow
+this message and will be placed in file /home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/hds_user-linux/logs/HDS_log.txt
+Once the application has terminated, please forward this information
+to customer support - for details please re-invoke the application
+and choose the menu item: Help> Support> How To Obtain Support
+Application HDL Designer version 2019.3 (Build 4)
+Created on 09/14/20 16:22:02
+HDL Designer Series
+HDL Designer
+Version 2019.3 (Build 4) 
+Built on Tue Jul 16 2019 at 2:33
+Verilog parser dynamic library version 5.1.42.f ( 2019/07/16 00:55:40 )
+Running on Linux 4.15.0-111-generic #112-Ubuntu SMP Thu Jul 9 20:32:34 UTC 2020 x86_64
+
+Loading HDS Project file via Environment variable $HDS_LIBS /home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/hds.hdp
+Loading prefs env variable USER_HOME /home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/hds_user-linux
+Loading teamprefs env variable TEAM_HOME /home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/hds_team
+Loading user Task files from '/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/hds_user-linux/v2019.3/tasks'.
+Loading team Task files from '/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/hds_team/v2019.3/tasks'.
+
+HDS_HOME is set to : /usr/opt/HDS
+
+Environment variables:
+HDS_HOME set to /usr/opt/HDS
+HDS_USER_HOME set to /home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/hds_user-linux
+HDS_TEAM_HOME set to /home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/hds_team
+HDS_LIBS set to /home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/hds.hdp
+HDS_PORT set to Aphelia:39149
+10 events recorded:
+ZoomOut
+ZoomOut
+ViewAll
+RunTaskOpUSER:ModelSim Flow
+RunTaskOpUSER:ModelSim FlowThruComponents
+RunTaskOpUSER:ModelSim Flow
+RunTaskOpUSER:ModelSim FlowThruComponents
+ExecuteAction
+AddToWave
+ExecuteAction
+
+(0) 31ed6e5
+(1) 31ed872
+(2) 7f18e5e32fd0
+(3) 7f18e5f08cc4
+(4) 7f18e9b55e7a
+(5) 7f18e9b57265
+(6) 4afa23e
+(7) 4afa1b5
+(8) 1832e32
+(9) 1831558
+(10) 4b5bc8e
+(11) 7f18e5e15b97
+(12) 18303f9
+/usr/opt/HDS/bin/hdldesigner(_ZN16TracebackHandler6reportEv+0x35)[0x31ed6e5]
+/usr/opt/HDS/bin/hdldesigner(_ZN16TracebackHandler13signalHandlerEi+0x110)[0x31ed872]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3efd0)[0x7f18e5e32fd0]
+/lib/x86_64-linux-gnu/libc.so.6(__poll+0x14)[0x7f18e5f08cc4]
+/usr/lib/x86_64-linux-gnu/libXt.so.6(_XtWaitForSomething+0x47a)[0x7f18e9b55e7a]
+/usr/lib/x86_64-linux-gnu/libXt.so.6(XtAppNextEvent+0xe5)[0x7f18e9b57265]
+/usr/opt/HDS/bin/hdldesigner(_ZN9VNotifier11messageLoopE10LoopReason+0x72)[0x4afa23e]
+/usr/opt/HDS/bin/hdldesigner(_ZN9VNotifier5startEv+0x31)[0x4afa1b5]
+/usr/opt/HDS/bin/hdldesigner(_ZN20Gen_RenoirAppStarterC1Ev+0x520)[0x1832e32]
+/usr/opt/HDS/bin/hdldesigner(_Z6cvmainiPPc+0xae)[0x1831558]
+/usr/opt/HDS/bin/hdldesigner(main+0x956)[0x4b5bc8e]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7)[0x7f18e5e15b97]
+/usr/opt/HDS/bin/hdldesigner[0x18303f9]
+Internal Error: Unexpected signal 'Terminated' encountered
+Information about the problem which has just occurred will follow
+this message and will be placed in file /home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/hds_user-linux/logs/HDS_log.txt
+Once the application has terminated, please forward this information
+to customer support - for details please re-invoke the application
+and choose the menu item: Help> Support> How To Obtain Support
+Application HDL Designer version 2019.3 (Build 4)
+Created on 09/28/20 12:00:39
+HDL Designer Series
+HDL Designer
+Version 2019.3 (Build 4) 
+Built on Tue Jul 16 2019 at 2:33
+Verilog parser dynamic library version 5.1.42.f ( 2019/07/16 00:55:40 )
+Running on Linux 4.15.0-111-generic #112-Ubuntu SMP Thu Jul 9 20:32:34 UTC 2020 x86_64
+
+Loading HDS Project file via Environment variable $HDS_LIBS /home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/hds.hdp
+Loading prefs env variable USER_HOME /home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/hds_user-linux
+Loading teamprefs env variable TEAM_HOME /home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/hds_team
+Loading user Task files from '/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/hds_user-linux/v2019.3/tasks'.
+Loading team Task files from '/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/hds_team/v2019.3/tasks'.
+
+HDS_HOME is set to : /usr/opt/HDS
+
+Environment variables:
+HDS_HOME set to /usr/opt/HDS
+HDS_USER_HOME set to /home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/hds_user-linux
+HDS_TEAM_HOME set to /home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/hds_team
+HDS_LIBS set to /home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/hds.hdp
+HDS_PORT set to Aphelia:44361
+10 events recorded:
+ReconcileInterface
+Save
+ExecuteAction
+Delete
+ViewAll
+OpenDownExistingView
+ViewAll
+Delete
+Delete
+Save
+
+(0) 31ed6e5
+(1) 31ed872
+(2) 7fb7181b0fd0
+(3) 7fb718286cc4
+(4) 7fb71bed3e7a
+(5) 7fb71bed5265
+(6) 4afa23e
+(7) 4afa1b5
+(8) 1832e32
+(9) 1831558
+(10) 4b5bc8e
+(11) 7fb718193b97
+(12) 18303f9
+/usr/opt/HDS/bin/hdldesigner(_ZN16TracebackHandler6reportEv+0x35)[0x31ed6e5]
+/usr/opt/HDS/bin/hdldesigner(_ZN16TracebackHandler13signalHandlerEi+0x110)[0x31ed872]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3efd0)[0x7fb7181b0fd0]
+/lib/x86_64-linux-gnu/libc.so.6(__poll+0x14)[0x7fb718286cc4]
+/usr/lib/x86_64-linux-gnu/libXt.so.6(_XtWaitForSomething+0x47a)[0x7fb71bed3e7a]
+/usr/lib/x86_64-linux-gnu/libXt.so.6(XtAppNextEvent+0xe5)[0x7fb71bed5265]
+/usr/opt/HDS/bin/hdldesigner(_ZN9VNotifier11messageLoopE10LoopReason+0x72)[0x4afa23e]
+/usr/opt/HDS/bin/hdldesigner(_ZN9VNotifier5startEv+0x31)[0x4afa1b5]
+/usr/opt/HDS/bin/hdldesigner(_ZN20Gen_RenoirAppStarterC1Ev+0x520)[0x1832e32]
+/usr/opt/HDS/bin/hdldesigner(_Z6cvmainiPPc+0xae)[0x1831558]
+/usr/opt/HDS/bin/hdldesigner(main+0x956)[0x4b5bc8e]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7)[0x7fb718193b97]
+/usr/opt/HDS/bin/hdldesigner[0x18303f9]

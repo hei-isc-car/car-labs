@@ -1,0 +1,2 @@
+DEFAULT_FILE atom freqDividerEnable_RTL.vhd
+DEFAULT_ARCHITECTURE atom RTL

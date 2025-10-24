@@ -1,0 +1,3 @@
+DEFAULT_FILE atom bram_actel.vhd
+DEFAULT_ARCHITECTURE atom actel
+TOP_MARKER atom 1

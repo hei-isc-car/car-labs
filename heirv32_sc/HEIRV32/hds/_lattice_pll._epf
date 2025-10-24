@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Structure
+DEFAULT_FILE atom lattice_pll_Structure.vhd

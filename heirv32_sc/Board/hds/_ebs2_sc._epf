@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom struct
+DEFAULT_FILE atom ebs2_sc/struct.bd

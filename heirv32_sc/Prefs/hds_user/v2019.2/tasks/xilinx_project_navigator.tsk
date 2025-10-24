@@ -1,0 +1,163 @@
+version "1.1"
+HDSFlow (HDSFlow
+TaskName "Xilinx Project Navigator"
+bitmap "$HDS_HOME\\resources\\bitmaps\\tools\\tool_xilinx_synthesis.bmp"
+hasBitmap 1
+tooltip "Xilinx Flow"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"flowSettingsDlg"
+""
+"taskInvocationScript"
+""
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+subTasks [
+(HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "Update.xise"
+bitmap "tool_default_tool.bmp"
+hasBitmap 1
+tooltip "Update file references in the Xilnx project .xise file"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+"$CONCAT_DIR\\..\\..\\Scripts\\update_ise.pl $DESIGN_NAME.xise $CONCAT_DIR\\$DESIGN_NAME.vhd $CONCAT_DIR\\$DESIGN_NAME.ucf"
+"captureOutput"
+"1"
+"customPrompt"
+""
+"initialDir"
+"$ISE_WORK_DIR"
+"promptForRunSettings"
+"0"
+"runMethod"
+"gui"
+"runnableObject"
+"$HDS_HOME\\resources\\perl\\bin\\perl.exe"
+"runnableObjectType"
+"executable"
+"useViewSpecific"
+"0"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 3
+)
+(HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "Xilinx Project navigator"
+bitmap "$HDS_HOME\\resources\\bitmaps\\tools\\tool_xilinx_synthesis.bmp"
+hasBitmap 1
+tooltip "Invokes the Xilinx ISE tool"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+"$DESIGN_NAME.xise"
+"captureOutput"
+"0"
+"customPrompt"
+""
+"descriptiveName"
+"FPGA Technology Setup Plugin"
+"initialDir"
+"$ISE_WORK_DIR"
+"isHierarchical"
+"0"
+"needsSave"
+"0"
+"pluginInfo"
+"FPGA Technology Setup Plug-in v2.0
+For additional information, exceptions, compatibility issues and updates, visit SupportNet."
+"pluginVersion"
+"2.0"
+"promptForRunSettings"
+"0"
+"runMethod"
+"gui"
+"runnableObject"
+"$ISE_HOME\\bin\\nt64\\ise.exe"
+"runnableObjectType"
+"executable"
+"useViewSpecific"
+"0"
+]
+)
+"TaskSetting"
+(SettingsMap
+settingsMap [
+"InputFile"
+"U:/ELN_board/Board/concat/cursor.vhd"
+"RunFromPlugin"
+"False"
+"RunInteractiveFromPlugIn"
+"True"
+"createAsciiFile"
+"False"
+"createBinaryFile"
+"False"
+"createFiles"
+"True"
+"createScriptFile"
+"False"
+"device"
+"xc2vp7"
+"edifngcPath"
+"U:/ELN_board/Board/concat/cursor.vhd"
+"effortLevel"
+"Standard"
+"family"
+"virtex2p"
+"familyName"
+"virtex2p"
+"netlist"
+"other"
+"netlistDefaultView"
+"True"
+"package"
+"fg456"
+"simulationModelLanguage"
+"Modelsim_VHDL"
+"speed"
+"-7"
+"synthTool"
+"Xilinx XST"
+"ucfPath"
+""
+"vendor"
+"xilinx"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 3
+)
+]
+)

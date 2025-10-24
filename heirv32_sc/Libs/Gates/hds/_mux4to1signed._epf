@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom sim
+DEFAULT_FILE atom mux4to1Signed_sim.vhd

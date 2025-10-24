@@ -1,0 +1,162 @@
+version "1.1"
+HDSFlow (HDSFlow
+TaskName "Diamond Project Navigator"
+bitmap "$HDS_HOME\\resources\\bitmaps\\tools\\tool_lattice.bmp"
+hasBitmap 1
+tooltip "Diamond synthesis Flow"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"flowSettingsDlg"
+""
+"taskInvocationScript"
+""
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+subTasks [
+(HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "Update.ldf"
+bitmap "tool_default_tool.bmp"
+hasBitmap 1
+tooltip "Update file references in the Diamond project .prjx file"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+"$CONCAT_DIR\\..\\..\\Scripts\\update_diamond.pl $DESIGN_NAME.ldf $CONCAT_DIR\\$DESIGN_NAME.vhd $CONCAT_DIR\\$DESIGN_NAME.lpf"
+"captureOutput"
+"1"
+"customPrompt"
+""
+"initialDir"
+"$DIAMOND_WORK_DIR"
+"promptForRunSettings"
+"0"
+"runMethod"
+"gui"
+"runnableObject"
+"$HDS_HOME\\resources\\perl\\bin\\perl.exe"
+"runnableObjectType"
+"executable"
+"useViewSpecific"
+"0"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 3
+)
+(HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "Diamond Project IDE"
+bitmap "$HDS_HOME\\resources\\bitmaps\\tools\\tool_lattice.bmp"
+hasBitmap 1
+tooltip "Invokes the Lattice Diamond tool"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+"$CONCAT_DIR\\..\\..\\Scripts\\start_diamond.pl $DESIGN_NAME.ldf"
+"captureOutput"
+"1"
+"customPrompt"
+""
+"descriptiveName"
+"FPGA Technology Setup Plugin"
+"initialDir"
+"$LIBERO_WORK_DIR"
+"isHierarchical"
+"0"
+"needsSave"
+"0"
+"pluginInfo"
+"FPGA Technology Setup Plug-in v2.0 For additional information, exceptions, compatibility issues and updates, visit SupportNet."
+"pluginVersion"
+"2.0"
+"promptForRunSettings"
+"0"
+"runMethod"
+"gui"
+"runnableObject"
+"$HDS_HOME\\resources\\perl\\bin\\perl.exe"
+"runnableObjectType"
+"executable"
+"useViewSpecific"
+"0"
+]
+)
+"TaskSetting"
+(SettingsMap
+settingsMap [
+"InputFile"
+"U:/ELN_board/Board/concat/cursor.vhd"
+"RunFromPlugin"
+"False"
+"RunInteractiveFromPlugIn"
+"True"
+"createAsciiFile"
+"False"
+"createBinaryFile"
+"False"
+"createFiles"
+"True"
+"createScriptFile"
+"False"
+"device"
+"xc2vp7"
+"edifngcPath"
+"U:/ELN_board/Board/concat/cursor.vhd"
+"effortLevel"
+"Standard"
+"family"
+"virtex2p"
+"familyName"
+"virtex2p"
+"netlist"
+"other"
+"netlistDefaultView"
+"True"
+"package"
+"fg456"
+"simulationModelLanguage"
+"Modelsim_VHDL"
+"speed"
+"-7"
+"synthTool"
+"Xilinx XST"
+"ucfPath"
+""
+"vendor"
+"xilinx"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 3
+)
+]
+)

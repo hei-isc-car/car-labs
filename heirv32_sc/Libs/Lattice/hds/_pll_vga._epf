@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Structure
+DEFAULT_FILE atom pll_vga_Structure.vhd

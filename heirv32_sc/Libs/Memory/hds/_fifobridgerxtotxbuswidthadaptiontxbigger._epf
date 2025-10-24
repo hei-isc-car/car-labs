@@ -1,0 +1,2 @@
+DEFAULT_FILE atom fifoBridgeRxToTxBuswidthAdaptionTxbigger_behavioral.vhd
+DEFAULT_ARCHITECTURE atom behavioral

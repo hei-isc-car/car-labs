@@ -1,0 +1,74 @@
+version "1.1"
+HDSFlow (HDSFlow
+TaskName "ModelSim Flow"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_modelsim.bmp"
+hasBitmap 1
+tooltip "Generate and run entire ModelSim flow"
+taskSettings [
+]
+PreferedTasks [
+(preferedMap
+preferedEnum 0
+preferedSetting "/usr/opt/Modelsim/modeltech/bin"
+)
+(preferedMap
+preferedEnum 2
+preferedSetting "MODEL_SIM"
+)
+]
+onShortcutBar 1
+onPulldownMenu 1
+onToolbar 1
+enabled 1
+hierDepth 1
+subTasks [
+(HDSTaskRef
+TaskName "Generate"
+bitmap ""
+hasBitmap 1
+tooltip ""
+taskSettings [
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+reffedTaskName "USER:Generate"
+)
+(HDSTaskRef
+TaskName "ModelSim Compile"
+bitmap ""
+hasBitmap 1
+tooltip ""
+taskSettings [
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+reffedTaskName "USER:ModelSim Compile"
+)
+(HDSTaskRef
+TaskName "ModelSim Simulate"
+bitmap ""
+hasBitmap 1
+tooltip ""
+taskSettings [
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 3
+reffedTaskName "USER:ModelSim Simulate"
+)
+]
+)

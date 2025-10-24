@@ -1,0 +1,162 @@
+version "1.1"
+HDSFlow (HDSFlow
+TaskName "Prepare for Synthesis"
+bitmap "$HDS_HOME\\resources\\bitmaps\\tools\\tool_synthesis.bmp"
+hasBitmap 1
+tooltip "generates a single file"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"flowSettingsDlg"
+""
+"taskInvocationScript"
+""
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 1
+enabled 1
+hierDepth 1
+subTasks [
+(HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "Generate"
+bitmap "$HDS_HOME\\resources\\bitmaps\\tools/tool_generate.bmp"
+hasBitmap 1
+tooltip "Performs generation of graphics files"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+""
+"captureOutput"
+"0"
+"customPrompt"
+""
+"initialDir"
+""
+"promptForRunSettings"
+"0"
+"runMethod"
+"gui"
+"runnableObject"
+"Generator"
+"runnableObjectType"
+"tcl_plugin"
+"useViewSpecific"
+"0"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+)
+(HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "Concatenate HDL"
+bitmap "$HDS_HOME\\resources\\bitmaps\\tools/tool_concatenate.bmp"
+hasBitmap 1
+tooltip "Appends all HDL files together"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+""
+"captureOutput"
+"0"
+"customPrompt"
+""
+"initialDir"
+""
+"promptForRunSettings"
+"0"
+"runMethod"
+"gui"
+"runnableObject"
+"Concatenation"
+"runnableObjectType"
+"tcl_plugin"
+"useViewSpecific"
+"1"
+]
+)
+"TaskSetting"
+(SettingsMap
+settingsMap [
+"outputFileNameRoot"
+"%(concat_file)"
+"outputVerilogFileExtension"
+"v"
+"outputVhdlFileExtension"
+"vhd"
+"place"
+"0"
+"specifyDir"
+""
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+)
+(HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "Trim libraries"
+bitmap "tool_default_tool.bmp"
+hasBitmap 1
+tooltip "comment out library declarations for singles file"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+".\\..\\..\\Scripts\\trimLibs.pl %(concat_file).vhd $DESIGN_NAME.vhd"
+"captureOutput"
+"1"
+"customPrompt"
+""
+"initialDir"
+"$CONCAT_DIR"
+"promptForRunSettings"
+"0"
+"runMethod"
+"gui"
+"runnableObject"
+"$HDS_HOME\\resources\\perl\\bin\\perl.exe"
+"runnableObjectType"
+"executable"
+"useViewSpecific"
+"0"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 3
+)
+]
+)

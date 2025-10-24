@@ -1,0 +1,41 @@
+version "1.1"
+HDSTool (HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "Generate"
+bitmap "$HDS_HOME\\resources\\bitmaps\\tools/tool_generate.bmp"
+hasBitmap 1
+tooltip "Performs generation of graphics files"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+""
+"captureOutput"
+"0"
+"customPrompt"
+""
+"initialDir"
+""
+"promptForRunSettings"
+"0"
+"runMethod"
+"gui"
+"runnableObject"
+"Generator"
+"runnableObjectType"
+"tcl_plugin"
+"useViewSpecific"
+"0"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 1
+onPulldownMenu 1
+onToolbar 1
+enabled 1
+hierDepth 2
+)

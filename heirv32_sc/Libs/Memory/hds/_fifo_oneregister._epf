@@ -1,0 +1,3 @@
+DEFAULT_FILE atom fifo_oneRegister_rtl.vhd
+DEFAULT_ARCHITECTURE atom oneRegister
+TOP_MARKER atom 0

@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom RTL
+DEFAULT_FILE atom sdramControllerSR_RTL.vhd

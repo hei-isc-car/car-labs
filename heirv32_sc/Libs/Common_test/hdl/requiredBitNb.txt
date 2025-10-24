@@ -1,0 +1,40 @@
+# testing function "requiredBitNb"
+#   requiredBitNb(1) = 1
+#   requiredBitNb(2) = 2
+#   requiredBitNb(3) = 2
+# 
+#   requiredBitNb(3) = 2
+#   requiredBitNb(4) = 3
+#   requiredBitNb(5) = 3
+# 
+#   requiredBitNb(7) = 3
+#   requiredBitNb(8) = 4
+#   requiredBitNb(9) = 4
+# 
+#   requiredBitNb(15) = 4
+#   requiredBitNb(16) = 5
+#   requiredBitNb(17) = 5
+# 
+#   requiredBitNb(31) = 5
+#   requiredBitNb(32) = 6
+#   requiredBitNb(33) = 6
+# 
+#   requiredBitNb(63) = 6
+#   requiredBitNb(64) = 7
+#   requiredBitNb(65) = 7
+# 
+#   requiredBitNb(127) = 7
+#   requiredBitNb(128) = 8
+#   requiredBitNb(129) = 8
+# 
+#   requiredBitNb(255) = 8
+#   requiredBitNb(256) = 9
+#   requiredBitNb(257) = 9
+# 
+#   requiredBitNb(511) = 9
+#   requiredBitNb(512) = 10
+#   requiredBitNb(513) = 10
+# 
+#   requiredBitNb(1023) = 10
+#   requiredBitNb(1024) = 11
+#   requiredBitNb(1025) = 11

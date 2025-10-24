@@ -1,0 +1,2 @@
+DEFAULT_FILE atom zeroUnsigned_sim.vhd
+DEFAULT_ARCHITECTURE atom sim

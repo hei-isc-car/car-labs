@@ -1,0 +1,96 @@
+version "1.1"
+HDSTool (HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "ModelSim Simulate"
+bitmap "$HDS_HOME\\resources\\bitmaps\\tools/tool_modelsim_invoke.bmp"
+hasBitmap 1
+tooltip "Invokes the ModelSim Simulator"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+""
+"captureOutput"
+"0"
+"customPrompt"
+""
+"initialDir"
+""
+"promptForRunSettings"
+"1"
+"runMethod"
+"gui"
+"runnableObject"
+"ModelSimSimulator"
+"runnableObjectType"
+"tcl_plugin"
+"useViewSpecific"
+"0"
+]
+)
+"TaskSetting"
+(SettingsMap
+settingsMap [
+"Arguments"
+""
+"Arguments1"
+"do controller.do"
+"Arguments2"
+"controller.do"
+"Communication"
+"1"
+"DelaySelection"
+"typ"
+"GlitchGeneration"
+"1"
+"InitCmd"
+"$SIMULATION_DIR\\IND.do"
+"LogFile"
+""
+"RemoteHost"
+""
+"Resolution"
+"ps"
+"SdfDelay"
+"typ"
+"SdfMultiSrcDelay"
+"latest"
+"SdfReduce"
+"0"
+"SdfWarnings"
+"1"
+"TimingChecks"
+"1"
+"UseBatch"
+"0"
+"UseGUI"
+"1"
+"VitalVersion"
+"95"
+"autoNames"
+"1"
+"coverage"
+"0"
+"excludePSL"
+"0"
+"exepath"
+"$MODELSIM_HOME"
+"minimumSimSetting"
+"0"
+"saveReplayScript"
+"0"
+"useCustomSimDir"
+"0"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 1
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 3
+)

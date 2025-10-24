@@ -1,0 +1,3 @@
+DEFAULT_FILE atom fifo@bridge/struct.bd
+DEFAULT_ARCHITECTURE atom struct
+TOP_MARKER atom 1

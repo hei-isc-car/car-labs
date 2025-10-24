@@ -1,0 +1,3 @@
+DEFAULT_FILE atom testUtils_tb_test.vhd
+DEFAULT_ARCHITECTURE atom test
+TOP_MARKER atom 1
