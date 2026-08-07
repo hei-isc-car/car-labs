@@ -1,0 +1,9 @@
+[package]
+name = "rust_sorting"
+version = "1.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+native-dialog = "0.6.3"

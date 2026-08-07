@@ -1,0 +1,93 @@
+##################################################
+# Variables
+#
+open := if os() == "linux" {
+  "xdg-open"
+} else if os() == "macos" {
+  "open"
+} else {
+  "start \"\" /max"
+}
+
+project_dir   := justfile_directory()
+project_name  := file_stem(justfile_directory())
+
+rust_version  := "rustc --version"
+rustup_url    := "https://sh.rustup.rs"
+
+lq_version    := "lq --version"
+lq_github     := "https://github.com/tschinz/langquest"
+
+exercises_dir := "."
+labs_dir      := "labs"
+
+set shell := ["bash", "-uc"]
+set windows-shell := ["cmd.exe", "/c"]
+
+##################################################
+# COMMANDS
+#
+# List all commands
+@default:
+  just --list
+
+# Information about the environment
+@info:
+  echo "Environment Informations\n------------------------\n"
+  echo "    OS          : {{os()}}({{arch()}})"
+  echo "    Open        : {{open}}"
+  echo "    Rust        : `{{rust_version}}`"
+  echo "    LangQuest   : `{{lq_version}}`"
+  echo "    Projectdir  : {{project_dir}}"
+  echo "    Projectname : {{project_name}}"
+  echo "    Exercises   : {{exercises_dir}}"
+  echo "    Labs        : {{labs_dir}}"
+
+# install required sw (Rust toolchain + LangQuest)
+[linux]
+[macos]
+@install:
+  echo "Install Rust (rustup)"
+  command -v cargo >/dev/null 2>&1 || curl --proto '=https' --tlsv1.2 -sSf {{rustup_url}} | sh -s -- -y
+  echo "Install LangQuest"
+  . "$HOME/.cargo/env" && cargo install --git {{lq_github}}
+
+# install required sw (Rust toolchain + LangQuest)
+[windows]
+@install:
+  echo "Install Rust (rustup)"
+  where cargo >nul 2>nul || winget install --id Rustlang.Rustup -e --accept-source-agreements --accept-package-agreements
+  echo "Install LangQuest"
+  "%USERPROFILE%\.cargo\bin\cargo" install --git {{lq_github}}
+
+# rewrite exercise markdown and assembly files as UTF-8 without BOM
+[linux]
+[macos]
+@ex-cleanup dir=exercises_dir:
+  python3 - <<'PY'
+  from pathlib import Path
+
+  root = Path(r'''{{dir}}''')
+  for path in root.rglob('*'):
+      if path.is_file() and path.suffix in {'.md', '.asm'}:
+          text = path.read_text(encoding='utf-8-sig')
+          path.write_text(text, encoding='utf-8', newline='')
+  PY
+
+# rewrite exercise markdown and assembly files as UTF-8 without BOM
+[windows]
+@ex-cleanup dir=exercises_dir:
+  powershell -NoProfile -Command "$utf8NoBom = New-Object System.Text.UTF8Encoding($false); $root = Resolve-Path '{{dir}}'; Get-ChildItem -Path $root -Recurse -File | Where-Object { $_.Extension -in '.md', '.asm' } | ForEach-Object { $text = [System.IO.File]::ReadAllText($_.FullName); [System.IO.File]::WriteAllText($_.FullName, $text, $utf8NoBom) }"
+
+# start LangQuest on the exercises
+@ex-start dir=exercises_dir:
+  just ex-cleanup {{dir}}
+  lq --repo {{dir}}
+
+# print current exercise and overall progress
+@ex-status dir=exercises_dir:
+  lq --repo {{dir}} status
+
+# wipe all progress and start fresh
+@ex-reset dir=exercises_dir:
+  lq --repo {{dir}} --reset

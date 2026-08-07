@@ -1,0 +1,106 @@
+##################################################
+# Variables
+#
+rust_env := "rustup show"
+rust_edition := "2021"
+open := if os() == "linux" {
+  "xdg-open"
+} else if os() == "macos" {
+  "open"
+} else {
+  "start \"\" /max"
+}
+
+app_name := "rust_sorting_fast"
+version := "v1_0_0"
+project_directory := justfile_directory()
+release := `git describe --abbrev=0 --always`
+url := "https://gitlab.hevs.ch/course/car/car-labs"
+
+##################################################
+# COMMANDS
+#
+
+# List all commands
+default:
+  just --list
+
+# Information about the environment
+@info:
+  echo "Environment Informations\n------------------------\n"
+  echo "OS   : {{os()}}({{arch()}})"
+  echo "Open : {{open}}"
+  echo "Rust :"
+  echo "`{{rust_env}}`"
+
+# Install dependencies
+[macos]
+install:
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+  cargo install --locked trunk
+  brew install mingw-w64
+
+# Install dependencies
+[windows]
+[linux]
+install:
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+  cargo install --locked trunk
+
+# Build app in debug mode
+build-dbg:
+  cargo build
+
+# Build app in release mode
+build-rel:
+  cargo build --release
+
+# Run app in debug mode
+run-dbg:
+  cargo run
+
+# Run app in release mode
+run-rel:
+  cargo run --release
+
+# release the app for mac aarch64
+release-mac-aarch64:
+  rustup target add aarch64-apple-darwin
+  cargo build -r --target=aarch64-apple-darwin
+  mkdir -p release/ && cp "build/aarch64-apple-darwin/release/{{app_name}}" "release/{{app_name}}_{{version}}_Mac_AARCH64"
+
+# release the app for linux x64
+[windows]
+release-linux-x64:
+  rustup target add x86_64-unknown-linux-musl
+  cargo build -r --target=x86_64-unknown-linux-musl
+  xcopy /v /f /y "uild\x86_64-unknown-linux-musl\release\{{app_name}}" "release\{{app_name}}_{{version}}_Linux_x64"
+
+# release the app for linux x64
+[macos]
+[linux]
+release-linux-x64:
+  rustup target add x86_64-unknown-linux-musl
+  cargo build -r --target=x86_64-unknown-linux-musl
+  mkdir -p release/ && cp -f -v build/x86_64-unknown-linux-musl/release/{{app_name}} release/{{app_name}}_{{version}}_Linux_x64
+
+# release the app for win x64
+[windows]
+release-win-x64:
+  rustup target add x86_64-pc-windows-msvc
+  cargo build -r --target=x86_64-pc-windows-msvc
+  xcopy /v /f /y build\x86_64-pc-windows-msvc\release\{{app_name}} release\{{app_name}}_{{version}}_Windows_x64.exe
+
+# release the app for windows x64
+[macos]
+[linux]
+release-win-x64:
+  rustup target add x86_64-pc-windows-gnu
+  cargo build -r --target=x86_64-pc-windows-gnu
+
+  mkdir -p release/ && cp -f -v build/x86_64-pc-windows-gnu/release/{{app_name}}.exe release/{{app_name}}_{{version}}_Windows_x64.exe
+
+release-all:
+  just release-linux-x64
+  just release-mac-aarch64
+  just release-win-x64

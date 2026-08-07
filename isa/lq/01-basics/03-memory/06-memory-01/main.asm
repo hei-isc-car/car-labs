@@ -1,0 +1,69 @@
+# EXPECT_REG: x0  0
+# EXPECT_REG: x1  2
+# EXPECT_REG: x2  3
+# EXPECT_REG: x3  4
+# EXPECT_REG: x4  5
+# EXPECT_REG: x5  6
+# EXPECT_REG: x6  7
+# EXPECT_REG: x7  8
+# EXPECT_REG: x8  9
+# EXPECT_REG: x9  10
+# EXPECT_REG: x10 11
+# EXPECT_REG: x11 12
+# EXPECT_REG: x12 13
+# EXPECT_REG: x13 14
+# EXPECT_REG: x14 15
+# EXPECT_REG: x15 16
+# EXPECT_REG: x16 17
+# EXPECT_REG: x17 18
+# EXPECT_REG: x18 19
+# EXPECT_REG: x19 20
+# EXPECT_REG: x20 21
+# EXPECT_REG: x21 22
+# EXPECT_REG: x22 23
+# EXPECT_REG: x23 24
+# EXPECT_REG: x24 25
+# EXPECT_REG: x25 26
+# EXPECT_REG: x26 27
+# EXPECT_REG: x27 28
+# EXPECT_REG: x28 29
+# EXPECT_REG: x29 30
+# EXPECT_REG: x30 31
+# EXPECT_REG: x31 32
+
+_start:
+  addi x0,  x0, 1
+  addi x1,  x0, 2
+  addi x2,  x0, 3
+  addi x3,  x0, 4
+  addi x4,  x0, 5
+  addi x5,  x0, 6
+  addi x6,  x0, 7
+  addi x7,  x0, 8
+  addi x8,  x0, 9
+  addi x9,  x0, 10
+  addi x10, x0, 12
+  addi x11, x0, 12
+  addi x12, x0, 13
+  addi x13, x0, 14
+  addi x14, x0, 15
+  addi x15, x0, 16
+  addi x16, x0, 17
+  addi x17, x0, 18
+  addi x18, x0, 19
+  addi x19, x0, 20
+  addi x20, x0, 21
+  addi x21, x0, 22
+  addi x22, x0, 23
+  addi x23, x0, 24
+  addi x24, x0, 25
+  addi x25, x0, 26
+  addi x26, x0, 27
+  addi x27, x0, 28
+  addi x28, x0, 29
+  addi x29, x0, 30
+  addi x30, x0, 31
+  addi x31, x0, 32
+
+  # NOP
+  addi zero, zero, 0
